@@ -1,0 +1,409 @@
+/* https://www.arsys.es/blog/efecto-resplandor-sombras-css */
+/* https://carontestudio.com/blog/efecto-cristal-css-te-ensenamos-a-crearlo-de-0/ */
+/* https://alvarotrigo.com/blog/html-css-timelines/ */
+/* https://programadorwebvalencia.com/Javascript-cuenta-atras-o-contador-regresivo/ */
+
+/* generales */
+.center
+{
+  margin: auto;
+}
+
+.text-justify
+{
+  text-align: justify;
+}
+.txtTitles
+{
+  font-size: 60px;
+  font-family: 'Pinyon Script', cursive;
+}
+.txtText
+{
+  font-size: 40px;
+  font-family: 'Niconne', cursive;
+}
+
+.txtBadage
+{
+  font-size: 45px;
+  font-family: 'Pinyon Script', cursive;
+}
+/* img circle */
+.circular 
+{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.circular img 
+{
+  width: 100%;
+  height: auto;
+}
+.back
+{
+  background-image: url(img/backgroundTela.png);
+  /*background-image: url(img/rosa.png);*/
+}
+
+
+/* __________ 1ra sección Head __________ */
+.parallax-header
+{
+  background:#A5A2A2;
+  background: linear-gradient(
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.8)
+  ),
+  url();
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-content
+{
+  padding: 50px 0 200px 0;
+}
+.monograma 
+{
+  opacity: 0.2;
+  border-radius: 50px 50px 50px 50px;
+  position:relative;
+}
+
+
+/* __________ 2da sección Love card  __________ */
+
+.content
+{
+  margin-top: -80px;
+  background: #fff;
+  box-shadow: 0 0 20px -6px rgba(0,0,0,0.2);
+}
+#lovequote 
+{
+  padding: 5rem;
+  margin: auto;
+  background-color: #A5A2A2;
+  /*background-image: url(img/parejas.jpg);*/
+  background-size: cover;
+  font-family: sans-serif;
+  background-position: center;
+}
+.lovecard
+{
+  width:auto;
+  height: auto;
+  margin:auto;
+  padding: 2rem 4rem 2rem 4rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color:white;
+  background: rgba(255, 255, 255, .25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+}
+
+
+/* __________ 3ra sección Save the date __________ */
+.save
+{
+  padding: 15px 50px 15px 50px;
+}
+.cardsave
+{
+  opacity:30;
+  box-shadow: 1rem 1rem 1rem 1rem rgba(76,25,25, 0.5); 
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+}
+
+/* __________ 4ta sección Countdown __________ */
+
+/* __________ 5ta sección Family __________ */
+.photofam
+{
+  border-radius: 50px 50px 50px 50px;
+}
+.boxfam
+{
+  padding: 15px 10px 30px 15px;
+}
+.boxphoto
+{
+  padding: 3em 1em 2em 1em;
+}
+.nomPadres
+{
+  font-size: 50px;
+}
+
+
+/* _________ 6ta sección Location _________ */
+#garden 
+{
+  padding: 5rem;
+  margin: 0;
+  background-image: url(img/finca.jpeg);
+  background-size: cover;
+  font-family: sans-serif;
+  background-position: center;
+}
+#btnlink 
+{
+  background-color: #6363db;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.cardLoc
+{
+  width: 20rem;
+  height: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color:white;
+  background: rgba(255, 255, 255, .25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+}
+.cardLoc-title 
+{
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.cardLoc p
+{
+  margin-bottom: 1.5rem;
+}
+
+
+/* _________ 7ma sección Carrousel _________ */
+.imgcenter
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* _________ 8va sección Give away _________ */
+#divtable
+{
+  padding: 15px;
+  height: 250px;
+}
+.backtable
+{
+  padding: 15px;
+}
+.boxStore
+{
+  width: 18rem;
+  padding: auto;
+  padding: auto;
+}
+.anyborder
+{
+  border: 0 !important;
+}
+.brand
+{
+  height:10rem;
+  width: 10rem;
+  margin:auto;
+  padding: auto;
+}
+
+
+/* _________ 9na sección Time line _________ */
+
+ul 
+{
+  padding: 50px 0;
+}
+
+ul li 
+{
+  position:relative;
+  list-style-type: none;
+  width: 6px;
+  background-color:#d9ad26;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+ul li::after
+{
+  /*background: white;*/
+  background:#000000;
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+ul li div
+{
+  position: relative;
+  width: 400px;
+  padding: 15px;
+  border-radius: 20px;
+  bottom: 0;
+  background: rgba(255,255,255);
+}
+ul li:nth-child(odd) div 
+{
+  left: 45px;
+}
+ul li:nth-child(even) div 
+{
+  left: -445px;
+}
+time 
+{
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+ul li div 
+{
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+ul li:nth-child(odd) div 
+{
+  transform: translate3d(200px, 0, 0);
+}
+ul li:nth-child(even) div 
+{
+  transform: translate3d(-200px, 0, 0);
+}
+ul li.show div 
+{
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+@media screen and (max-width: 900px) 
+{
+  ul li div {
+    width: 250px;
+  }
+  ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+/* _________ 10ma lodgement _________ */
+
+
+/*  # instagram */
+#instagram
+{
+  padding: 10rem;
+  margin: 0;
+  background-image: url(img/instagram.png);
+  background-size: cover;
+  font-family: sans-serif;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pie */
+.content .bottom
+{
+  background:#A5A2A2;
+  padding: 20px;
+}
+
+.primary-color
+{
+  color: #dc3545;
+}
+
+
+
+
+
+
+
+
+
+
+
+div 
+{
+ /*border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;*/
+  outline: solid 1px;
+}
