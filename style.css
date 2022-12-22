@@ -45,6 +45,42 @@
   width: 100%;
   height: auto;
 }
+/*backdrop*/
+#backdrop
+{
+  background-color: rgba(255,255,255,1);
+  position: fixed;
+  height: 100vh;/*cubra toda la altura de la pantalla*/
+  width: 100%;
+  z-index: 1000; /* eje z y su posición*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: frontMonoGif 1s ease 3s;
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
+}
+@keyframes frontMonoGif
+{
+  0%
+  {
+    opacity: 1;
+  }
+  99%
+  {
+    opacity: 0;
+    display: flex;
+    top: 0;
+  }
+  100%
+  {
+    opacity: 0;
+    display: none;
+    top: -100vh
+  }
+} 
+
+
 /* __________ 1ra sección Head __________ */
 /*.parallax-header
 {
@@ -65,7 +101,7 @@
 }
 .monograma 
 {
-  opacity: 0.2;
+  opacity: 0.3;
   border-radius: 50px 50px 50px 50px;
   position:relative;
 }
