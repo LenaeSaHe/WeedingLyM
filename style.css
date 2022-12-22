@@ -4,6 +4,7 @@
 /* https://programadorwebvalencia.com/Javascript-cuenta-atras-o-contador-regresivo/ */
 
 /* generales */
+
 .center
 {
   margin: auto;
@@ -22,6 +23,7 @@
 {
   font-size: 40px;
   font-family: 'Niconne', cursive;
+  color: #000000;
 }
 
 .txtBadage
@@ -43,15 +45,8 @@
   width: 100%;
   height: auto;
 }
-.back
-{
-  background-image: url(img/backgroundTela.png);
-  /*background-image: url(img/rosa.png);*/
-}
-
-
 /* __________ 1ra sección Head __________ */
-.parallax-header
+/*.parallax-header
 {
   background:#A5A2A2;
   background: linear-gradient(
@@ -63,7 +58,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+}*/
 .header-content
 {
   padding: 50px 0 200px 0;
@@ -76,20 +71,21 @@
 }
 
 
-/* __________ 2da sección Love card  __________ */
 
-.content
+/* __________ 2da sección Love card  __________ */
+.contA
+{
+  background-color: #6363db;
+}
+/*.content
 {
   margin-top: -80px;
-  background: #fff;
   box-shadow: 0 0 20px -6px rgba(0,0,0,0.2);
-}
+}*/
 #lovequote 
 {
   padding: 5rem;
   margin: auto;
-  background-color: #A5A2A2;
-  /*background-image: url(img/parejas.jpg);*/
   background-size: cover;
   font-family: sans-serif;
   background-position: center;
@@ -102,8 +98,7 @@
   padding: 2rem 4rem 2rem 4rem;
   border-radius: 1rem;
   font-size: 1rem;
-  color:white;
-  background: rgba(255, 255, 255, .25);
+  color:black;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border: 1.5px solid rgba(209, 213, 219, 0.3);
@@ -111,6 +106,10 @@
 
 
 /* __________ 3ra sección Save the date __________ */
+.contB
+{
+  background-color: cadetblue;
+}
 .save
 {
   padding: 15px 50px 15px 50px;
@@ -148,11 +147,15 @@
 
 
 /* _________ 6ta sección Location _________ */
+.contLoc
+{
+  background-image: url(img/finca.jpeg);
+  background-size: cover;
+}
 #garden 
 {
   padding: 5rem;
   margin: 0;
-  background-image: url(img/finca.jpeg);
   background-size: cover;
   font-family: sans-serif;
   background-position: center;
@@ -190,17 +193,7 @@
   margin-bottom: 1.5rem;
 }
 
-
-/* _________ 7ma sección Carrousel _________ */
-.imgcenter
-{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-/* _________ 8va sección Give away _________ */
+/* _________ 7ma sección Give away _________ */
 #divtable
 {
   padding: 15px;
@@ -380,7 +373,7 @@ ul li.show div
 /* pie */
 .content .bottom
 {
-  background:#A5A2A2;
+  color: #000000;
   padding: 20px;
 }
 
