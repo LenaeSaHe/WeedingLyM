@@ -25,7 +25,6 @@
   font-family: 'Niconne', cursive;
   color: #000000;
 }
-
 .txtBadage
 {
   font-size: 45px;
@@ -106,8 +105,6 @@
   position:relative;
 }
 
-
-
 /* __________ 2da sección Love card  __________ */
 .contA
 {
@@ -150,16 +147,6 @@
 {
   padding: 15px 50px 15px 50px;
 }
-.cardsave
-{
-  opacity:30;
-  box-shadow: 1rem 1rem 1rem 1rem rgba(76,25,25, 0.5); 
-  border-radius: 10px;
-  position: relative;
-  z-index: 1;
-  background: inherit;
-  overflow: hidden;
-}
 
 /* __________ 4ta sección Countdown __________ */
 
@@ -180,7 +167,6 @@
 {
   font-size: 50px;
 }
-
 
 /* _________ 6ta sección Location _________ */
 .contLoc
@@ -346,8 +332,6 @@ ul li.show div
 
 /* _________ 10ma lodgement _________ */
 
-
-/*  # instagram */
 #instagram
 {
   padding: 10rem;
@@ -358,74 +342,12 @@ ul li.show div
   background-position: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* pie */
 .content .bottom
 {
   color: #000000;
   padding: 20px;
 }
-
-.primary-color
-{
-  color: #dc3545;
-}
-
-
-
-
-
-
-
-
-
 
 
 div 
