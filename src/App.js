@@ -11,19 +11,17 @@ import party from "./img/heart-15-48.ico"
 
 import "./css/style.css"
 import { useEffect, useRef, useState } from "react"
+
 import Header from "./componentes/Header";
-import Lovequote from "./componentes/Lovequote"
-
-
+import Lovequote from "./componentes/Lovequote";
+import Savethedate from "./componentes/Savethedate"
 
 function App() /* Función = Componente debe llevar un return dentro de la funcion jsx */
 {
-  
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
-
 
   const item1 = useRef();
   const item2 = useRef();
@@ -101,36 +99,11 @@ function App() /* Función = Componente debe llevar un return dentro de la funci
     <img src={logo} className="center" />
   </div>
   <Header/>
+  {/*Lovequote*/}
   <Lovequote/>
-  {/*paragraph and photo*/}
-  <section className="contA">
-      <div className="container">
-        <div className="content row">
-          <div className="col-12" id="lovequote">
-            <div className="lovecard">
-              <h3 className="card-title text-center txtTitles">
-                Lorem ipsum, dolor sit amet
-              </h3>
-              <p className="text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Doloremque, culpa. Iure quis eum ratione animi aperiam neque est
-                expedita autem inventore. Doloribus suscipit laboriosam ullam
-                fugiat. Impedit praesentium expedita quae?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    {/* save the date */}
-    <section className="contB">
-      <div className="container">
-        <div className="content row">
-          <div className="col-12 save">Save the date</div>
-        </div>
-      </div>
-    </section>
-    {/*countdown*/}
+  {/*Save the date*/}
+  <Savethedate/>
+  {/*countdown*/}
     <section className="contA">
       <div className="container">
         <div className="content row">
