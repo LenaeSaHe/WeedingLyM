@@ -4,108 +4,94 @@
 /* https://programadorwebvalencia.com/Javascript-cuenta-atras-o-contador-regresivo/ */
 
 /* generales */
-:root
-{
-  --colorChamp:#F7E7CE;
-  --colorBlanco:white;
-  --colorRojo:#b32428;
-  --colorNegro:#000000;
+:root {
+  --colorChamp: #f7e7ce;
+  --colorBlanco: white;
+  --colorRojo: #b32428;
+  --colorNegro: #000000;
 }
- button 
- {
-  background-color: var(--color3)!important;
+section {
+  padding: 100px 0;
+}
+button {
+  background-color: var(--color3) !important;
   color: white !important;
- }
+}
 
-.contA
-{
+.contA {
   background-color: var(--colorChamp);
 }
 
-.contB
-{
+.contB {
   background-color: var(--colorBlanco);
 }
 
-.center
-{
+.center {
   margin: auto;
 }
 
-.text-justify
-{
+.text-justify {
   text-align: justify;
 }
 
-.txtTitles
-{
+.txtTitles {
   font-size: 60px;
-  font-family: 'Pinyon Script', cursive;
+  font-family: "Pinyon Script", cursive;
 }
 
-.txtText
-{
+.txtText {
   font-size: 40px;
-  font-family: 'Niconne', cursive;
+  font-family: "Niconne", cursive;
   color: #000000;
 }
 
-.txtBadage
-{
+.txtBadage {
   font-size: 45px;
-  font-family: 'Pinyon Script', cursive;
+  font-family: "Pinyon Script", cursive;
 }
 /* img circle */
-.circular 
-{
+.circular {
   position: relative;
   width: 200px;
   height: 200px;
   overflow: hidden;
   border-radius: 50%;
 }
-.circular img 
-{
+.circular img {
   width: 100%;
   height: auto;
 }
 
 /*backdrop*/
-#backdrop
-{
-  background-color: rgba(255,255,255,1);
+#backdrop {
+  background-color: rgba(255, 255, 255, 1);
   position: fixed;
-  height: 100vh;/*cubra toda la altura de la pantalla*/
+  height: 100vh; /*cubra toda la altura de la pantalla*/
   width: 100%;
   z-index: 1000; /* eje z y su posición*/
   display: flex;
   align-items: center;
   justify-content: center;
   animation: frontMonoGif 1s ease 3s;
-  animation-iteration-count:1;
+  animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-@keyframes frontMonoGif
-{
-  0%
-  {
+@keyframes frontMonoGif {
+  0% {
     opacity: 1;
   }
-  99%
-  {
+  99% {
     opacity: 0;
     display: flex;
     top: 0;
   }
-  100%
-  {
+  100% {
     opacity: 0;
     display: none;
-    top: -100vh
+    top: -100vh;
   }
-} 
-
+}
 
 /* __________ 1ra sección Head __________ */
 /*.parallax-header
@@ -121,8 +107,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }*/
-#mainLyM
-{
+#mainLyM {
   background-image: url(../img/mainLyM.jpg);
   height: 100vh;
   background-size: cover;
@@ -132,16 +117,13 @@
   justify-content: end;
 }
 
-
-.header-content
-{
+.header-content {
   padding: 50px 0 200px 0;
 }
-.monograma 
-{
+.monograma {
   opacity: 0.3;
   border-radius: 50px 50px 50px 50px;
-  position:relative;
+  position: relative;
 }
 
 /* __________ 2da sección Love card  __________ */
@@ -151,164 +133,177 @@
   margin-top: -80px;
   box-shadow: 0 0 20px -6px rgba(0,0,0,0.2);
 }*/
-#lovequote 
-{
-  padding: 5rem;
+#lovequote {
   margin: auto;
   background-size: cover;
   font-family: sans-serif;
   background-position: center;
 }
-.lovecard
-{
-  width:auto;
+.lovecard {
+  width: auto;
   height: auto;
-  margin:auto;
+  margin: auto;
   padding: 2rem 4rem 2rem 4rem;
   border-radius: 1rem;
   font-size: 1rem;
-  color:black;
+  color: black;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border: 1.5px solid rgba(209, 213, 219, 0.3);
 }
 
-
 /* __________ 3ra sección Save the date __________ */
 
-.save
-{
+.save {
   padding: 15px 50px 15px 50px;
 }
 
 /* __________ 4ta sección Countdown __________ */
+#countdown {
+  background-color: #4a84cd;
+  background-image: url(../img/fondo-salon.png);
+  padding: 100px 0;
+  background-repeat: repeat-x;
+  background-position: 0 50vh;
+  height: 120vh;
+  min-height: 700px;
+  background-size: contain;
+}
+.countdownNumber {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 80px 0;
+  width: 200px;
+  justify-content: center;
+}
+.countdownNumber .countdownBadge {
+  color: var(--colorChamp);
+  font-family: "Pacifico";
+  font-size: 70px;
+  font-weight: bold;
+}
+.countdownNumber .countdownText {
+  color: white;
+  text-align: center;
+}
+h2 {
+  background: -webkit-linear-gradient(var(--colorBlanco), var(--colorChamp));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Pacifico", cursive;
+  font-size: 96px;
+  padding: 30px 0;
+  text-align: center;
+  filter: drop-shadow(0 8px 2px rgba(11, 11, 110, 0.3));
 
+  /* text-shadow: 0 5px 2px rgba(11, 11, 110, 0.3), 0 8px 2px rgba(0, 0, 219, 0.2); */
+}
 /* __________ 5ta sección Family __________ */
-.photofam
-{
+.photofam {
   border-radius: 50px 50px 50px 50px;
 }
-.boxfam
-{
+.boxfam {
   padding: 15px 10px 30px 15px;
 }
-.boxphoto
-{
+.boxphoto {
   padding: 3em 1em 2em 1em;
 }
-.nomPadres
-{
+.nomPadres {
   font-size: 50px;
 }
 
 /* _________ 6ta sección Location _________ */
-.contLoc
-{
+.contLoc {
   background-image: url(../img/finca.jpeg);
   background-size: cover;
 }
-#garden 
-{
+#garden {
   padding: 5rem;
   margin: 0;
   background-size: cover;
   font-family: sans-serif;
   background-position: center;
 }
-#btnlink 
-{
+#btnlink {
   background-color: #6363db;
   border-radius: 0.5rem;
   color: white;
   padding: 0.5rem 1rem;
   text-decoration: none;
 }
-.cardLoc
-{
+.cardLoc {
   width: 20rem;
   height: auto;
   padding: 2rem;
   border-radius: 1rem;
   font-size: 1rem;
-  color:white;
-  background: rgba(255, 255, 255, .25);
+  color: white;
+  background: rgba(255, 255, 255, 0.25);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border: 1.5px solid rgba(209, 213, 219, 0.3);
 }
-.cardLoc-title 
-{
+.cardLoc-title {
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 1.2rem;
   font-weight: 600;
 }
-.cardLoc p
-{
+.cardLoc p {
   margin-bottom: 1.5rem;
 }
 
 /* _________ 7ma sección Give away _________ */
-#divtable
-{
+#divtable {
   padding: 15px;
   height: 250px;
 }
-.backtable
-{
+.backtable {
   padding: 15px;
 }
-.boxStore
-{
+.boxStore {
   width: 18rem;
   padding: auto;
   padding: auto;
 }
-.anyborder
-{
+.anyborder {
   border: 0 !important;
 }
-.brand
-{
-  height:10rem;
+.brand {
+  height: 10rem;
   width: 10rem;
-  margin:auto;
+  margin: auto;
   padding: auto;
 }
 
-
 /* _________ 9na sección Time line _________ */
 
-ul 
-{
+ul {
   padding: 50px 0;
 }
 
-ul li 
-{
-  position:relative;
+ul li {
+  position: relative;
   list-style-type: none;
   width: 6px;
-  background-color:var(--colorNegro);
+  background-color: var(--colorNegro);
   margin: 0 auto;
   padding-top: 50px;
 }
 
-ul li::after
-{
+ul li::after {
   /*background: white;*/
-  background:var(--colorNegro);
-  content: '';
+  background: var(--colorNegro);
+  content: "";
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  position:absolute;
-  left:50%;
+  position: absolute;
+  left: 50%;
   transform: translateX(-50%);
   bottom: 0;
 }
-ul li div
-{
+ul li div {
   position: relative;
   width: 400px;
   padding: 15px;
@@ -316,44 +311,36 @@ ul li div
   bottom: 0;
   /*background: rgba(255,255,255);*/
 }
-ul li:nth-child(odd) div 
-{
+ul li:nth-child(odd) div {
   left: 45px;
 }
-ul li:nth-child(even) div 
-{
+ul li:nth-child(even) div {
   left: -445px;
 }
-time 
-{
+time {
   font-weight: bold;
   font-size: 18px;
   display: block;
   margin-bottom: 10px;
 }
 
-ul li div 
-{
+ul li div {
   visibility: hidden;
   opacity: 0;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-ul li:nth-child(odd) div 
-{
+ul li:nth-child(odd) div {
   transform: translate3d(200px, 0, 0);
 }
-ul li:nth-child(even) div 
-{
+ul li:nth-child(even) div {
   transform: translate3d(-200px, 0, 0);
 }
-ul li.show div 
-{
+ul li.show div {
   transform: none;
   visibility: visible;
   opacity: 1;
 }
-@media screen and (max-width: 900px) 
-{
+@media screen and (max-width: 900px) {
   ul li div {
     width: 250px;
   }
@@ -365,8 +352,7 @@ ul li.show div
 
 /* _________ 10ma lodgement _________ */
 
-#instagram
-{
+#instagram {
   padding: 10rem;
   margin: 0;
   /*background-image: url(../img/instagram.png);*/
@@ -376,16 +362,13 @@ ul li.show div
 }
 
 /* pie */
-.content .bottom
-{
+.content .bottom {
   color: #000000;
   padding: 20px;
 }
 
-
-div 
-{
- /*border-top-style: solid;
+div {
+  /*border-top-style: solid;
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;*/
