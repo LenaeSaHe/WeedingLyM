@@ -349,6 +349,15 @@ ul li.show div {
     /*250+45-6*/
   }
 }
+@media screen and (max-width: 500px) {
+  #countdown {
+    background-position: center bottom;
+  }
+
+  .countdownNumber {
+    padding: 10px;
+  }
+}
 
 /* _________ 10ma lodgement _________ */
 
