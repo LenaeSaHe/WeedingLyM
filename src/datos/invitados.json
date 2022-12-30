@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "nombre": "Omar Pozos",
+    "boletos": 2
+  },
+  {
+    "id": "2",
+    "nombre": "Beatriz Coria",
+    "boletos": 2
+  }
+]
