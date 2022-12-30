@@ -1,17 +1,12 @@
-import { useState } from "react";
+import monograma from "../img/Imagen2.png";
 function Header()
 {
-    const [contador, setContador] = useState(0);    
-    function manejoClic()
-    {
-        setContador(contador+1);
-    }
+ 
     
-    
-    return <section>
+    return <section id="mainLyM">
                 <header className="parallax-header">
                     <div className="container">
-                        <div className="header-content"><button onClick={manejoClic}>Hola {contador}</button></div>
+                        <div className="header-content"><img src={monograma}  id="monograma"/></div>
                     </div>
                 </header>
             </section>;

@@ -4,6 +4,28 @@
 /* https://programadorwebvalencia.com/Javascript-cuenta-atras-o-contador-regresivo/ */
 
 /* generales */
+:root
+{
+  --colorChamp:#F7E7CE;
+  --colorBlanco:white;
+  --colorRojo:#b32428;
+  --colorNegro:#000000;
+}
+ button 
+ {
+  background-color: var(--color3)!important;
+  color: white !important;
+ }
+
+.contA
+{
+  background-color: var(--colorChamp);
+}
+
+.contB
+{
+  background-color: var(--colorBlanco);
+}
 
 .center
 {
@@ -14,17 +36,20 @@
 {
   text-align: justify;
 }
+
 .txtTitles
 {
   font-size: 60px;
   font-family: 'Pinyon Script', cursive;
 }
+
 .txtText
 {
   font-size: 40px;
   font-family: 'Niconne', cursive;
   color: #000000;
 }
+
 .txtBadage
 {
   font-size: 45px;
@@ -44,6 +69,7 @@
   width: 100%;
   height: auto;
 }
+
 /*backdrop*/
 #backdrop
 {
@@ -59,6 +85,7 @@
   animation-iteration-count:1;
   animation-fill-mode: forwards;
 }
+
 @keyframes frontMonoGif
 {
   0%
@@ -94,6 +121,18 @@
   background-repeat: no-repeat;
   background-size: cover;
 }*/
+#mainLyM
+{
+  background-image: url(../img/mainLyM.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+
 .header-content
 {
   padding: 50px 0 200px 0;
@@ -106,10 +145,7 @@
 }
 
 /* __________ 2da sección Love card  __________ */
-.contA
-{
-  background-color: #6363db;
-}
+
 /*.content
 {
   margin-top: -80px;
@@ -139,10 +175,7 @@
 
 
 /* __________ 3ra sección Save the date __________ */
-.contB
-{
-  background-color: cadetblue;
-}
+
 .save
 {
   padding: 15px 50px 15px 50px;
@@ -256,7 +289,7 @@ ul li
   position:relative;
   list-style-type: none;
   width: 6px;
-  background-color:#d9ad26;
+  background-color:var(--colorNegro);
   margin: 0 auto;
   padding-top: 50px;
 }
@@ -264,7 +297,7 @@ ul li
 ul li::after
 {
   /*background: white;*/
-  background:#000000;
+  background:var(--colorNegro);
   content: '';
   width: 25px;
   height: 25px;
@@ -281,7 +314,7 @@ ul li div
   padding: 15px;
   border-radius: 20px;
   bottom: 0;
-  background: rgba(255,255,255);
+  /*background: rgba(255,255,255);*/
 }
 ul li:nth-child(odd) div 
 {
@@ -336,7 +369,7 @@ ul li.show div
 {
   padding: 10rem;
   margin: 0;
-  background-image: url(../img/instagram.png);
+  /*background-image: url(../img/instagram.png);*/
   background-size: cover;
   font-family: sans-serif;
   background-position: center;
@@ -356,5 +389,5 @@ div
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;*/
-  outline: solid 1px;
+  /*outline: solid 1px;*/
 }

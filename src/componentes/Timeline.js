@@ -3,6 +3,7 @@ import civil from "../img/bookmark-32.ico";
 import coctel from "../img/bar-32.ico";
 import party from "../img/heart-15-48.ico";
 import { useRef , useEffect} from "react";
+import Event from "./Event";
 
 function Timeline()
 {
@@ -10,7 +11,11 @@ function Timeline()
     const li2 = useRef();
     const li3 = useRef();
     const li4 = useRef();
-    const items = [li1,li2,li3,li4];/*arreglo de los useref*/
+    const li5 = useRef();
+    const li6 = useRef();
+    const li7 = useRef();
+    const li8 = useRef();
+    const items = [li1,li2,li3,li4,li5,li6,li7,li8];/*arreglo de los useref*/
 
     function isItemInView(item) 
     {
@@ -39,31 +44,35 @@ function Timeline()
         window.addEventListener("scroll", callbackFunc);}
     ,[])
     // listen for events
-    return     <section className="contB">
+    return     <section className="contA">
     <div className="container">
       <div className="row content">
         <div className="col-12 back">
           <h1 className="text-center txtTitles">Time line</h1>
           <ul>
             <li ref={li1}>
-              <div>
-                <time>Ceremonia religiosa <img src={iglesia} className="center" /></time>
-              </div>
+              <Event titulo="Ceremonia religiosa" imagen={iglesia}/>
             </li>
             <li ref={li2}>
-              <div>
-                <time>Ceremonia cívil <img src={civil} className="center" /></time>
-              </div>
+                 <Event titulo="Ceremonia civil" imagen={civil}/>
             </li>
             <li ref={li3}>
-              <div>
-                <time>Coctel <img src={coctel} className="center" /></time>
-              </div>
+                 <Event titulo="Coctel" imagen={coctel}/>
             </li>
             <li ref={li4}>
-              <div>
-                <time>Recepción <img src={party} className="center" /></time>
-              </div>
+                 <Event titulo="Recepción" imagen={party}/>
+            </li>
+            <li ref={li5}>
+                 <Event titulo="Recepción" imagen={party}/>
+            </li>
+            <li ref={li6}>
+                 <Event titulo="Recepción" imagen={party}/>
+            </li>
+            <li ref={li7}>
+                 <Event titulo="Recepción" imagen={party}/>
+            </li>
+            <li ref={li8}>
+                 <Event titulo="Recepción" imagen={party}/>
             </li>
           </ul>
         </div>
