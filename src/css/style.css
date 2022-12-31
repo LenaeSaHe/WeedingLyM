@@ -9,6 +9,10 @@
   --colorBlanco: white;
   --colorRojo: #b32428;
   --colorNegro: #000000;
+
+  --fuenteCursiva: "Pinyon Script", cursive;
+  --fuenteCursiva2: "Niconne", cursive;
+  --fuenteCursiva3: "Pacifico", cursive;
 }
 section {
   padding: 100px 0;
@@ -70,11 +74,28 @@ button {
   width: 100%;
   z-index: 1000; /* eje z y su posición*/
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: frontMonoGif 1s ease 3s;
+  animation: frontMonoGif 1s ease 10s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+#backdrop .name {
+  color: black;
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.delay-5 {
+  animation-delay: 0.5s;
+}
+.delay-3 {
+  animation-delay: 0.3s;
 }
 
 @keyframes frontMonoGif {
@@ -93,6 +114,15 @@ button {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* __________ 1ra sección Head __________ */
 /*.parallax-header
 {
@@ -108,8 +138,8 @@ button {
   background-size: cover;
 }*/
 #mainLyM {
-  background-image: url(../img/mainLyM.jpg);
-  height: 100vh;
+  background-image: url(../img/mainLyM4.jpg);
+  height: 90vh;
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -197,6 +227,21 @@ h2 {
   filter: drop-shadow(0 8px 2px rgba(11, 11, 110, 0.3));
 
   /* text-shadow: 0 5px 2px rgba(11, 11, 110, 0.3), 0 8px 2px rgba(0, 0, 219, 0.2); */
+}
+.title {
+  background: -webkit-linear-gradient(var(--colorNegro), var(--colorNegro));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Pacifico", cursive;
+  font-size: 96px;
+  padding: 30px 0;
+  text-align: center;
+  /* text-shadow: 0 5px 2px rgba(11, 11, 110, 0.3), 0 8px 2px rgba(0, 0, 219, 0.2); */
+}
+
+#backdrop .message {
+  font-family: var(--fuenteCursiva);
+  font-size: 48px;
 }
 /* __________ 5ta sección Family __________ */
 .photofam {

@@ -12,7 +12,7 @@ import Hotel from "./componentes/hotel";
 import Instagram from "./componentes/Instagram";
 import Footer from "./componentes/Footer";
 import Timeline from "./componentes/Timeline";
-import Backdrop from "./componentes/Backdrop";
+import Backdrop from "./componentes/Backdrop.jsx";
 import { useParams } from "react-router-dom";
 import data from "./datos/invitados.json";
 
@@ -38,10 +38,9 @@ function App() {
   return (
     <>
       {/*Backdrop*/}
-      <Backdrop />
+      <Backdrop invitado={invitado} />
       {/*header*/}
       <Header />
-      <div>{invitado ? invitado.nombre : "Nada"}</div>
       {/*Lovequote*/}
       <Lovequote />
       {/*Save the date*/}
