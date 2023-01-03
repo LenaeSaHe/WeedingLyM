@@ -65,6 +65,58 @@ button {
   width: 100%;
   height: auto;
 }
+ 
+/* Size of screen */
+@media screen and (max-width: 500px) 
+{
+  #countdown 
+  {
+    background-position: center bottom;
+  }
+
+  .countdownNumber 
+  {
+    padding: 10px;
+  }
+
+  #backdrop .title
+  {
+    font-size: 20px;
+  }
+
+  #backdrop .logo
+  {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  #backdrop
+  {
+    left: 0;
+    top: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: #b32428!important;
+    overflow: hidden;
+  }
+
+  body 
+  {
+    height: -webkit-fill-available;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  ul li:nth-child(odd) div 
+  {
+    left: 0px;
+  }
+  ul li:nth-child(even) div 
+  {
+    left: 0px;
+  }
+
+}
+
 
 /*backdrop*/
 #backdrop {
@@ -77,7 +129,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: frontMonoGif 1s ease 10s;
+  animation: frontMonoGif 1s ease 15s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -356,10 +408,12 @@ ul li div {
   bottom: 0;
   /*background: rgba(255,255,255);*/
 }
-ul li:nth-child(odd) div {
+ul li:nth-child(odd) div 
+{
   left: 45px;
 }
-ul li:nth-child(even) div {
+ul li:nth-child(even) div 
+{
   left: -445px;
 }
 time {
@@ -392,15 +446,6 @@ ul li.show div {
   ul li:nth-child(even) div {
     left: -289px;
     /*250+45-6*/
-  }
-}
-@media screen and (max-width: 500px) {
-  #countdown {
-    background-position: center bottom;
-  }
-
-  .countdownNumber {
-    padding: 10px;
   }
 }
 
