@@ -65,58 +65,6 @@ button {
   width: 100%;
   height: auto;
 }
- 
-/* Size of screen */
-@media screen and (max-width: 500px) 
-{
-  #countdown 
-  {
-    background-position: center bottom;
-  }
-
-  .countdownNumber 
-  {
-    padding: 10px;
-  }
-
-  #backdrop .title
-  {
-    font-size: 20px;
-  }
-
-  #backdrop .logo
-  {
-    width: 150px !important;
-    height: 150px !important;
-  }
-  #backdrop
-  {
-    left: 0;
-    top: 0;
-    width: 100vw !important;
-    height: 100vh !important;
-    background-color: #b32428!important;
-    overflow: hidden;
-  }
-
-  body 
-  {
-    height: -webkit-fill-available;
-    overflow: hidden;
-    height: 100vh;
-  }
-
-  ul li:nth-child(odd) div 
-  {
-    left: 0px;
-  }
-  ul li:nth-child(even) div 
-  {
-    left: 0px;
-  }
-
-}
-
 
 /*backdrop*/
 #backdrop {
@@ -134,8 +82,38 @@ button {
   animation-fill-mode: forwards;
 }
 
+.backdropContainer {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
 #backdrop .name {
   color: black;
+}
+
+#backdrop .logo {
+  width: 200px;
+  margin: 0 auto;
+}
+
+#backdrop .title {
+  background: -webkit-linear-gradient(var(--colorNegro), var(--colorNegro));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Pacifico", cursive;
+  font-size: 70px;
+  padding: 30px 0;
+  text-align: center;
+  /* text-shadow: 0 5px 2px rgba(11, 11, 110, 0.3), 0 8px 2px rgba(0, 0, 219, 0.2); */
+}
+
+#backdrop .message {
+  font-family: var(--fuenteCursiva);
+  font-size: 32px;
 }
 
 .fadeIn {
@@ -280,21 +258,7 @@ h2 {
 
   /* text-shadow: 0 5px 2px rgba(11, 11, 110, 0.3), 0 8px 2px rgba(0, 0, 219, 0.2); */
 }
-.title {
-  background: -webkit-linear-gradient(var(--colorNegro), var(--colorNegro));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Pacifico", cursive;
-  font-size: 96px;
-  padding: 30px 0;
-  text-align: center;
-  /* text-shadow: 0 5px 2px rgba(11, 11, 110, 0.3), 0 8px 2px rgba(0, 0, 219, 0.2); */
-}
 
-#backdrop .message {
-  font-family: var(--fuenteCursiva);
-  font-size: 48px;
-}
 /* __________ 5ta sección Family __________ */
 .photofam {
   border-radius: 50px 50px 50px 50px;
@@ -408,12 +372,10 @@ ul li div {
   bottom: 0;
   /*background: rgba(255,255,255);*/
 }
-ul li:nth-child(odd) div 
-{
+ul li:nth-child(odd) div {
   left: 45px;
 }
-ul li:nth-child(even) div 
-{
+ul li:nth-child(even) div {
   left: -445px;
 }
 time {
@@ -439,15 +401,6 @@ ul li.show div {
   visibility: visible;
   opacity: 1;
 }
-@media screen and (max-width: 900px) {
-  ul li div {
-    width: 250px;
-  }
-  ul li:nth-child(even) div {
-    left: -289px;
-    /*250+45-6*/
-  }
-}
 
 /* _________ 10ma lodgement _________ */
 
@@ -472,4 +425,70 @@ div {
   border-bottom-style: solid;
   border-left-style: solid;*/
   /*outline: solid 1px;*/
+}
+
+/* Size of screen */
+@media screen and (max-width: 500px) {
+  #countdown {
+    background-position: center bottom;
+  }
+
+  .countdownNumber {
+    padding: 10px;
+  }
+
+  #backdrop .title {
+    font-size: 20px;
+  }
+
+  #backdrop .logo {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  #backdrop {
+    left: 0;
+    top: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: #b32428 !important;
+    overflow: hidden;
+  }
+  #backdrop .title {
+    font-size: 48px;
+  }
+  #backdrop .message {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 64px;
+  }
+
+  html,
+  body {
+    height: -webkit-fill-available;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  ul li:nth-child(odd) div {
+    left: 0px;
+  }
+  ul li:nth-child(even) div {
+    left: 0px;
+  }
+
+  .countdownNumber {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  ul li div {
+    width: 250px;
+  }
+  ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
 }
