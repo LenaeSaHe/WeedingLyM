@@ -4,7 +4,8 @@
 /* https://programadorwebvalencia.com/Javascript-cuenta-atras-o-contador-regresivo/ */
 
 /* generales */
-:root {
+:root 
+{
   --colorChamp: #f7e7ce;
   --colorBlanco: white;
   --colorRojo: #b32428;
@@ -14,7 +15,8 @@
   --fuenteCursiva2: "Niconne", cursive;
   --fuenteCursiva3: "Pacifico", cursive;
 }
-section {
+section 
+{
   padding: 100px 0;
 }
 button {
@@ -77,7 +79,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: frontMonoGif 1s ease 15s;
+  animation: frontMonoGif 1s ease 10s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -154,19 +156,6 @@ button {
 }
 
 /* __________ 1ra sección Head __________ */
-/*.parallax-header
-{
-  background:#A5A2A2;
-  background: linear-gradient(
-    rgba(0,0,0,0.3),
-    rgba(0,0,0,0.8)
-  ),
-  url();
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
 #mainLyM {
   /*background-image: url(../img/mainLyM4.jpg);*/
   height: 90vh;
@@ -176,23 +165,20 @@ button {
   align-items: end;
   justify-content: end;
 }
-
-.header-content {
-  padding: 50px 0 200px 0;
-}
-.monograma {
+.monograma 
+{
   opacity: 0.3;
   border-radius: 50px 50px 50px 50px;
   position: relative;
 }
+.imgslide
+{
+ object-fit: cover;
+ height: 100vh;
+}
 
 /* __________ 2da sección Love card  __________ */
 
-/*.content
-{
-  margin-top: -80px;
-  box-shadow: 0 0 20px -6px rgba(0,0,0,0.2);
-}*/
 #lovequote {
   margin: auto;
   background-size: cover;
@@ -445,12 +431,12 @@ div {
     width: 150px !important;
     height: 150px !important;
   }
-  #backdrop {
+  #backdrop 
+  {
     left: 0;
     top: 0;
     width: 100vw !important;
     height: 100vh !important;
-    background-color: #b32428 !important;
     overflow: hidden;
   }
   #backdrop .title {

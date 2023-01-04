@@ -1,19 +1,15 @@
 import monograma from "../img/Imagen2.png";
 import CarrouselHeader from "./CarrouselHeader";
 
-function Header() {
+function Header() 
+{
   return (
-    <section id="">
-                    <CarrouselHeader/>
-
-      <header className="parallax-header">
-        <div className="container">
-          <div className="header-content">
-            {/*<img src={monograma} id="monograma" />*/}
-          </div>
-        </div>
-      </header>
-    </section>
+    <header id="">
+      <CarrouselHeader/>
+      <div>
+        {/*<img src={monograma} id="monograma" />*/}
+      </div>
+    </header>
   );
 }
 export default Header;
