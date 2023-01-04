@@ -220,9 +220,9 @@ button {
   padding: 100px 0;
   background-repeat: repeat-x;
   background-position: 0 50vh;
-  height: 120vh;
-  min-height: 700px;
-  background-size: contain;
+  height: auto;
+  background-size: auto;
+  
 }
 .countdownNumber {
   display: inline-flex;
@@ -253,6 +253,13 @@ h2 {
 
   /* text-shadow: 0 5px 2px rgba(11, 11, 110, 0.3), 0 8px 2px rgba(0, 0, 219, 0.2); */
 }
+
+.backgroundCount
+{
+ object-fit: cover;
+ height: 100vh;
+}
+
 
 /* __________ 5ta sección Family __________ */
 .photofam {
