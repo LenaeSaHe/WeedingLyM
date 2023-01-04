@@ -40,15 +40,26 @@ button {
   text-align: justify;
 }
 
-.txtTitles {
+.txtTitles  /* cursiva de titulos*/
+{
   font-size: 60px;
   font-family: "Pinyon Script", cursive;
 }
 
-.txtText {
+.txtText /* Nombre*/
+{
   font-size: 40px;
   font-family: "Niconne", cursive;
   color: #000000;
+}
+.widthLovequote
+{
+  width: 50%;
+}
+
+.txtParagraph /*parrafos*/
+{
+  font-family: 'Source Serif Pro', serif;
 }
 
 .txtBadage {
@@ -457,16 +468,23 @@ div {
     height: 100vh;
   }
 
-  ul li:nth-child(odd) div {
+  ul li:nth-child(odd) div 
+  {
     left: 0px;
   }
-  ul li:nth-child(even) div {
+  ul li:nth-child(even) div 
+  {
     left: 0px;
   }
 
   .countdownNumber {
     width: 170px;
   }
+  .widthLovequote
+  {
+    width: 100%;
+  }
+
 }
 
 @media screen and (max-width: 900px) {

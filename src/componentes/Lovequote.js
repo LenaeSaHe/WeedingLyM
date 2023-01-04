@@ -6,7 +6,7 @@ function Lovequote()
                         <div class="col-12" id="lovequote">
                             <div class="lovecard">
                                 <h3 class="card-title text-center txtTitles">Lorem ipsum, dolor sit amet</h3>
-                                <p class="text-center">
+                                <p class="text-center txtParagraph widthLovequote m-auto mt-3 container-sm">
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                     Doloremque, culpa. Iure quis eum ratione animi aperiam neque est
                                     expedita autem inventore. Doloribus suscipit laboriosam ullam
