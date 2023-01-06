@@ -209,9 +209,39 @@ button {
 
 /* __________ 3ra sección Save the date __________ */
 
-.save {
-  padding: 15px 50px 15px 50px;
+#secDate
+{
+  padding: 0 0 0 350px !important;
+  height: 100vh;
+  background-image: url(../img/savethedate2.jpg);
+  background-size: 350px 100%;
+  background-position: 0px 0px;
+  text-align: center;
+} 
+#contDate
+{
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  background-color: var(--colorBlanco);
+  flex-direction: column;
+  justify-content: center;
 }
+.cristalSave
+{
+    display:flex;
+    align-items: center;
+    font-size: 1rem;
+    color: black;
+    background: rgba(255, 255, 255, 0.25);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);  
+ }
+ .hrSave
+ {
+  font-size: 20px;
+ }
 
 /* __________ 4ta sección Countdown __________ */
 #countdown {
@@ -250,8 +280,6 @@ h2 {
   padding: 30px 0;
   text-align: center;
   filter: drop-shadow(0 8px 2px rgba(11, 11, 110, 0.3));
-
-  /* text-shadow: 0 5px 2px rgba(11, 11, 110, 0.3), 0 8px 2px rgba(0, 0, 219, 0.2); */
 }
 
 .backgroundCount
@@ -294,7 +322,8 @@ h2 {
   padding: 0.5rem 1rem;
   text-decoration: none;
 }
-.cardLoc {
+.cardLoc 
+{
   width: 20rem;
   height: auto;
   padding: 2rem;
@@ -430,20 +459,25 @@ div {
 }
 
 /* Size of screen */
-@media screen and (max-width: 500px) {
-  #countdown {
+@media screen and (max-width: 500px) 
+{
+  #countdown 
+  {
     background-position: center bottom;
   }
 
-  .countdownNumber {
+  .countdownNumber 
+  {
     padding: 10px;
   }
 
-  #backdrop .title {
+  #backdrop .title 
+  {
     font-size: 20px;
   }
 
-  #backdrop .logo {
+  #backdrop .logo 
+  {
     width: 150px !important;
     height: 150px !important;
   }
@@ -455,19 +489,22 @@ div {
     height: 100vh !important;
     overflow: hidden;
   }
-  #backdrop .title {
+  #backdrop .title 
+  {
     font-size: 48px;
   }
-  #backdrop .message {
+  #backdrop .message 
+  {
     font-size: 24px;
   }
 
-  h2 {
+  h2 
+  {
     font-size: 64px;
   }
 
-  html,
-  body {
+  html,body 
+  {
     height: -webkit-fill-available;
     overflow: hidden;
     height: 100vh;
@@ -481,22 +518,35 @@ div {
   {
     left: 0px;
   }
-
-  .countdownNumber {
+  .countdownNumber 
+  {
     width: 170px;
   }
   .widthLovequote
   {
     width: 100%;
   }
+  #secDate
+  {
+    padding: 0 0 0 0px !important;
+  }
+  #contDate
+  {
+    background-color: rgba(255,255,255,0.5);
+    text-shadow: 0 0 20px white , 0 0 20px white;
+    color:black;
+  }
 
 }
 
-@media screen and (max-width: 900px) {
-  ul li div {
+@media screen and (max-width: 900px) 
+{
+  ul li div 
+  {
     width: 250px;
   }
-  ul li:nth-child(even) div {
+  ul li:nth-child(even) div 
+  {
     left: -289px;
     /*250+45-6*/
   }
