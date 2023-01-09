@@ -368,7 +368,6 @@ ul {
 }
 
 #timeline ul li::after {
-  /*background: white;*/
   background: var(--colorNegro);
   content: "";
   width: 25px;
@@ -391,7 +390,6 @@ ul {
   flex-direction: row-reverse;
   min-height: 150px;
   top: -25px;
-  /*background: rgba(255,255,255);*/
 }
 #timeline .eventContainer .eventInfo time {
   padding-left: 20px;
@@ -428,21 +426,19 @@ time {
   margin-bottom: 10px;
 }
 
-ul li div {
-  /*  visibility: hidden; 
-  opacity: 0*/
+.eventContainer {
+  opacity: 0;
   transition: all 0.5s ease-in-out;
 }
-/* ul li:nth-child(odd) div {
+ul li:nth-child(odd) .hidden {
   transform: translate3d(200px, 0, 0);
 }
-ul li:nth-child(even) div {
+ul li:nth-child(even) .hidden {
   transform: translate3d(-200px, 0, 0);
-} */
-ul li.show div {
-  transform: none;
-  visibility: visible;
+}
+.show {
   opacity: 1;
+  transform: none;
 }
 
 /* _________ 10ma lodgement _________ */
@@ -568,6 +564,13 @@ div {
   #timeline ul li::after {
     /*background: white;*/
     background-color: transparent;
+  }
+
+  ul li:nth-child(odd) .hidden {
+    transform: translate3d(80px, 0, 0);
+  }
+  ul li:nth-child(even) .hidden {
+    transform: translate3d(-80px, 0, 0);
   }
 }
 

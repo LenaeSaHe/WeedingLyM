@@ -44,9 +44,9 @@ function Timeline() {
     }
   }
   useEffect(() => {
-    window.addEventListener("load", callbackFunc);
+    /*  window.addEventListener("load", callbackFunc);
     window.addEventListener("resize", callbackFunc);
-    window.addEventListener("scroll", callbackFunc);
+    window.addEventListener("scroll", callbackFunc); */
   }, []);
   // listen for events
   return (
