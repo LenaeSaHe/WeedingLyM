@@ -2,11 +2,13 @@
   {
     "id": "1",
     "nombre": "Omar Pozos",
+    "nickname": "Pozillos",
     "boletos": 2
   },
   {
     "id": "2",
     "nombre": "Beatriz Coria",
+    "nickname": "Beti",
     "boletos": 2
   }
 ]

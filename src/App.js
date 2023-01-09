@@ -44,7 +44,7 @@ function App() {
       {/*Lovequote*/}
       <Lovequote />
       {/*Save the date*/}
-      <Savethedate />
+      <Savethedate invitado={invitado} />
       {/*countdown*/}
       <Countdown />
       {/* Family */}

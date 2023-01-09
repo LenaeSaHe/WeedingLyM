@@ -4,8 +4,7 @@
 /* https://programadorwebvalencia.com/Javascript-cuenta-atras-o-contador-regresivo/ */
 
 /* generales */
-:root 
-{
+:root {
   --colorChamp: #f7e7ce;
   --colorBlanco: white;
   --colorRojo: #b32428;
@@ -15,8 +14,7 @@
   --fuenteCursiva2: "Niconne", cursive;
   --fuenteCursiva3: "Pacifico", cursive;
 }
-section 
-{
+section {
   padding: 100px 0;
 }
 button {
@@ -40,26 +38,22 @@ button {
   text-align: justify;
 }
 
-.txtTitles  /* cursiva de titulos*/
-{
+.txtTitles  /* cursiva de titulos*/ {
   font-size: 60px;
   font-family: "Pinyon Script", cursive;
 }
 
-.txtText /* Nombre*/
-{
+.txtText /* Nombre*/ {
   font-size: 40px;
   font-family: "Niconne", cursive;
   color: #000000;
 }
-.widthLovequote
-{
+.widthLovequote {
   width: 50%;
 }
 
-.txtParagraph /*parrafos*/
-{
-  font-family: 'Source Serif Pro', serif;
+.txtParagraph /*parrafos*/ {
+  font-family: "Source Serif Pro", serif;
 }
 
 .txtBadage {
@@ -176,16 +170,14 @@ button {
   align-items: end;
   justify-content: end;
 }
-.monograma 
-{
+.monograma {
   opacity: 0.3;
   border-radius: 50px 50px 50px 50px;
   position: relative;
 }
-.imgslide
-{
- object-fit: cover;
- height: 100vh;
+.imgslide {
+  object-fit: cover;
+  height: 100vh;
 }
 
 /* __________ 2da sección Love card  __________ */
@@ -209,39 +201,35 @@ button {
 
 /* __________ 3ra sección Save the date __________ */
 
-#secDate
-{
+#secDate {
   padding: 0 0 0 350px !important;
   height: 100vh;
   background-image: url(../img/savethedate2.jpg);
-  background-size: 350px 100%;
-  background-position: 0px 0px;
+  background-size: 350px auto;
+  background-position: 0px center;
   text-align: center;
-} 
-#contDate
-{
+}
+#contDate {
   height: 100vh;
-  display:flex;
+  display: flex;
   align-items: center;
   background-color: var(--colorBlanco);
   flex-direction: column;
   justify-content: center;
 }
-.cristalSave
-{
-    display:flex;
-    align-items: center;
-    font-size: 1rem;
-    color: black;
-    background: rgba(255, 255, 255, 0.25);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    border: 1.5px solid rgba(209, 213, 219, 0.3);  
- }
- .hrSave
- {
+.cristalSave {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: black;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+}
+.hrSave {
   font-size: 20px;
- }
+}
 
 /* __________ 4ta sección Countdown __________ */
 #countdown {
@@ -252,7 +240,6 @@ button {
   background-position: 0 50vh;
   height: auto;
   background-size: auto;
-  
 }
 .countdownNumber {
   display: inline-flex;
@@ -282,12 +269,10 @@ h2 {
   filter: drop-shadow(0 8px 2px rgba(11, 11, 110, 0.3));
 }
 
-.backgroundCount
-{
- object-fit: cover;
- height: 100vh;
+.backgroundCount {
+  object-fit: cover;
+  height: 100vh;
 }
-
 
 /* __________ 5ta sección Family __________ */
 .photofam {
@@ -322,8 +307,7 @@ h2 {
   padding: 0.5rem 1rem;
   text-decoration: none;
 }
-.cardLoc 
-{
+.cardLoc {
   width: 20rem;
   height: auto;
   padding: 2rem;
@@ -459,94 +443,78 @@ div {
 }
 
 /* Size of screen */
-@media screen and (max-width: 500px) 
-{
-  #countdown 
-  {
+@media screen and (max-width: 500px) {
+  #countdown {
     background-position: center bottom;
   }
 
-  .countdownNumber 
-  {
+  .countdownNumber {
     padding: 10px;
   }
 
-  #backdrop .title 
-  {
+  #backdrop .title {
     font-size: 20px;
   }
 
-  #backdrop .logo 
-  {
+  #backdrop .logo {
     width: 150px !important;
     height: 150px !important;
   }
-  #backdrop 
-  {
+  #backdrop {
     left: 0;
     top: 0;
     width: 100vw !important;
     height: 100vh !important;
     overflow: hidden;
   }
-  #backdrop .title 
-  {
+  #backdrop .title {
     font-size: 48px;
   }
-  #backdrop .message 
-  {
+  #backdrop .message {
     font-size: 24px;
   }
 
-  h2 
-  {
+  h2 {
     font-size: 64px;
   }
 
-  html,body 
-  {
+  html,
+  body {
     height: -webkit-fill-available;
     overflow: hidden;
     height: 100vh;
   }
 
-  ul li:nth-child(odd) div 
-  {
+  ul li:nth-child(odd) div {
     left: 0px;
   }
-  ul li:nth-child(even) div 
-  {
+  ul li:nth-child(even) div {
     left: 0px;
   }
-  .countdownNumber 
-  {
+  .countdownNumber {
     width: 170px;
   }
-  .widthLovequote
-  {
+  .widthLovequote {
     width: 100%;
   }
-  #secDate
-  {
+  #secDate {
     padding: 0 0 0 0px !important;
   }
-  #contDate
-  {
-    background-color: rgba(255,255,255,0.5);
-    text-shadow: 0 0 20px white , 0 0 20px white;
-    color:black;
+  #contDate {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 20px white, 0 0 20px white;
+    color: black;
+    box-sizing: border-box;
+    height: 80vh;
+    width: 80%;
   }
-
 }
 
-@media screen and (max-width: 900px) 
-{
-  ul li div 
-  {
+@media screen and (max-width: 900px) {
+  ul li div {
     width: 250px;
   }
-  ul li:nth-child(even) div 
-  {
+  ul li:nth-child(even) div {
     left: -289px;
     /*250+45-6*/
   }
