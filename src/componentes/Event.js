@@ -31,7 +31,11 @@ function Event({ imagen, titulo, time }) {
   }, []);
   return (
     <div
-      className={classNames("eventContainer", show ? "show" : "hidden")}
+      className={classNames(
+        "eventContainer",
+        "txtText",
+        show ? "show" : "hidden"
+      )}
       ref={ref}
     >
       <div className="icon">

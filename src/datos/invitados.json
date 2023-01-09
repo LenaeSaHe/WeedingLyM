@@ -2,11 +2,19 @@
   {
     "id": "1",
     "nombre": "Omar Pozos",
-    "boletos": 2
+    "boletos": 2,
+    "ninos": 0
   },
   {
     "id": "2",
     "nombre": "Beatriz Coria",
-    "boletos": 2
+    "boletos": 2,
+    "ninos": 0
+  },
+  {
+    "id": "3",
+    "nombre": "Victoria",
+    "boletos": 2,
+    "ninos": 1
   }
 ]

@@ -60,7 +60,7 @@ function App() {
       {/* Instagram */}
       <Instagram />
       {/* Confirm */}
-      <Footer />
+      <Footer invitado={invitado} />
     </>
   );
 }
