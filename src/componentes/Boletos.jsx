@@ -13,15 +13,6 @@ export default function Boletos({ invitado }) {
           <h3 className="center">RSVP</h3>
           <p>Por favor responde antes del 20 de agosto de 2023</p>
           <form>
-            <ul>
-              <li>
-                <input type="radio" name="confirmed" id="" /> Allí estaremos
-              </li>
-              <li>
-                <input type="radio" name="confirmed" id="" />
-                Lo siento, no podremos asistir
-              </li>
-            </ul>
             <div>
               <span>{invitado?.boletos ?? ""} adultos</span>
               <span>
@@ -35,7 +26,7 @@ export default function Boletos({ invitado }) {
                 Confirmar elección
               </button>
               <button className="ticketButton btn btn-outline-secondary">
-                Cancelar
+                Lo siento, no podre asistir
               </button>
             </div>
           </form>

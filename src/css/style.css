@@ -45,7 +45,11 @@ section {
   font-size: 60px;
   font-family: "Pinyon Script", cursive;
 }
-
+.txtTitles2
+{
+  font-family: var(--fuenteCursiva2);
+  font-size: 40px;
+}
 .txtText /* Nombre*/ {
   font-size: 40px;
   font-family: "Niconne", cursive;
@@ -75,6 +79,7 @@ section {
   width: 100%;
   height: auto;
 }
+
 
 /*backdrop*/
 #backdrop {
@@ -279,16 +284,8 @@ h2 {
 
 /* __________ 5ta sección Family __________ */
 .photofam {
-  border-radius: 50px 50px 50px 50px;
-}
-.boxfam {
-  padding: 15px 10px 30px 15px;
-}
-.boxphoto {
-  padding: 3em 1em 2em 1em;
-}
-.nomPadres {
-  font-size: 50px;
+  border-radius: 50%;
+  width: 350px;
 }
 
 /* _________ 6ta sección Location _________ */
@@ -359,6 +356,11 @@ h2 {
 
 ul {
   padding: 50px 0;
+}
+
+#timeline
+{
+  overflow-x: hidden;
 }
 
 #timeline ul li {
@@ -475,6 +477,7 @@ ul li:nth-child(even) .hidden {
   border-radius: 20px;
   text-align: center;
   writing-mode: vertical-rl;
+  border-right: dotted 3px #ccc;
 }
 
 .ticketContainer .ticketContent {
@@ -614,6 +617,8 @@ ul li:nth-child(even) .hidden {
   }
   .ticketContainer .ticketDate {
     writing-mode: horizontal-tb;
+    border-bottom: dotted 3px #ccc;
+    
   }
   .ticketContainer .ticketContent {
     flex-direction: column;
