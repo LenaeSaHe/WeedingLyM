@@ -11,8 +11,9 @@
   --colorNegro: #000000;
 
   --fuenteCursiva: "Pinyon Script", cursive;
-  --fuenteCursiva2: "Niconne", cursive;
+  --fuenteCursivaTitulo: "Niconne", cursive;
   --fuenteCursiva3: "Pacifico", cursive;
+  --fuenteParrafo: "Source Serif Pro", serif;
   --introDuracion: 1s;
   --introDelay: 5s;
 }
@@ -41,13 +42,19 @@ section {
   text-align: justify;
 }
 
-.txtTitles  /* cursiva de titulos*/ {
+.txtTitles  /* fuente de titulos*/ 
+{
   font-size: 60px;
-  font-family: "Pinyon Script", cursive;
+  font-family: var(--fuenteCursivaTitulo);
 }
+.txtParagraph /* fuente de parrafos */ 
+{
+  font-family: var(--fuenteParrafo);
+}
+
 .txtTitles2
 {
-  font-family: var(--fuenteCursiva2);
+  font-family: var(--fuenteCursivaTitulo);
   font-size: 40px;
 }
 .txtText /* Nombre*/ {
@@ -59,9 +66,6 @@ section {
   width: 50%;
 }
 
-.txtParagraph /*parrafos*/ {
-  font-family: "Source Serif Pro", serif;
-}
 
 .txtBadage {
   font-size: 45px;
@@ -270,7 +274,8 @@ h2 {
   background: -webkit-linear-gradient(var(--colorBlanco), var(--colorChamp));
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Pacifico", cursive;
+  /*font-family: "Pacifico", cursive;*/
+  font-family: var(--fun);
   font-size: 96px;
   padding: 30px 0;
   text-align: center;
