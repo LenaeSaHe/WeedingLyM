@@ -33,6 +33,9 @@ section {
   background-color: var(--colorBlanco);
 }
 
+div {
+}
+
 .center {
   margin: auto;
   text-align: center;
@@ -47,15 +50,34 @@ section {
   font-size: 60px;
   font-family: var(--fuenteCursivaTitulo);
 }
-.txtParagraph /* fuente de parrafos */ 
+.txtParagraph
 {
   font-family: var(--fuenteParrafo);
 }
 
-.txtTitles2
-{
-  font-family: var(--fuenteCursivaTitulo);
-  font-size: 40px;
+.txtTitles2 {
+  font-family: var(--fuenteCursiva2);
+  font-size: 60px !important;
+}
+.txtTitles4 {
+  font-family: var(--fuenteCursiva2);
+  font-size: 30px !important;
+}
+.fontSize60 {
+  font-size: 60px;
+}
+.fontSize30 {
+  font-size: 30px;
+}
+.txtTitles3 {
+  background: -webkit-linear-gradient(var(--colorBlanco), var(--colorChamp));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Pacifico", cursive;
+  font-size: 96px;
+  padding: 30px 0;
+  text-align: center;
+  filter: drop-shadow(0 8px 2px rgba(11, 11, 110, 0.3));
 }
 .txtText /* Nombre*/ {
   font-size: 40px;
@@ -83,7 +105,6 @@ section {
   width: 100%;
   height: auto;
 }
-
 
 /*backdrop*/
 #backdrop {
@@ -269,13 +290,15 @@ section {
 .countdownNumber .countdownText {
   color: white;
   text-align: center;
+  font-family: var(--fuenteParrafo);
+  font-size: 25px;
 }
-h2 {
+h2 
+{
   background: -webkit-linear-gradient(var(--colorBlanco), var(--colorChamp));
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  /*font-family: "Pacifico", cursive;*/
-  font-family: var(--fun);
+  font-family: var(--fuenteCursivaTitulo);
   font-size: 96px;
   padding: 30px 0;
   text-align: center;
@@ -290,7 +313,9 @@ h2 {
 /* __________ 5ta sección Family __________ */
 .photofam {
   border-radius: 50%;
-  width: 350px;
+  max-width: 350px;
+  min-width: 200px;
+  width: 100%;
 }
 
 /* _________ 6ta sección Location _________ */
@@ -363,8 +388,7 @@ ul {
   padding: 50px 0;
 }
 
-#timeline
-{
+#timeline {
   overflow-x: hidden;
 }
 
@@ -574,6 +598,10 @@ ul li:nth-child(even) .hidden {
     width: 80%;
   }
 
+  .photofam {
+    width: 70%;
+  }
+
   #timeline ul li {
     position: static;
     list-style-type: none;
@@ -623,7 +651,6 @@ ul li:nth-child(even) .hidden {
   .ticketContainer .ticketDate {
     writing-mode: horizontal-tb;
     border-bottom: dotted 3px #ccc;
-    
   }
   .ticketContainer .ticketContent {
     flex-direction: column;

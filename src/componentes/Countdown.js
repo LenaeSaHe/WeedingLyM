@@ -44,7 +44,7 @@ function Countdown() {
             <h2 className="text-center">Ya falta muy poco</h2>
           </div>
           <div className="col-12">
-            <p className="text-center txtBadage">
+            <p className="text-center">
               <CountdownNumber text="Días" value={days} />
               <CountdownNumber text="Horas" value={hours} />
               <CountdownNumber text="Minutos" value={minutes} />
