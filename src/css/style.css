@@ -230,6 +230,9 @@ section {
 /* __________ 3ra sección Save the date __________ */
 
 #secDate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0 0 0 350px !important;
   height: 100vh;
   background-image: url(../img/savethedate2.jpg);
