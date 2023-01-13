@@ -33,8 +33,6 @@ section {
   background-color: var(--colorBlanco);
 }
 
-div {
-}
 
 .center {
   margin: auto;
@@ -362,9 +360,17 @@ h2 {
 }
 
 /* _________ 7ma sección Give away _________ */
-#divtable {
-  padding: 15px;
-  height: 250px;
+
+#idSecGive
+{
+  padding-top: 50px !important;
+}
+.tableMessage
+{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .backtable {
   padding: 15px;
@@ -382,7 +388,13 @@ h2 {
   width: 10rem;
   margin: auto;
   padding: auto;
+  transition: transform 0.9s;
 }
+.brand:hover
+{
+  transform: scale(1.08);
+}
+
 
 /* _________ 9na sección Time line _________ */
 
