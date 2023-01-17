@@ -263,7 +263,8 @@ section {
 }
 
 /* __________ 4ta sección Countdown __________ */
-#countdown {
+#countdown 
+{
   background-color: #4a84cd;
   background-image: url(../img/fondo-salon.png);
   padding: 100px 0;
@@ -272,26 +273,30 @@ section {
   height: 100vh;
   background-size: cover;
 }
-.countdownNumber {
+.countdownNumber 
+{
   display: inline-flex;
   flex-direction: column;
   padding: 80px 0;
   width: 200px;
   justify-content: center;
 }
-.countdownNumber .countdownBadge {
+.countdownNumber .countdownBadge 
+{
   color: var(--colorChamp);
   font-family: "Pacifico";
   font-size: 70px;
   font-weight: bold;
 }
-.countdownNumber .countdownText {
+.countdownNumber .countdownText 
+{
   color: white;
   text-align: center;
   font-family: var(--fuenteParrafo);
   font-size: 25px;
 }
-h2 {
+h2 
+{
   background: -webkit-linear-gradient(var(--colorBlanco), var(--colorChamp));
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -302,13 +307,15 @@ h2 {
   filter: drop-shadow(0 8px 2px rgba(11, 11, 110, 0.3));
 }
 
-.backgroundCount {
+.backgroundCount 
+{
   object-fit: cover;
   height: 100vh;
 }
 
 /* __________ 5ta sección Family __________ */
-.photofam {
+.photofam 
+{
   border-radius: 50%;
   max-width: 350px;
   min-width: 200px;
@@ -316,12 +323,14 @@ h2 {
 }
 
 /* _________ 6ta sección Location _________ */
-.contLoc {
+.contLoc 
+{
   padding: 0;
   margin: 0;
   overflow-x: hidden;
 }
-#garden {
+#garden 
+{
   background-color: blue;
   background-image: url(../img/finca.jpeg);
   background-size: cover;
@@ -333,7 +342,8 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-#btnlink {
+#btnlink 
+{
   background-color: #6363db;
   border-radius: 0.5rem;
   color: white;
