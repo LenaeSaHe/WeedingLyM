@@ -23,7 +23,7 @@ function Giveaway() {
                 <div className="anyborder">
                     <h5 className="text-center txtTitles">Liverpool</h5>
                     <p className="text-center anyborder">
-                      <a href="#" className="text-center">
+                      <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51117720" className="text-center">
                         <img src={liverpool} className="card-img-top brand"/>
                       </a>
                     </p>
@@ -39,7 +39,7 @@ function Giveaway() {
                 <div className="anyborder backR">
                   <h5 className="text-center txtTitles">Amazon</h5>
                   <p className="text-center anyborder">
-                    <a href="#" className="text-center">
+                    <a href="https://www.amazon.com.mx/wedding/marcos-rivas-rojas-lena-elizabeth-sanchez-hernandez-morelos-november-2023/registry/34EZFKVSULGV7" className="text-center">
                       <img src={amazon} className="card-img-top brand" />
                     </a>
                   </p>
