@@ -33,7 +33,6 @@ section {
   background-color: var(--colorBlanco);
 }
 
-
 .center {
   margin: auto;
   text-align: center;
@@ -99,6 +98,10 @@ section {
 .circular img {
   width: 100%;
   height: auto;
+}
+#div
+{
+  outline: #000000 solid 1px;
 }
 
 /*backdrop*/
@@ -500,6 +503,12 @@ ul li:nth-child(even) .hidden {
 .show {
   opacity: 1;
   transform: none;
+}
+/* hotel */
+.txtCardHotel
+{
+  font-size: 20px;
+  font-family: var(--fuenteParrafo);
 }
 
 /* _________ 10ma lodgement _________ */
