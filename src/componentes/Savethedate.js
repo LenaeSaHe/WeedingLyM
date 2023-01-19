@@ -17,11 +17,11 @@ function Savethedate({ invitado }) {
           </p>
         </div>
         <small className="hrSave txtParagraph">14:00 hrs.</small>
-        <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MmVhaG5kOTJzZmhjbG1qa2VzcWVoZmg1djQgbGl6enkuc2FoZUBt&tmsrc=lizzy.sahe%40gmail.com" target="_blank">
+        <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MWRzcXZ2cWg4ZjlxdjR2cW9yOW1rZGNidGIgZjBlYjRlNzdiZDZmZmRjNjQ4NzU5NWU4NjEzZWE5MjBiNGY1YTRlNDYyZjdhMGIwZjI5ZTg2OTI2MzA2NTE2Y0Bn&tmsrc=f0eb4e77bd6ffdc6487595e8613ea920b4f5a4e462f7a0b0f29e86926306516c%40group.calendar.google.com" target="_blank">
           <img src={googleCalendar}/>
         </a>
         <small className="txtParagraph">
-          <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MmVhaG5kOTJzZmhjbG1qa2VzcWVoZmg1djQgbGl6enkuc2FoZUBt&tmsrc=lizzy.sahe%40gmail.com" target="_blank">
+          <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MWRzcXZ2cWg4ZjlxdjR2cW9yOW1rZGNidGIgZjBlYjRlNzdiZDZmZmRjNjQ4NzU5NWU4NjEzZWE5MjBiNGY1YTRlNDYyZjdhMGIwZjI5ZTg2OTI2MzA2NTE2Y0Bn&tmsrc=f0eb4e77bd6ffdc6487595e8613ea920b4f5a4e462f7a0b0f29e86926306516c%40group.calendar.google.com" target="_blank">
             <strong>Agrega el evento a tu calendario en </strong>&nbsp;
             <img src={googleicon} width="30"/>
           </a>
