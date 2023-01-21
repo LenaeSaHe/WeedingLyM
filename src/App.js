@@ -15,6 +15,8 @@ import Timeline from "./componentes/Timeline";
 import Backdrop from "./componentes/Backdrop.jsx";
 import { useParams } from "react-router-dom";
 import data from "./datos/invitados.json";
+import Protocolocovid from "./componentes/Protocolocovid";
+
 
 function App() {
   /* Función = Componente debe llevar un return dentro de la funcion jsx */
@@ -61,6 +63,8 @@ function App() {
       <Instagram />
       {/* Confirm */}
       <Footer invitado={invitado} />
+      {/* Protocolo covid*/}
+      <Protocolocovid />
     </>
   );
 }
