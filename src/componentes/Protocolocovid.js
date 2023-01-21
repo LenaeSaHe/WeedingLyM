@@ -8,8 +8,8 @@ function Protocolocovid()
                                 <li>Por favor respeta las medidas de sanidad durante el evento</li>
                                 <li>No olvides continuar con el uso de cubrebocas y gel antibacteríal </li>
                                 <li>Evita el contacto de tus manos con nariz y boca</li>
-                                <li> Manten la sana distancia </li>
-                                <li>Si presentas algún sintoma previo al evento, háznoslo saber, comprenderemos tu ausencia.</li>
+                                <li> Mantén la sana distancia </li>
+                                <li>Si presentas algún síntoma previo al evento, háznoslo saber, comprenderemos tu ausencia.</li>
                             </ul>
                         </p>
                     </div>                
