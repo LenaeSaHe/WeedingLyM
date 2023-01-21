@@ -712,3 +712,18 @@ ul li:nth-child(even) .hidden {
     /*250+45-6*/
   }
 }
+
+/* protocolo covid */
+.smallletter
+{
+  font-size: 12px;
+}
+.smalldiv
+{
+  height: 5px;
+}
+.smallTitle
+{
+ font-size: 25px;
+ font-family: var(--fuenteCursivaTitulo);
+}
