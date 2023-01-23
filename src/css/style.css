@@ -47,7 +47,7 @@ section {
   font-size: 60px;
   font-family: var(--fuenteTitulo2);
   font-style: italic;
-  color: #6b5d0f;
+  color: #000000;
 }
 .txtParagraph {
   font-family: var(--fuenteParrafo);
@@ -58,8 +58,8 @@ section {
   font-size: 60px !important;
 }
 .txtTitles4 {
-  font-family: var(--fuenteCursiva2);
-  font-size: 30px !important;
+  font-family: var(--fuenteCursiva);
+  font-size: 40px !important;
 }
 .fontSize60 {
   font-size: 60px;
@@ -424,7 +424,7 @@ ul {
   position: relative;
   list-style-type: none;
   width: 6px;
-  background-color: #6b5d0f;
+  background-color: #000000;
   margin: 0 auto;
   padding-top: 50px;
 }
@@ -433,7 +433,7 @@ ul {
 }
 
 #timeline ul li::after {
-  background: #6b5d0f;
+  background: #000000;
   content: "";
   width: 25px;
   height: 25px;
@@ -535,7 +535,7 @@ ul li:nth-child(even) .hidden {
 
 .ticketContainer {
   width: 80vw;
-  height: 320px;
+  height: 350px;
   min-width: 300px;
   margin: 0 auto;
   display: flex;
@@ -600,13 +600,16 @@ ul li:nth-child(even) .hidden {
 }
 
 /* Size of screen */
-@media screen and (max-width: 500px) {
-  #countdown {
+@media screen and (max-width: 500px) 
+{
+  #countdown 
+  {
     background-position: center bottom;
     background-size: contain;
   }
 
-  .countdownNumber {
+  .countdownNumber
+  {
     padding: 10px;
   }
 
@@ -716,7 +719,9 @@ ul li:nth-child(even) .hidden {
   .ticketContainer {
     max-width: 300px;
     flex-direction: column;
+    height: auto;
   }
+ 
   .ticketContainer .ticketDate {
     writing-mode: horizontal-tb;
     border-bottom: dotted 3px #ccc;
@@ -726,18 +731,14 @@ ul li:nth-child(even) .hidden {
   }
 
   .ticketContainer .ticketInfo {
-    height: 200px;
+    height: 330px;
     width: 100%;
   }
   .ticketContainer .ticketRSVP {
     border: none;
     border-top: dashed 2px #ccc;
   }
-  .ticketContainer.ticketFake {
-    transform: rotateZ(-2deg);
-    z-index: 0;
-    top: -580px;
-  }
+ 
 }
 
 @media screen and (max-width: 900px) {
