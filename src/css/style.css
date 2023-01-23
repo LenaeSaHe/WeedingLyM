@@ -58,8 +58,8 @@ section {
   font-size: 60px !important;
 }
 .txtTitles4 {
-  font-family: var(--fuenteCursiva2);
-  font-size: 30px !important;
+  font-family: var(--fuenteCursiva);
+  font-size: 40px !important;
 }
 .fontSize60 {
   font-size: 60px;
@@ -525,7 +525,7 @@ ul li:nth-child(even) .hidden {
 
 .ticketContainer {
   width: 80vw;
-  height: 320px;
+  height: 350px;
   min-width: 300px;
   margin: 0 auto;
   display: flex;
@@ -707,6 +707,7 @@ ul li:nth-child(even) .hidden {
     max-width: 300px;
     flex-direction: column;
   }
+ 
   .ticketContainer .ticketDate {
     writing-mode: horizontal-tb;
     border-bottom: dotted 3px #ccc;

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useMemo } from "react";
 import { getInvitadosNumber } from "../datos/util";
+import monogramaticket from "../img/monolymticket1.png"
 
 export default function Boleto({ invitado }) {
   const [confirmed, setConfirmed] = useState(false);
@@ -54,7 +55,8 @@ export default function Boleto({ invitado }) {
         <div className="ticketDate">Sabado 04 de noviembre de 2023</div>
         <div className="ticketContent">
           <div className="ticketInfo">
-            <div>Lena & Marcos</div>
+            <img src={monogramaticket} height="150"/>
+            <div className="txtTitles4">Lena & Marcos</div>
             <div>Finca San Pedro</div>
             <div>Bugambilias 2 Fracc, Brisas, 62584 Temixco, Morelos</div>
             <div>14:00 hrs</div>
@@ -67,9 +69,8 @@ export default function Boleto({ invitado }) {
             <p>Por favor responde antes del 20 de agosto de 2023</p>
             <form>
               <div>
-                <div className="ticketsNameOrNumber">{namesOfNumber()}</div>
                 <div className="ticketsNumbe text-center">
-                  {invitado?.boletos} Adultos, {invitado?.ninos} niños
+                  {invitado?.boletos} Adultos, {invitado?.ninos} niño(s)
                 </div>
               </div>
               <div className="d-grid gap-2 mt-4">
