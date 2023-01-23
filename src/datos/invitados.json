@@ -15,8 +15,41 @@
   },
   {
     "id": "3",
+    "nickname": "Vicky",
     "nombre": "Victoria",
     "boletos": 2,
-    "ninos": 1
+    "ninos": 1,
+    "invitados": [
+      {
+        "nombre": "Eric"
+      },
+      {
+        "nombre": "Luciana"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "nickname": "Pepito",
+    "nombre": "Pedro",
+    "boletos": 3,
+    "ninos": 3,
+    "invitados": [
+      {
+        "nombre": "Juanito"
+      },
+      {
+        "nombre": "Pedrito"
+      },
+      {
+        "nombre": "Julia"
+      },
+      {
+        "nombre": "Capi"
+      },
+      {
+        "nombre": "Tony"
+      }
+    ]
   }
 ]

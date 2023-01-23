@@ -3,7 +3,6 @@
 /* https://alvarotrigo.com/blog/html-css-timelines/ */
 /* https://programadorwebvalencia.com/Javascript-cuenta-atras-o-contador-regresivo/ */
 
-
 /* generales */
 :root {
   --colorChamp: #f7e7ce;
@@ -15,6 +14,7 @@
   --fuenteCursivaTitulo: "Niconne", cursive;
   --fuenteCursiva3: "Pacifico", cursive;
   --fuenteParrafo: "Source Serif Pro", serif;
+  --fuenteTitulo2: "Crimson Text", serif;
   --introDuracion: 1s;
   --introDelay: 5s;
 }
@@ -45,7 +45,8 @@ section {
 
 .txtTitles  /* fuente de titulos*/ {
   font-size: 60px;
-  font-family: var(--fuenteCursivaTitulo);
+  font-family: var(--fuenteTitulo2);
+  font-style: italic;
 }
 .txtParagraph {
   font-family: var(--fuenteParrafo);
@@ -100,8 +101,7 @@ section {
   width: 100%;
   height: auto;
 }
-#div
-{
+#div {
   outline: #000000 solid 1px;
 }
 
@@ -267,8 +267,7 @@ section {
 }
 
 /* __________ 4ta sección Countdown __________ */
-#countdown 
-{
+#countdown {
   background-color: #4a84cd;
   background-image: url(../img/fondo-salon.png);
   padding: 100px 0;
@@ -277,30 +276,26 @@ section {
   height: 100vh;
   background-size: cover;
 }
-.countdownNumber 
-{
+.countdownNumber {
   display: inline-flex;
   flex-direction: column;
   padding: 80px 0;
   width: 200px;
   justify-content: center;
 }
-.countdownNumber .countdownBadge 
-{
+.countdownNumber .countdownBadge {
   color: var(--colorChamp);
   font-family: "Pacifico";
   font-size: 70px;
   font-weight: bold;
 }
-.countdownNumber .countdownText 
-{
+.countdownNumber .countdownText {
   color: white;
   text-align: center;
   font-family: var(--fuenteParrafo);
   font-size: 25px;
 }
-h2 
-{
+h2 {
   background: -webkit-linear-gradient(var(--colorBlanco), var(--colorChamp));
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -311,15 +306,13 @@ h2
   filter: drop-shadow(0 8px 2px rgba(11, 11, 110, 0.3));
 }
 
-.backgroundCount 
-{
+.backgroundCount {
   object-fit: cover;
   height: 100vh;
 }
 
 /* __________ 5ta sección Family __________ */
-.photofam 
-{
+.photofam {
   border-radius: 50%;
   max-width: 350px;
   min-width: 200px;
@@ -327,14 +320,12 @@ h2
 }
 
 /* _________ 6ta sección Location _________ */
-.contLoc 
-{
+.contLoc {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
 }
-#garden 
-{
+#garden {
   background-color: blue;
   background-image: url(../img/finca.jpeg);
   background-size: cover;
@@ -346,8 +337,7 @@ h2
   align-items: center;
   justify-content: center;
 }
-#btnlink 
-{
+#btnlink {
   background-color: #6363db;
   border-radius: 0.5rem;
   color: white;
@@ -378,13 +368,11 @@ h2
 
 /* _________ 7ma sección Give away _________ */
 
-#idSecGive
-{
+#idSecGive {
   padding-top: 50px !important;
 }
-.tableMessage
-{
-  display:flex;
+.tableMessage {
+  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -407,11 +395,9 @@ h2
   padding: auto;
   transition: transform 0.9s;
 }
-.brand:hover
-{
+.brand:hover {
   transform: scale(1.08);
 }
-
 
 /* _________ 9na sección Time line _________ */
 
@@ -506,8 +492,7 @@ ul li:nth-child(even) .hidden {
   transform: none;
 }
 /* hotel */
-.txtCardHotel
-{
+.txtCardHotel {
   font-size: 20px;
   font-family: var(--fuenteParrafo);
 }
@@ -529,13 +514,19 @@ ul li:nth-child(even) .hidden {
   padding: 20px;
 }
 
+.ticketsContainer {
+  max-height: 100vh;
+}
+
 .ticketContainer {
+  position: relative;
   width: 60vw;
   min-width: 300px;
   margin: 0 auto;
   display: flex;
   border-radius: 20px;
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2));
+  z-index: 100;
 }
 .ticketContainer .ticketDate {
   padding: 20px;
@@ -555,7 +546,7 @@ ul li:nth-child(even) .hidden {
 }
 .ticketContainer .ticketInfo {
   padding: 16px;
-  width: 80%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -565,6 +556,32 @@ ul li:nth-child(even) .hidden {
 .ticketContainer .ticketRSVP {
   padding: 16px;
   border-left: dashed 2px #ccc;
+}
+
+.ticketContainer .ticketRSVP .ticketsNumber {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.ticketContainer .ticketRSVP .ticketsNameOrNumber {
+  text-align: center;
+}
+
+.ticketContainer.ticketFake.ticket1 {
+  top: -316px;
+  z-index: 10;
+}
+.ticketContainer.ticketFake.ticket2 {
+  top: -625px;
+  z-index: 9;
+}
+.ticketContainer.ticketFake.ticket3 {
+  top: -1000px;
+  z-index: 8;
+}
+.ticketContainer.ticketFake.ticket4 {
+  top: -1334px;
+  z-index: 7;
 }
 
 /* Size of screen */
@@ -701,6 +718,11 @@ ul li:nth-child(even) .hidden {
     border: none;
     border-top: dashed 2px #ccc;
   }
+  .ticketContainer.ticketFake {
+    transform: rotateZ(-2deg);
+    z-index: 0;
+    top: -580px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -714,16 +736,13 @@ ul li:nth-child(even) .hidden {
 }
 
 /* protocolo covid */
-.smallletter
-{
+.smallletter {
   font-size: 12px;
 }
-.smalldiv
-{
+.smalldiv {
   height: 5px;
 }
-.smallTitle
-{
- font-size: 25px;
- font-family: var(--fuenteCursivaTitulo);
+.smallTitle {
+  font-size: 25px;
+  font-family: var(--fuenteCursivaTitulo);
 }
