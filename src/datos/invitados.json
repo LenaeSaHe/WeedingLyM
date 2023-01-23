@@ -1,22 +1,22 @@
 [
   {
     "id": "1",
-    "nombre": "Omar Pozos",
-    "nickname": "Pozillos",
+    "nombre": "Maria Elena",
+    "nickname": "Mary",
     "boletos": 2,
-    "ninos": 0
+    "ninos": 1
   },
   {
     "id": "2",
-    "nombre": "Beatriz Coria",
-    "nickname": "Beti",
+    "nombre": "Julio César",
+    "nickname": "Julio",
     "boletos": 2,
     "ninos": 0
   },
   {
     "id": "3",
-    "nickname": "Vicky",
-    "nombre": "Victoria",
+    "nombre": "Omar Pozos",
+    "nickname": "Pozos",
     "boletos": 2,
     "ninos": 1,
     "invitados": [

@@ -518,13 +518,14 @@ ul li:nth-child(even) .hidden {
   padding: 20px;
 }
 
-.ticketsContainer {
-  max-height: 100vh;
+.titleticket {
+  font-size: 30px;
+  font-family: var(--fuenteCursiva3);
 }
 
 .ticketContainer {
-  position: relative;
-  width: 60vw;
+  width: 80vw;
+  height: 320px;
   min-width: 300px;
   margin: 0 auto;
   display: flex;
