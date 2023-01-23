@@ -1,17 +1,19 @@
 import googleCalendar from "../img/calendar_google.png";
 import googleicon from "../img/google.png";
+import Paragraph from "./common/Paragraph";
 import Title from "./common/Title";
 function Savethedate({ invitado }) {
   return (
     <section className="contB" id="secDate">
       <div className="cristalSave" id="contDate">
         <Title>Save the date</Title>
-        <p className="txtParagraph w-50">
+        <Paragraph short>
           {invitado ? invitado.nickname : ""}, eres muy importante para nostros,
           y en este día tan especial en el que frente a Dios y a nuestros seres
           amados recibiremos la bendición de un nuevo capítulo en nuestras
           vidas, deseamos nos acompañes el próximo
-        </p>
+        </Paragraph>
+
         <div className="txtTitles">
           <p>
             <b>04.Nov.23</b>

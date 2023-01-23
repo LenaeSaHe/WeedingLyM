@@ -47,6 +47,7 @@ section {
   font-size: 60px;
   font-family: var(--fuenteTitulo2);
   font-style: italic;
+  color: #6b5d0f;
 }
 .txtParagraph {
   font-family: var(--fuenteParrafo);
@@ -237,10 +238,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 0 0 350px !important;
+  padding: 0 0 0 500px !important;
   height: 100vh;
   background-image: url(../img/savethedate2.jpg);
-  background-size: 350px auto;
+  background-size: 500px auto;
   background-position: 0px center;
   text-align: center;
 }
@@ -413,13 +414,16 @@ ul {
   position: relative;
   list-style-type: none;
   width: 6px;
-  background-color: var(--colorNegro);
+  background-color: #6b5d0f;
   margin: 0 auto;
   padding-top: 50px;
 }
+#timeline ul li:first-child {
+  border-radius: 10px 10px 0 0;
+}
 
 #timeline ul li::after {
-  background: var(--colorNegro);
+  background: #6b5d0f;
   content: "";
   width: 25px;
   height: 25px;
@@ -451,7 +455,7 @@ ul {
 }
 #timeline .eventContainer h3 {
   font-size: 48px;
-  border-bottom: dotted 2px rgba(0, 0, 0, 0.3);
+  border-bottom: dotted 2px #6b5d0f;
   width: 100%;
   padding-left: 20px;
   padding-bottom: 20px;

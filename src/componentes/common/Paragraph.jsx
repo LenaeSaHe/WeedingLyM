@@ -1,3 +1,11 @@
-export default function Paragraph({ children }) {
-  return <p className="txtParagraph text-center">{children}</p>;
+import classNames from "classnames";
+
+export default function Paragraph({ children, short }) {
+  return (
+    <p
+      className={classNames("txtParagraph", "text-center", short ? "w-50" : "")}
+    >
+      {children}
+    </p>
+  );
 }

@@ -2,7 +2,7 @@ import iglesia from "../img/church-2-32.ico";
 import civil from "../img/bookmark-32.ico";
 import coctel from "../img/bar-32.ico";
 import party from "../img/heart-15-48.ico";
-import Event from "./Event";
+import Event from "./timeline/Event";
 import Title from "./common/Title";
 
 function Timeline() {

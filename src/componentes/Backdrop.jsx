@@ -17,7 +17,7 @@ function Backdrop({ invitado }) {
     <div id="backdrop" ref={ref}>
       <div className="backdropContainer">
         <div>
-          <span className="title fadeIn delay-5">
+          <span className="txtTitles fadeIn delay-5">
             ¡Hola, {invitado ? invitado.nombre.split(" ")[0] : ""}!
           </span>
         </div>
