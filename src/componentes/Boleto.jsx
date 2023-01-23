@@ -60,12 +60,17 @@ export default function Boleto({ invitado }) {
             <div>14:00 hrs</div>
           </div>
           <div className="ticketRSVP">
+            <p class="text-center titleticket">
+              ¡Gracias, {invitado ? invitado.nickname : ""}!
+            </p>
             <h3 className="center">RSVP</h3>
             <p>Por favor responde antes del 20 de agosto de 2023</p>
             <form>
               <div>
-                <div className="ticketsNumber">{invitado?.boletos} Boletos</div>
                 <div className="ticketsNameOrNumber">{namesOfNumber()}</div>
+                <div className="ticketsNumbe text-center">
+                  {invitado?.boletos} Adultos, {invitado?.ninos} niños
+                </div>
               </div>
               <div className="d-grid gap-2 mt-4">
                 {confirmed ? (
