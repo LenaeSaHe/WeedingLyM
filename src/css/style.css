@@ -529,8 +529,15 @@ ul li:nth-child(even) .hidden {
   padding: 20px;
 }
 
+.titleticket
+{
+  font-size: 30px;
+  font-family: var(--fuenteCursiva3);
+}
+
 .ticketContainer {
-  width: 60vw;
+  width: 80vw;
+  height: 320px;
   min-width: 300px;
   margin: 0 auto;
   display: flex;
