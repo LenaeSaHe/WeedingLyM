@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import CountdownNumber from "./CountdownNumber";
-import mainYard from '../img/fondo-salon.png';
+import mainYard from "../img/fondo-salon.png";
+import Title from "./common/Title";
 
 function Countdown() {
   const [days, setDays] = useState(0);
@@ -38,10 +39,10 @@ function Countdown() {
 
   return (
     <section className="contA" id="countdown">
-        <div className="container">
+      <div className="container">
         <div className="content row">
           <div className="col-12">
-            <h2 className="text-center">Ya falta muy poco</h2>
+            <Title>Ya falta muy poco</Title>
           </div>
           <div className="col-12">
             <p className="text-center">

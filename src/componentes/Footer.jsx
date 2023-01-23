@@ -1,20 +1,13 @@
-import Boletos from "./Boletos";
+import Boleto from "./Boleto";
+import Title from "./common/Title";
 
 function Footer({ invitado }) {
   return (
-    <section className="contA">
+    <section className="contA ticketsContainer">
       <div className="col-12 bottom">
-        <p className="text-center txtText">
-          Por favor, confirmanos tu asistencia
-        </p>
+        <Title>Por favor, confírmanos tu asistencia</Title>
       </div>
-      <Boletos invitado={invitado} />
-      <div>
-        También puedes confirmarnos tu asistencia al correo: <br />
-        marcosrivasr@gmail.com <br />
-        o al whatsapp <br />
-        7221496010
-      </div>
+      <Boleto invitado={invitado} />
     </section>
   );
 }

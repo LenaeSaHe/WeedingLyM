@@ -3,6 +3,7 @@ import civil from "../img/bookmark-32.ico";
 import coctel from "../img/bar-32.ico";
 import party from "../img/heart-15-48.ico";
 import Event from "./Event";
+import Title from "./common/Title";
 
 function Timeline() {
   // listen for events
@@ -11,7 +12,7 @@ function Timeline() {
       <div className="container">
         <div className="row content">
           <div className="col-12 back">
-            <h1 className="text-center txtTitles">Time line</h1>
+            <Title>Timeline</Title>
             <ul>
               <li>
                 <Event
