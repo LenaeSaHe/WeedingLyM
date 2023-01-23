@@ -47,7 +47,7 @@ section {
   font-size: 60px;
   font-family: var(--fuenteTitulo2);
   font-style: italic;
-  color: #6b5d0f;
+  color: #000000;
 }
 .txtParagraph {
   font-family: var(--fuenteParrafo);
@@ -414,7 +414,7 @@ ul {
   position: relative;
   list-style-type: none;
   width: 6px;
-  background-color: #6b5d0f;
+  background-color: #000000;
   margin: 0 auto;
   padding-top: 50px;
 }
@@ -423,7 +423,7 @@ ul {
 }
 
 #timeline ul li::after {
-  background: #6b5d0f;
+  background: #000000;
   content: "";
   width: 25px;
   height: 25px;
