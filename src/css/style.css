@@ -759,3 +759,7 @@ ul li:nth-child(even) .hidden {
   font-size: 25px;
   font-family: var(--fuenteCursivaTitulo);
 }
+.fontcovid
+{
+  font-size: 15px !important;
+}

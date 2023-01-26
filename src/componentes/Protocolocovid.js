@@ -8,7 +8,7 @@ function Protocolocovid()
                             <li>No olvides continuar con el uso de cubrebocas y gel antibacteríal </li>
                             <li>Evita el contacto de tus manos con nariz y boca</li>
                             <li> Mantén la sana distancia </li>
-                            <li>Si presentas algún síntoma previo al evento, háznoslo saber, comprenderemos tu ausencia.</li>
+                            <li className="fontcovid"><b>Si presentas algún síntoma previo al evento, háznoslo saber, comprenderemos tu ausencia.</b></li>
                        </ul>
                     </div>                
             </footer>
