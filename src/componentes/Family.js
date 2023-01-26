@@ -1,5 +1,6 @@
 import photoFamF from "../img/papas.jpg";
 import photoFamM from "../img/papas.jpg";
+import Title from "./common/Title";
 function Family() {
   return (
     <section className="contB">
@@ -8,7 +9,7 @@ function Family() {
           <div className="col-lg-6 col-sm-12 center pb-5">
             <div className="row">
               <div className="col">
-                <p className="txtTitles">Padres de la novia</p>
+                <Title>Padres de la novia</Title>
               </div>
             </div>
 
@@ -29,7 +30,7 @@ function Family() {
           <div className="col-lg-6 col-sm-12 center pb-5">
             <div className="row">
               <div className="col">
-                <p className="txtTitles">Padres del novio</p>
+              <Title>Padres del novio</Title>
               </div>
             </div>
 
