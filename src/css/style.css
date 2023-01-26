@@ -536,6 +536,7 @@ ul li:nth-child(even) .hidden {
 .ticketContainer {
   width: 80vw;
   height: 350px;
+  max-width: 1100px;
   min-width: 300px;
   margin: 0 auto;
   display: flex;
@@ -600,16 +601,13 @@ ul li:nth-child(even) .hidden {
 }
 
 /* Size of screen */
-@media screen and (max-width: 500px) 
-{
-  #countdown 
-  {
+@media screen and (max-width: 500px) {
+  #countdown {
     background-position: center bottom;
     background-size: contain;
   }
 
-  .countdownNumber
-  {
+  .countdownNumber {
     padding: 10px;
   }
 
@@ -721,7 +719,7 @@ ul li:nth-child(even) .hidden {
     flex-direction: column;
     height: auto;
   }
- 
+
   .ticketContainer .ticketDate {
     writing-mode: horizontal-tb;
     border-bottom: dotted 3px #ccc;
@@ -738,7 +736,6 @@ ul li:nth-child(even) .hidden {
     border: none;
     border-top: dashed 2px #ccc;
   }
- 
 }
 
 @media screen and (max-width: 900px) {
