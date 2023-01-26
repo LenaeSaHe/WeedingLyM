@@ -8,7 +8,7 @@ function Savethedate({ invitado }) {
   return (
     <section className="contB" id="secDate">
       <div className="cristalSave" id="contDate">
-        <img src={heartsave} width="500"/>
+        <img src={heartsave} width="380"/>
         <Title>Save the date</Title>
         <Paragraph short>
           {invitado ? invitado.nickname : ""}, eres muy importante para nostros,
