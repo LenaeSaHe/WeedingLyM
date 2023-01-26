@@ -1,12 +1,13 @@
 import instagram from '../img/instagram-32.ico';
 import facebook from '../img/facebook-32.ico';
+import Title from './common/Title';
 function Instagram()
 {
     return <section className="contB">
                 <div className="container">
                     <div className="row content">
                         <div className="col-12 back">
-                            <h1 className="text-center txtTitles">#Hashtag del evento</h1>
+                            <Title>#Hashtag del evento</Title>
                             <p className="text-center">
                             Comparte con nosotros todas tus fotografías, historias, reels, o
                             videos que captures durante el evento, usando el hashtag
