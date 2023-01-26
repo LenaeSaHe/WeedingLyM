@@ -23,7 +23,7 @@ function Giveaway() {
               <div className="col-12 backable">
                 <div className="center boxStore anyborder">
                   <div className="anyborder">
-                    <h5 className="text-center txtTitles">Liverpool</h5>
+                  <Title>Liverpool</Title>
                     <p className="text-center anyborder">
                       <a
                         href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51117720"
@@ -51,7 +51,7 @@ function Giveaway() {
               <div className="col-12 backable back">
                 <div className="center boxStore anyborder">
                   <div className="anyborder backR">
-                    <h5 className="text-center txtTitles">Amazon</h5>
+                  <Title>Amazon</Title>
                     <p className="text-center anyborder">
                       <a
                         href="https://www.amazon.com.mx/wedding/marcos-rivas-rojas-lena-elizabeth-sanchez-hernandez-morelos-november-2023/registry/34EZFKVSULGV7"
