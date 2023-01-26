@@ -5,7 +5,7 @@ import doctor from "../img/doctor.ico";
 import distancia from "../img/distancia.jpg";
 function Protocolocovid()
 {
-    return <section className="smalldiv">
+    return <section className="px-3">
                 <Title>Protocolo de seguridad e higiene durante el evento</Title>
                     <div className="d-flex flex-column justify-content-center align-items-center container">
                         <div className="row mt-5">
