@@ -2,10 +2,13 @@ import googleCalendar from "../img/calendar_google.png";
 import googleicon from "../img/google.png";
 import Paragraph from "./common/Paragraph";
 import Title from "./common/Title";
+import heartsave from "../img/imgsave.png";
+
 function Savethedate({ invitado }) {
   return (
     <section className="contB" id="secDate">
       <div className="cristalSave" id="contDate">
+        <img src={heartsave} width="380"/>
         <Title>Save the date</Title>
         <Paragraph short>
           {invitado ? invitado.nickname : ""}, eres muy importante para nostros,

@@ -9,13 +9,13 @@ import Family from "./componentes/Family";
 import Location from "./componentes/Location";
 import Giveaway from "./componentes/Giveaway";
 import Hotel from "./componentes/hotel";
-import Instagram from "./componentes/Instagram";
 import Footer from "./componentes/Footer";
 import Timeline from "./componentes/Timeline";
 import Backdrop from "./componentes/Backdrop.jsx";
 import { useParams } from "react-router-dom";
 import data from "./datos/invitados.json";
 import Protocolocovid from "./componentes/Protocolocovid";
+import GooglePhotos from "./componentes/GooglePhotos";
 
 
 function App() {
@@ -60,7 +60,7 @@ function App() {
       {/* Hotel */}
       <Hotel />
       {/* Instagram */}
-      <Instagram />
+      <GooglePhotos />
       {/* Confirm */}
       <Footer invitado={invitado} />
       {/* Protocolo covid*/}

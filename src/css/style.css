@@ -557,6 +557,9 @@ ul li:nth-child(even) .hidden {
 }
 
 .ticketContainer .ticketContent {
+  background-image: url(../img/ticket-fondo1.jpg), url(../img/ticket-fondo2.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, top center;
   border-radius: 10px;
   background-color: white;
   padding: 16px;
