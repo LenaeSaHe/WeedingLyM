@@ -45,12 +45,12 @@ function Countdown() {
             <Title>Ya falta muy poco</Title>
           </div>
           <div className="col-12">
-            <p className="text-center">
+            <div className="text-center">
               <CountdownNumber text="Días" value={days} />
               <CountdownNumber text="Horas" value={hours} />
               <CountdownNumber text="Minutos" value={minutes} />
               <CountdownNumber text="Segundos" value={seconds} />
-            </p>
+            </div>
           </div>
         </div>
       </div>

@@ -63,7 +63,7 @@ export default function Boleto({ invitado }) {
             <div>14:00 hrs</div>
           </div>
           <div className="ticketRSVP">
-            <p class="text-center titleticket">
+            <p className="text-center titleticket">
               ¡Gracias, {invitado ? invitado.nickname : ""}!
             </p>
             <h3 className="center">RSVP</h3>

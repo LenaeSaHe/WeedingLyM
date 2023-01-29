@@ -102,9 +102,9 @@ function Location() {
                 padding: 0,
                 margin: 0,
               }}
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
         </div>
