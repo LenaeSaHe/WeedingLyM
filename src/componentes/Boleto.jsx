@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useMemo } from "react";
 import { getInvitadosNumber } from "../datos/util";
-import monogramaticket from "../img/monolymticket1.png"
+import monogramaticket from "../img/monolymticket1.png";
+import Transition from "./common/Transition";
 
 export default function Boleto({ invitado }) {
   const [confirmed, setConfirmed] = useState(false);
@@ -50,12 +51,12 @@ export default function Boleto({ invitado }) {
     };
   }, [invitado]);
   return (
-    <>
+    <Transition initialClassName={""} finalClassName="ticketTransition">
       <div className="ticketContainer my-5">
         <div className="ticketDate">Sabado 04 de noviembre de 2023</div>
         <div className="ticketContent">
           <div className="ticketInfo">
-            <img src={monogramaticket} height="150"/>
+            <img src={monogramaticket} height="150" />
             <div className="txtTitles4">Lena & Marcos</div>
             <div>Finca San Pedro</div>
             <div>Bugambilias 2 Fracc, Brisas, 62584 Temixco, Morelos</div>
@@ -118,6 +119,6 @@ export default function Boleto({ invitado }) {
       </div>
 
       <div className="fakeTickets"></div>
-    </>
+    </Transition>
   );
 }

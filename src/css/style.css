@@ -533,6 +533,9 @@ ul li:nth-child(even) .hidden {
   font-family: var(--fuenteCursiva3);
 }
 
+.transition {
+  transition: all 0.5s ease-in-out;
+}
 .ticketContainer {
   width: 80vw;
   height: 350px;
@@ -598,6 +601,12 @@ ul li:nth-child(even) .hidden {
 .ticketContainer.ticketFake.ticket4 {
   top: -1334px;
   z-index: 7;
+}
+
+.ticketTransition {
+  transform: translate(100px, 300px) rotate(20deg);
+  transform-origin: 500px 50px;
+  opacity: 0;
 }
 
 /* Size of screen */
@@ -759,7 +768,6 @@ ul li:nth-child(even) .hidden {
   font-size: 25px;
   font-family: var(--fuenteCursivaTitulo);
 }
-.fontcovid
-{
+.fontcovid {
   font-size: 15px !important;
 }
