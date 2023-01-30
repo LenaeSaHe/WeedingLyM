@@ -10,7 +10,7 @@ function GooglePhotos()
                             <Title>Compartenos tus momentos</Title>
                             <p className="text-center">
                                 <a href='https://photos.app.goo.gl/xr62pLeJWLixkXhw7' target="_blank">
-                                    <img src={googlephotosico}  width="500"/> 
+                                    <img src={googlephotosico}  width="400"/> 
                                 </a>
                             </p>
                         </div>
