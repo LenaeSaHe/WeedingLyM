@@ -748,6 +748,11 @@ ul li:nth-child(even) .hidden {
     border: none;
     border-top: dashed 2px #ccc;
   }
+  #heartsave
+  {
+    width: 200px;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
