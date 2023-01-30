@@ -1,23 +1,38 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import { useMemo } from "react";
+import { consInvitado, sumaInvitado } from "../datos/firebase";
 import { getInvitadosNumber } from "../datos/util";
 import monogramaticket from "../img/monolymticket1.png";
 import Transition from "./common/Transition";
 
-export default function Boleto({ invitado }) {
+export default function Boleto({ invitado,id }) 
+{
   const [confirmed, setConfirmed] = useState(false);
   const [assist, setAssist] = useState(false);
 
+  useEffect(()=>{
+    consInvitado(id).then(dato =>{
+      if(dato){
+        setConfirmed(true);
+        setAssist(dato.confirmacion)
+      }
+
+    });
+  },[])
+
   function handleConfirm(e) {
     e.preventDefault();
-
+  
     const name = e.target.id;
 
     setConfirmed(true);
     if (name === "bYes") {
       setAssist(true);
+      sumaInvitado(id,invitado.nombre,true,invitado.boletos, invitado.ninos);
     } else if (name === "bNo") {
       setAssist(false);
+      sumaInvitado(id,invitado.nombre,false,0, 0);
     }
   }
 
@@ -77,11 +92,11 @@ export default function Boleto({ invitado }) {
               <div className="d-grid gap-2 mt-4">
                 {confirmed ? (
                   assist ? (
-                    <div>Te vemos pronto</div>
+                    <div className="text-center" id="acceptmsg"><strong>Gracias por tu confirmación, nos vemos en la boda</strong></div>
                   ) : (
-                    <div>
-                      No va a ser posible acompañarnos <br />
-                      ¿Cambiaste de opinión?
+                    <div className="text-center" id="denymsg">
+                      <strong>No va a ser posible acompañarnos <br />
+                      ¿Cambiaste de opinión?</strong>
                     </div>
                   )
                 ) : (

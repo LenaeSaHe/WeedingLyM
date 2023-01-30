@@ -528,6 +528,15 @@ ul li:nth-child(even) .hidden {
   padding: 20px;
 }
 
+#denymsg
+{
+  color: #b32428;
+}
+#acceptmsg
+{
+  color: #1E8449;
+}
+
 .titleticket {
   font-size: 30px;
   font-family: var(--fuenteCursiva3);

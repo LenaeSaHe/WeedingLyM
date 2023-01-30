@@ -17,7 +17,6 @@ import data from "./datos/invitados.json";
 import Protocolocovid from "./componentes/Protocolocovid";
 import GooglePhotos from "./componentes/GooglePhotos";
 
-
 function App() {
   /* Función = Componente debe llevar un return dentro de la funcion jsx */
   const [invitado, setInvitado] = useState(null);
@@ -62,7 +61,7 @@ function App() {
       {/* Instagram */}
       <GooglePhotos />
       {/* Confirm */}
-      <Footer invitado={invitado} />
+      <Footer invitado={invitado} id={params.id} />
       {/* Protocolo covid*/}
       <Protocolocovid />
     </>
