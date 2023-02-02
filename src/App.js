@@ -16,36 +16,47 @@ import { useParams } from "react-router-dom";
 import data from "./datos/invitados.json";
 import Protocolocovid from "./componentes/Protocolocovid";
 import GooglePhotos from "./componentes/GooglePhotos";
+import { useAppContext } from "./datos/store";
 
 function App() {
   /* Función = Componente debe llevar un return dentro de la funcion jsx */
-  const [invitado, setInvitado] = useState(null);
   const params = useParams();
+  const store = useAppContext();
 
-  useEffect(() => {
+  async function loadInvitadoInfo() {
     if (params.id) {
       console.log(data);
+
+      //Buscamos en los datos locales
       const found = data.find(
         (item) => item.id.toString() === params.id.toString()
       );
       if (found) {
-        setInvitado(found);
+        //si lo encontramos buscamos en firebase
+        if (await store.loadInvitado(params.id, found)) {
+          //Si lo encontró actualizamos las propiedades con las locales
+        } else {
+          //No pasa nada
+        }
       } else {
         throw new Response("Not Found", { status: 404 });
       }
     }
+  }
+  useEffect(() => {
+    loadInvitadoInfo();
   }, []);
 
   return (
     <>
       {/*Backdrop*/}
-      <Backdrop invitado={invitado} />
+      <Backdrop invitado={store.invitado} />
       {/*header*/}
       <Header />
       {/*Lovequote*/}
       <Lovequote />
       {/*Save the date*/}
-      <Savethedate invitado={invitado} />
+      <Savethedate invitado={store.invitado} />
       {/*countdown*/}
       <Countdown />
       {/* Family */}
@@ -61,7 +72,7 @@ function App() {
       {/* Instagram */}
       <GooglePhotos />
       {/* Confirm */}
-      <Footer invitado={invitado} id={params.id} />
+      <Footer id={params.id} />
       {/* Protocolo covid*/}
       <Protocolocovid />
     </>

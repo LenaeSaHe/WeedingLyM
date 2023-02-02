@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./componentes/ErrorPage";
+import InvitadoState from "./datos/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -22,7 +23,9 @@ const router = createBrowserRouter([
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <InvitadoState>
+      <RouterProvider router={router} />
+    </InvitadoState>
   </React.StrictMode>
 );
 

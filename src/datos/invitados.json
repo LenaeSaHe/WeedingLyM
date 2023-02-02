@@ -4,6 +4,7 @@
     "nombre": "Maria Elena",
     "nickname": "Mary",
     "boletos": 2,
+    "maxBoletos": 2,
     "ninos": 1
   },
   {
@@ -11,6 +12,7 @@
     "nombre": "Julio César",
     "nickname": "Julio",
     "boletos": 2,
+    "maxBoletos": 2,
     "ninos": 0
   },
   {
@@ -18,6 +20,7 @@
     "nombre": "Omar Pozos",
     "nickname": "Pozos",
     "boletos": 2,
+    "maxBoletos": 2,
     "ninos": 1,
     "invitados": [
       {
@@ -33,6 +36,7 @@
     "nickname": "Pepito",
     "nombre": "Pedro",
     "boletos": 3,
+    "maxBoletos": 3,
     "ninos": 3,
     "invitados": [
       {
@@ -49,6 +53,25 @@
       },
       {
         "nombre": "Tony"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "nickname": "Ale",
+    "nombre": "Alejandra",
+    "boletos": 4,
+    "maxBoletos": 4,
+    "ninos": 0,
+    "invitados": [
+      {
+        "nombre": "Marcos"
+      },
+      {
+        "nombre": "Ari"
+      },
+      {
+        "nombre": "Bee"
       }
     ]
   }

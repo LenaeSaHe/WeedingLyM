@@ -528,13 +528,16 @@ ul li:nth-child(even) .hidden {
   padding: 20px;
 }
 
-#denymsg
-{
+#denymsg {
   color: #b32428;
 }
-#acceptmsg
-{
-  color: #1E8449;
+#acceptmsg {
+  color: #1e8449;
+}
+
+.ticketsContainer {
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .titleticket {
@@ -585,6 +588,7 @@ ul li:nth-child(even) .hidden {
   text-align: center;
 }
 .ticketContainer .ticketRSVP {
+  width: 370px;
   padding: 16px;
   border-left: dashed 2px #ccc;
 }
@@ -754,14 +758,13 @@ ul li:nth-child(even) .hidden {
     width: 100%;
   }
   .ticketContainer .ticketRSVP {
+    width: 100%;
     border: none;
     border-top: dashed 2px #ccc;
   }
-  #heartsave
-  {
+  #heartsave {
     width: 170px;
   }
-
 }
 
 @media screen and (max-width: 900px) {
