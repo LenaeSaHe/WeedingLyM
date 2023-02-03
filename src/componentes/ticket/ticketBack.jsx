@@ -50,10 +50,6 @@ export default function TicketBack({ invitado, onCancel, onChangeTickets }) {
           valueLabelDisplay="on"
         />
       </div>
-
-      <div className="py-3">
-        <input type="checkbox" name="ninos" id="" /> Iré sin niños
-      </div>
       <div className="d-grid gap-2">
         <button
           id="bYes"

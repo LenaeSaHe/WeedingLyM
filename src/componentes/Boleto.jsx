@@ -8,7 +8,7 @@ export default function Boleto({ id }) {
         <div className="ticketDate">Sabado 04 de noviembre de 2023</div>
         <TicketContent id={id} />
       </div>
-      <div className="text-center">
+      <div className="text-center p-3">
         <small>
           Niños menores de 7 años no cuentan como boleto. Solo niños entre 3 y 7
           años tendrán menu infantil

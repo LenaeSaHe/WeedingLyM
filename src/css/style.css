@@ -340,7 +340,7 @@ h2 {
   background-color: blue;
   background-image: url(../img/finca.jpeg);
   background-size: cover;
-  padding: 5rem;
+  padding: 20px;
   background-size: cover;
   font-family: sans-serif;
   background-position: center;
@@ -356,7 +356,7 @@ h2 {
   text-decoration: none;
 }
 .cardLoc {
-  width: 20rem;
+  width: 500px;
   height: auto;
   padding: 2rem;
   border-radius: 1rem;
@@ -625,6 +625,10 @@ ul li:nth-child(even) .hidden {
   opacity: 0;
 }
 
+.googleImage {
+  width: 400px;
+}
+
 /* Size of screen */
 @media screen and (max-width: 500px) {
   #countdown {
@@ -689,8 +693,13 @@ ul li:nth-child(even) .hidden {
     text-shadow: 0 0 20px white, 0 0 20px white;
     color: black;
     box-sizing: border-box;
-    height: 80vh;
+    height: auto;
+    min-height: 400px;
     width: 80%;
+    padding: 20px;
+  }
+  .txtParagraph.w-50 {
+    width: 100% !important;
   }
 
   .photofam {
@@ -750,11 +759,12 @@ ul li:nth-child(even) .hidden {
     border-bottom: dotted 3px #ccc;
   }
   .ticketContainer .ticketContent {
+    padding: 16px;
     flex-direction: column;
   }
 
   .ticketContainer .ticketInfo {
-    height: 330px;
+    min-height: 330px;
     width: 100%;
   }
   .ticketContainer .ticketRSVP {
@@ -764,6 +774,14 @@ ul li:nth-child(even) .hidden {
   }
   #heartsave {
     width: 170px;
+  }
+
+  .cardLoc {
+    width: 90%;
+  }
+
+  .googleImage {
+    width: 80%;
   }
 }
 
