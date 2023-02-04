@@ -279,13 +279,13 @@ section {
 
 /* __________ 4ta sección Countdown __________ */
 #countdown {
-  background-color: #4a84cd;
+  background-color: #75b8df;
   background-image: url(../img/fondo-salon.png);
   padding: 100px 0;
   background-repeat: repeat-x;
-  background-position: 0 50vh;
-  height: 100vh;
-  background-size: cover;
+  background-position: 0 bottom;
+  height: 130vh;
+  background-size: contain;
 }
 .countdownNumber {
   display: inline-flex;
@@ -632,8 +632,9 @@ ul li:nth-child(even) .hidden {
 /* Size of screen */
 @media screen and (max-width: 500px) {
   #countdown {
-    background-position: center bottom;
+    background-position: bottom center;
     background-size: contain;
+    height: 100vh;
   }
 
   .countdownNumber {
