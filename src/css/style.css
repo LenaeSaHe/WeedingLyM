@@ -116,6 +116,18 @@ section {
   opacity: 1;
 }
 
+.fadeOut {
+  animation: fadeOut 1s ease forwards;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 /*backdrop*/
 #backdrop {
   background-color: rgba(255, 255, 255, 1);
@@ -127,6 +139,8 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.backdropAnimation {
   animation: frontMonoGif var(--introDuracion) ease var(--introDelay);
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -166,8 +180,11 @@ section {
   font-size: 32px;
 }
 
-.fadeIn {
+.hidden {
   opacity: 0;
+}
+
+.fadeIn {
   animation: fadeIn 1s ease-in-out forwards;
 }
 

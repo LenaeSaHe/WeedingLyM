@@ -22,11 +22,9 @@ const router = createBrowserRouter([
 ]);
 
 root.render(
-  <React.StrictMode>
-    <InvitadoState>
-      <RouterProvider router={router} />
-    </InvitadoState>
-  </React.StrictMode>
+  <InvitadoState>
+    <RouterProvider router={router} />
+  </InvitadoState>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,5 +1,5 @@
 import "./css/style.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 
 import Header from "./componentes/Header";
 import Lovequote from "./componentes/Lovequote";
