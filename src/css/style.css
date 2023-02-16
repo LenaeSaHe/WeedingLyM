@@ -66,6 +66,7 @@ section {
 }
 .fontSize90 {
   font-size: 90px;
+  line-height: 1;
 }
 .fontSize30 {
   font-size: 30px;
@@ -246,7 +247,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-attachment: fixed;
 }
 header .content {
   font-family: var(--fuenteTitulo2);
