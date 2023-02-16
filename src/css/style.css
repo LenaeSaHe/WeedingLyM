@@ -64,8 +64,20 @@ section {
 .fontSize60 {
   font-size: 60px;
 }
+.fontSize90 {
+  font-size: 90px;
+}
 .fontSize30 {
   font-size: 30px;
+}
+.fontSize45 {
+  font-size: 45px;
+}
+.font-bold {
+  font-weight: bold;
+}
+.text-shadow {
+  text-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
 }
 .txtTitles3 {
   background: -webkit-linear-gradient(var(--colorBlanco), var(--colorChamp));
@@ -221,8 +233,27 @@ section {
 }
 
 /* __________ 1ra sección Head __________ */
+header {
+  background-image: url(../img/mainLyM3.jpg);
+  background-position: center center;
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+  left: 0;
+  overflow: hidden;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .content {
+  position: relative;
+  color: white;
+  font-family: var(--fuenteTitulo2);
+  text-align: center;
+}
 #mainLyM {
-  /*background-image: url(../img/mainLyM4.jpg);*/
   height: 90vh;
   background-size: cover;
   background-position: center center;
