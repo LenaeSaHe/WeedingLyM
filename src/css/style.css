@@ -246,10 +246,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
 }
 header .content {
-  position: relative;
-  color: white;
   font-family: var(--fuenteTitulo2);
   text-align: center;
 }
