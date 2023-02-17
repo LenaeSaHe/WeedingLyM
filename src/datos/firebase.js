@@ -7,6 +7,8 @@ import { getFirestore } from "firebase/firestore";
 
 import { doc, setDoc, getDoc } from "firebase/firestore";
 
+import { getStorage, ref, uploadBytes } from "firebase/storage";
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_APIKEY,
@@ -20,6 +22,9 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+
+// Initialize Cloud Storage and get a reference to the service
+const storage = getStorage(app);
 
 export async function sumaInvitado(id, nom, confirmacion, boletos, ninos) {
   await setDoc(doc(db, "invitados", id), {
@@ -42,4 +47,19 @@ export async function consInvitado(id) {
     console.log("No such document!");
     return null;
   }
+}
+
+export async function submitPhoto(file)
+{
+  // Get a reference to the storage service, which is used to create references in your storage bucket
+  const storage = getStorage();
+
+  // Create a storage reference from our storage service
+  const storageRef = ref(storage,"test");
+
+  // 'file' comes from the Blob or File API
+  uploadBytes(storageRef, file).then((snapshot) => 
+  {
+    console.log('Uploaded a blob or file!');
+  });
 }

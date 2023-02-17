@@ -1,7 +1,22 @@
+import { uuidv4 } from "@firebase/util";
+import { submitPhoto } from "../datos/firebase";
 import googlephotosico from "../img/google1.png";
 
 import Title from "./common/Title";
-function GooglePhotos() {
+
+
+
+function GooglePhotos({
+  invitado
+}) 
+{
+  function handleChange(e)
+  {
+    const fileName = invitado.nickname+"-"+crypto.randomUUID();
+    console.log(e.target.files);
+    submitPhoto(e.target.files[0]);  
+  }
+
   return (
     <section className="contB">
       <div className="container">
@@ -21,7 +36,9 @@ function GooglePhotos() {
               </a>
             </p>
           </div>
-          <div className="col-12" id="instagram"></div>
+          <div className="col-12" id="instagram">
+            <input type="file" onChange={handleChange}/>
+          </div>
         </div>
       </div>
     </section>

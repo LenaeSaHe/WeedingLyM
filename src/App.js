@@ -70,7 +70,7 @@ function App() {
       {/* Hotel */}
       <Hotel />
       {/* Instagram */}
-      <GooglePhotos />
+      <GooglePhotos invitado={store.invitado} />
       {/* Confirm */}
       <Footer id={params.id} />
       {/* Protocolo covid*/}
