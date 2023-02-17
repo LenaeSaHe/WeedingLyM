@@ -52,7 +52,7 @@ function App() {
       {/*Backdrop*/}
       <Backdrop invitado={store.invitado} />
       {/*header*/}
-      <Header />
+      <Header invitado={store.invitado} />
       {/*Lovequote*/}
       <Lovequote />
       {/*Save the date*/}
