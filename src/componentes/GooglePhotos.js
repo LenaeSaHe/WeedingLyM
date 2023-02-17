@@ -1,20 +1,30 @@
 import { uuidv4 } from "@firebase/util";
-import { submitPhoto } from "../datos/firebase";
+import { useState } from "react";
+import { useEffect } from "react";
+import { getPhotos, submitPhoto } from "../datos/firebase";
 import googlephotosico from "../img/google1.png";
 
 import Title from "./common/Title";
 
+function GooglePhotos({ invitado }) {
+  const [photos, setPhotos] = useState([]);
 
+  useEffect(() => {
+    loadPhotos();
+  }, []);
 
-function GooglePhotos({
-  invitado
-}) 
-{
-  function handleChange(e)
-  {
-    const fileName = invitado.nickname+"-"+crypto.randomUUID();
+  async function loadPhotos() {
+    const data = await getPhotos();
+    if (data && data.length > 0) {
+      console.log("datos de photos", data);
+      setPhotos([...data]);
+    }
+  }
+
+  function handleChange(e) {
+    const fileName = invitado.nickname + "-" + crypto.randomUUID();
     console.log(e.target.files);
-    submitPhoto(e.target.files[0]);  
+    submitPhoto(e.target.files[0], fileName);
   }
 
   return (
@@ -37,7 +47,16 @@ function GooglePhotos({
             </p>
           </div>
           <div className="col-12" id="instagram">
-            <input type="file" onChange={handleChange}/>
+            <input type="file" onChange={handleChange} />
+          </div>
+
+          <div>
+            {photos.map((photo, index) => (
+              <div key={index}>
+                Subida por {photo.submitedBy}
+                <img src={photo.url} width="200" />
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -7,7 +7,13 @@ import { getFirestore } from "firebase/firestore";
 
 import { doc, setDoc, getDoc } from "firebase/firestore";
 
-import { getStorage, ref, uploadBytes } from "firebase/storage";
+import {
+  getStorage,
+  ref,
+  uploadBytes,
+  listAll,
+  getDownloadURL,
+} from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -49,17 +55,43 @@ export async function consInvitado(id) {
   }
 }
 
-export async function submitPhoto(file)
-{
+export async function submitPhoto(file, filename) {
   // Get a reference to the storage service, which is used to create references in your storage bucket
-  const storage = getStorage();
+  //const storage = getStorage();
 
   // Create a storage reference from our storage service
-  const storageRef = ref(storage,"test");
+  const storageRef = ref(storage, "photos/" + filename);
 
   // 'file' comes from the Blob or File API
-  uploadBytes(storageRef, file).then((snapshot) => 
-  {
-    console.log('Uploaded a blob or file!');
+  uploadBytes(storageRef, file).then((snapshot) => {
+    console.log("Uploaded a blob or file!");
   });
+}
+
+export async function getPhotos() {
+  const storage = getStorage();
+
+  // Create a reference under which you want to list
+  const listRef = ref(storage, "photos/");
+
+  try {
+    // Find all the prefixes and items.
+    const response = await listAll(listRef);
+    const urls = [];
+    response.items.forEach((itemRef) => {
+      // All the items under listRef.
+      console.log(itemRef);
+      urls.push(getDownloadUrl(itemRef.fullPath, itemRef.name));
+    });
+    return await Promise.all(urls);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+async function getDownloadUrl(fullpath, name) {
+  const url = await getDownloadURL(ref(storage, fullpath));
+
+  console.log({ url, submitedBy: name.split("/")[0] });
+  return { url, submitedBy: name.split("-")[0] };
 }
