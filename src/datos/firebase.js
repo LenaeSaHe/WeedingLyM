@@ -63,9 +63,10 @@ export async function submitPhoto(file, filename) {
   const storageRef = ref(storage, "photos/" + filename);
 
   // 'file' comes from the Blob or File API
-  uploadBytes(storageRef, file).then((snapshot) => {
-    console.log("Uploaded a blob or file!");
-  });
+  const res = await uploadBytes(storageRef, file);
+  console.log("Uploaded a blob or file!");
+
+  return res;
 }
 
 export async function getPhotos() {
