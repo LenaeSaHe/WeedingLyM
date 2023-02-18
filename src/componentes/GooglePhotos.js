@@ -4,9 +4,16 @@ import { getPhotos, submitPhoto } from "../datos/firebase";
 import Title from "./common/Title";
 import camera from "../img/camera-2-32.ico";
 import photo from "../img/photo.png";
+import Photo from "./Photo";
+
+const stages = {
+  normal: "Sube tu foto",
+  loading: "Subiendo foto...",
+};
 
 function GooglePhotos({ invitado }) {
   const [photos, setPhotos] = useState([]);
+  const [submitStatus, setSubmitStatus] = useState(stages["normal"]);
   const ref = useRef();
   useEffect(() => {
     loadPhotos();
@@ -20,40 +27,45 @@ function GooglePhotos({ invitado }) {
     }
   }
 
-  function handleChange(e) 
-  {
+  function handleChange(e) {
+    setSubmitStatus(stages["loading"]);
     const fileName = invitado.nickname + "-" + crypto.randomUUID();
     console.log(e.target.files);
-    submitPhoto(e.target.files[0], fileName);
+    submitPhoto(e.target.files[0], fileName).then(() => {
+      setSubmitStatus(stages["normal"]);
+      loadPhotos();
+    });
   }
-  function handleClick()
-  {
-    if(ref.current)
-    {
+  function handleClick() {
+    if (ref.current) {
       ref.current.click();
     }
   }
   return (
-    <section className="contB">
-      <div className="container">
-        <div className="row content">
-          <div className="col-12 back">
-            <Title>Compartenos tus momentos</Title>
-          </div>
-          <div id="sharephotos">
-              <button class="btn py-3" onClick={handleClick} id="btnCam"><img src={photo}/></button>
-          </div>          
-          <button class="btn btnGold py-2" onClick={handleClick} id="btnCam"><img src={camera}/>Inserta una foto</button> 
-            <input type="file" onChange={handleChange} ref={ref}  id="hidebutton"/>
-          <div>
-            {photos.map((photo, index) => (
-              <div key={index}>
-                Subida por {photo.submitedBy}
-                <img src={photo.url} width="200" />
-              </div>
-            ))}
-          </div>
+    <section className="photosSection">
+      <div className="photosContainer">
+        <div className="photosWrapper">
+          {photos.map((photo, index) => (
+            <>
+              <Photo photo={photo} key={index} />
+            </>
+          ))}
         </div>
+      </div>
+      <div className="formPhotos">
+        <div className="">
+          <Title white>Compartenos tus momentos</Title>
+        </div>
+        <div id="sharephotos">
+          <button class="btn py-3" onClick={handleClick} id="btnCam">
+            <img src={photo} />
+          </button>
+        </div>
+        <button class="btn btnGold py-2" onClick={handleClick} id="btnCam">
+          <img src={camera} />
+          {submitStatus}
+        </button>
+        <input type="file" onChange={handleChange} ref={ref} id="hidebutton" />
       </div>
     </section>
   );

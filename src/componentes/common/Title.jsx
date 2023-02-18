@@ -8,7 +8,7 @@ let options = {
   threshold: 0.5,
 };
 
-export default function Title({ children }) {
+export default function Title({ children, white }) {
   const ref = useRef(null);
   const [show, setShow] = useState(false);
   const callbackFunc = (entries) => {
@@ -38,7 +38,8 @@ export default function Title({ children }) {
           "card-title",
           "text-center",
           "txtTitles",
-          show ? "showTitle" : ""
+          show ? "showTitle" : "",
+          white ? "text-white" : "text-black"
         )}
       >
         <div>{children}</div>
