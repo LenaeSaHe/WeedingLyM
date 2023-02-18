@@ -58,7 +58,7 @@ function Backdrop({ invitado }) {
       <div className="backdropContainer">
         <div>
           <span className={classNames("fadeIn delay-5", "txtTitles")}>
-            ¡Hola, {invitado ? invitado.nombre.split(" ")[0] : ""}!
+            ¡Hola, {invitado ? invitado.nickname.split(" ")[0] : ""}!
           </span>
         </div>
         <img className="logo mt-3" src={logo} />
