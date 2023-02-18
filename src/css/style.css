@@ -47,6 +47,7 @@ section {
   font-size: 60px;
   font-family: var(--fuenteTitulo2);
   font-style: italic;
+  line-height: 1;
   color: #000000;
 }
 .txtParagraph {
@@ -121,8 +122,17 @@ section {
 
 .sectionTitle {
   opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   transform: translateY(-30px);
   transition: all 0.5s ease-in-out;
+}
+.ornamentTitle {
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 .showTitle {
   transform: translateY(0);
@@ -247,10 +257,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-header .content {
   font-family: var(--fuenteTitulo2);
   text-align: center;
+  flex-direction: column;
+}
+header .content {
 }
 #mainLyM {
   height: 90vh;
@@ -268,6 +279,18 @@ header .content {
 .imgslide {
   object-fit: cover;
   height: 100vh;
+}
+
+.headerSeparator {
+  text-align: center;
+  background-color: rgb(158, 87, 12);
+  height: 50px;
+}
+.headerSeparator img {
+  position: relative;
+  top: -70px;
+  width: 400px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0.5));
 }
 
 /* __________ 2da sección Love card  __________ */

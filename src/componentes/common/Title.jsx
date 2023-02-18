@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import classNames from "classnames";
+import ornament from "../../img/ornamenta-titulo.gif";
 
 let options = {
   root: null,
@@ -29,17 +30,22 @@ export default function Title({ children }) {
     };
   }, []);
   return (
-    <h3
-      ref={ref}
-      className={classNames(
-        "sectionTitle",
-        "card-title",
-        "text-center",
-        "txtTitles",
-        show ? "showTitle" : ""
-      )}
-    >
-      {children}
-    </h3>
+    <>
+      <h3
+        ref={ref}
+        className={classNames(
+          "sectionTitle",
+          "card-title",
+          "text-center",
+          "txtTitles",
+          show ? "showTitle" : ""
+        )}
+      >
+        <div>{children}</div>
+        <div className="ornamentTitle">
+          <img src={ornament} width="300" />
+        </div>
+      </h3>
+    </>
   );
 }
