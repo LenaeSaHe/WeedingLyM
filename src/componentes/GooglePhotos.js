@@ -9,6 +9,8 @@ import Photo from "./Photo";
 const stages = {
   normal: "Sube tu foto",
   loading: "Subiendo foto...",
+  succcess: "Foto guardada. Sube más fotos!",
+  error: "Erro al guardar la foto, intenta más tarde",
 };
 
 function GooglePhotos({ invitado }) {
@@ -31,10 +33,14 @@ function GooglePhotos({ invitado }) {
     setSubmitStatus(stages["loading"]);
     const fileName = invitado.nickname + "-" + crypto.randomUUID();
     console.log(e.target.files);
-    submitPhoto(e.target.files[0], fileName).then(() => {
-      setSubmitStatus(stages["normal"]);
-      loadPhotos();
-    });
+    submitPhoto(e.target.files[0], fileName)
+      .then(() => {
+        setSubmitStatus(stages["success"]);
+        loadPhotos();
+      })
+      .error(() => {
+        setSubmitStatus(stages["error"]);
+      });
   }
   function handleClick() {
     if (ref.current) {
