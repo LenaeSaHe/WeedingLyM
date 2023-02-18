@@ -559,17 +559,31 @@ ul li:nth-child(even) .hidden {
 }
 
 /* _________ 10ma lodgement _________ */
+#hidebutton
+{
+  display: none;
+}
+#btnCam
+{
+  display: flex;
+  align-items:center;
+  gap: 8px;
+}
+.btnGold
+{
+  background-color: var(--colorChamp);
 
-#instagram {
-  padding: 10rem;
-  margin: 0;
-  /*background-image: url(../img/instagram.png);*/
+}
+
+#sharephotos 
+{
   background-size: cover;
   font-family: sans-serif;
   background-position: center;
 }
 
-/* pie */
+
+/* ________ ticket ___________________ */
 .content .bottom {
   color: #000000;
   padding: 20px;

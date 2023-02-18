@@ -1,14 +1,13 @@
-import { uuidv4 } from "@firebase/util";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useEffect } from "react";
 import { getPhotos, submitPhoto } from "../datos/firebase";
-import googlephotosico from "../img/google1.png";
-
 import Title from "./common/Title";
+import camera from "../img/camera-2-32.ico";
+import photo from "../img/photo.png";
 
 function GooglePhotos({ invitado }) {
   const [photos, setPhotos] = useState([]);
-
+  const ref = useRef();
   useEffect(() => {
     loadPhotos();
   }, []);
@@ -21,35 +20,31 @@ function GooglePhotos({ invitado }) {
     }
   }
 
-  function handleChange(e) {
+  function handleChange(e) 
+  {
     const fileName = invitado.nickname + "-" + crypto.randomUUID();
     console.log(e.target.files);
     submitPhoto(e.target.files[0], fileName);
   }
-
+  function handleClick()
+  {
+    if(ref.current)
+    {
+      ref.current.click();
+    }
+  }
   return (
     <section className="contB">
       <div className="container">
         <div className="row content">
           <div className="col-12 back">
             <Title>Compartenos tus momentos</Title>
-            <p className="text-center">
-              <a
-                href="https://photos.app.goo.gl/xr62pLeJWLixkXhw7"
-                target="_blank"
-              >
-                <img
-                  className="googleImage"
-                  src={googlephotosico}
-                  width="400"
-                />
-              </a>
-            </p>
           </div>
-          <div className="col-12" id="instagram">
-            <input type="file" onChange={handleChange} />
-          </div>
-
+          <div id="sharephotos">
+              <button class="btn py-3" onClick={handleClick} id="btnCam"><img src={photo}/></button>
+          </div>          
+          <button class="btn btnGold py-2" onClick={handleClick} id="btnCam"><img src={camera}/>Inserta una foto</button> 
+            <input type="file" onChange={handleChange} ref={ref}  id="hidebutton"/>
           <div>
             {photos.map((photo, index) => (
               <div key={index}>
