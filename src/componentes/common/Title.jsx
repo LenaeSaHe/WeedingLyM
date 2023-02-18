@@ -8,7 +8,7 @@ let options = {
   threshold: 0.5,
 };
 
-export default function Title({ children, white }) {
+export default function Title({ children, white, separator = true }) {
   const ref = useRef(null);
   const [show, setShow] = useState(false);
   const callbackFunc = (entries) => {
@@ -29,6 +29,7 @@ export default function Title({ children, white }) {
       observer.unobserve(ref.current);
     };
   }, []);
+
   return (
     <>
       <h3
@@ -43,10 +44,15 @@ export default function Title({ children, white }) {
         )}
       >
         <div>{children}</div>
-        <div className="ornamentTitle">
-          <img src={ornament} width="300" />
-        </div>
+        {separator ? <Separator /> : null}
       </h3>
     </>
+  );
+}
+function Separator() {
+  return (
+    <div className="ornamentTitle">
+      <img src={ornament} width="300" />
+    </div>
   );
 }

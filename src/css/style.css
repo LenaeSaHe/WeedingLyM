@@ -268,8 +268,7 @@ header {
   text-align: center;
   flex-direction: column;
 }
-header .content {
-}
+
 #mainLyM {
   height: 90vh;
   background-size: cover;
@@ -345,13 +344,48 @@ header .content {
   align-items: center;
   font-size: 1rem;
   color: black;
-  background: rgba(255, 255, 255, 0.25);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1.5px solid rgba(209, 213, 219, 0.3);
+  background-image: url(../img/leaf.png), url(../img/leaf.png);
+  background-size: 300px, 300px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 10px 10px, bottom right;
 }
 .hrSave {
-  font-size: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-family: var(--fuenteTitulo2);
+}
+
+.hrSaveLeft,
+.hrSaveRight {
+  padding: 10px 0;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  width: 160px;
+}
+.hrSaveCenter {
+  padding: 10px 0;
+  width: 120px;
+  text-align: center;
+}
+.hrSaveSmall {
+  font-size: 28px;
+  font-weight: bold;
+}
+.hrSaveBig {
+  font-weight: bold;
+  font-size: 48px !important;
+}
+
+.googleButton {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: var(--fuenteTitulo2);
 }
 
 /* __________ 4ta sección Countdown __________ */
@@ -828,16 +862,31 @@ ul li:nth-child(even) .hidden {
   #secDate {
     padding: 0 0 0 0px !important;
   }
+
   #contDate {
-    background-color: rgba(255, 255, 255, 0.5);
-    text-shadow: 0 0 20px white, 0 0 20px white;
+    background-color: rgba(255, 255, 255, 0.6);
     color: black;
     box-sizing: border-box;
     height: auto;
     min-height: 400px;
-    width: 80%;
+    width: 90%;
     padding: 20px;
+    height: 700px !important;
   }
+  .cristalSave {
+    border-radius: 10px;
+    background-size: 200px, 200px;
+    height: 700px !important;
+  }
+  .hrSave {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .googleButton {
+    font-size: 12px;
+  }
+
   .txtParagraph.w-50 {
     width: 100% !important;
   }
@@ -913,6 +962,7 @@ ul li:nth-child(even) .hidden {
     border-top: dashed 2px #ccc;
   }
   #heartsave {
+    padding: 10px 0;
     width: 170px;
   }
 
