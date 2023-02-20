@@ -5,11 +5,47 @@ import Title from "./common/Title";
 import heartsave from "../img/imgsave.png";
 import argollas from "../img/argollas.png";
 import classNames from "classnames";
+import { useRef, useState, useEffect } from "react";
+
+let options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5,
+};
 
 function Savethedate({ invitado }) {
+  const [show, setShow] = useState(false);
+  const ref = useRef(null);
+
+  const callbackFunc = (entries) => {
+    entries.forEach((entry) => {
+      setShow(entry.isIntersecting);
+      if (entry.isIntersecting !== show) {
+      }
+    });
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(callbackFunc, options);
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      observer.unobserve(ref.current);
+    };
+  }, []);
   return (
-    <section className="contB" id="secDate">
-      <div className="cristalSave" id="contDate">
+    <section
+      className="contB"
+      id="secDate"
+      ref={ref}
+      style={{ overflow: "hidden" }}
+    >
+      <div
+        className={classNames("cristalSave", show ? "showSaveDate" : null)}
+        id="contDate"
+      >
         <Title separator={false}>Save the date</Title>
         <img src={heartsave} width="380" id="heartsave" />
         <Paragraph short>

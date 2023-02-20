@@ -31,16 +31,20 @@ function GooglePhotos({ invitado }) {
 
   function handleChange(e) {
     setSubmitStatus(stages["loading"]);
-    const fileName = invitado.nickname + "-" + crypto.randomUUID();
-    console.log(e.target.files);
-    submitPhoto(e.target.files[0], fileName)
-      .then(() => {
-        setSubmitStatus(stages["success"]);
-        loadPhotos();
-      })
-      .error(() => {
-        setSubmitStatus(stages["error"]);
-      });
+    try {
+      const fileName = invitado.nickname + "-" + crypto.randomUUID();
+      console.log(e.target.files);
+      submitPhoto(e.target.files[0], fileName)
+        .then(() => {
+          setSubmitStatus(stages["success"]);
+          loadPhotos();
+        })
+        .error(() => {
+          setSubmitStatus(stages["error"]);
+        });
+    } catch (error) {
+      setSubmitStatus(stages["error"]);
+    }
   }
   function handleClick() {
     if (ref.current) {
@@ -52,9 +56,7 @@ function GooglePhotos({ invitado }) {
       <div className="photosContainer">
         <div className="photosWrapper">
           {photos.map((photo, index) => (
-            <>
-              <Photo photo={photo} key={index} />
-            </>
+            <Photo photo={photo} key={index} />
           ))}
         </div>
       </div>
@@ -63,11 +65,11 @@ function GooglePhotos({ invitado }) {
           <Title white>Compartenos tus momentos</Title>
         </div>
         <div id="sharephotos">
-          <button class="btn py-3" onClick={handleClick} id="btnCam">
+          <button className="btn py-3" onClick={handleClick} id="btnCam">
             <img src={photo} />
           </button>
         </div>
-        <button class="btn btnGold py-2" onClick={handleClick} id="btnCam">
+        <button className="btn btnGold py-2" onClick={handleClick} id="btnCam">
           <img src={camera} />
           {submitStatus}
         </button>

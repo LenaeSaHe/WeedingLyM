@@ -39,20 +39,12 @@ function Countdown() {
 
   return (
     <section className="contA" id="countdown">
-      <div className="container">
-        <div className="content row">
-          <div className="col-12">
-            <Title>Ya falta muy poco</Title>
-          </div>
-          <div className="col-12">
-            <div className="text-center">
-              <CountdownNumber text="Días" value={days} />
-              <CountdownNumber text="Horas" value={hours} />
-              <CountdownNumber text="Minutos" value={minutes} />
-              <CountdownNumber text="Segundos" value={seconds} />
-            </div>
-          </div>
-        </div>
+      <div className="countdownTitle">CUENTA REGRESIVA PARA EL EVENTO</div>
+      <div className="text-center">
+        <CountdownNumber text="Días" value={days} />
+        <CountdownNumber text="Horas" value={hours} />
+        <CountdownNumber text="Minutos" value={minutes} />
+        <CountdownNumber text="Segundos" value={seconds} />
       </div>
     </section>
   );

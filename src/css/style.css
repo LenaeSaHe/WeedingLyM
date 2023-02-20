@@ -333,11 +333,13 @@ header {
 }
 #contDate {
   height: 100vh;
+  max-height: 100vh;
   display: flex;
   align-items: center;
   background-color: var(--colorBlanco);
   flex-direction: column;
   justify-content: center;
+  overflow: hidden !important;
 }
 .cristalSave {
   display: flex;
@@ -352,6 +354,7 @@ header {
   background-size: 300px, 300px;
   background-repeat: no-repeat, no-repeat;
   background-position: 10px 10px, bottom right;
+  transition: all 1s ease;
 }
 .hrSave {
   display: flex;
@@ -390,32 +393,36 @@ header {
 
 /* __________ 4ta sección Countdown __________ */
 #countdown {
-  background-color: #75b8df;
-  background-image: url(../img/fondo-salon.png);
-  padding: 100px 0;
-  background-repeat: repeat-x;
-  background-position: 0 bottom;
-  height: 130vh;
-  background-size: contain;
+  padding: 50px 0;
+}
+
+.countdownTitle {
+  text-align: center;
+  opacity: 0.7;
+  font-size: 28px;
+  font-family: var(--fuenteTitulo2);
+  padding: 20px;
 }
 .countdownNumber {
   display: inline-flex;
   flex-direction: column;
-  padding: 80px 0;
+  padding: 20px 0;
   width: 200px;
   justify-content: center;
 }
 .countdownNumber .countdownBadge {
-  color: var(--colorChamp);
-  font-family: "Pacifico";
+  color: var(--colorNegro);
+  font-family: var(--fuenteTitulo2);
   font-size: 70px;
   font-weight: bold;
 }
 .countdownNumber .countdownText {
-  color: white;
+  color: var(--colorNegro);
   text-align: center;
-  font-family: var(--fuenteParrafo);
+  font-family: var(--fuenteTitulo2);
   font-size: 25px;
+  opacity: 0.5;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);
 }
 h2 {
   background: -webkit-linear-gradient(var(--colorBlanco), var(--colorChamp));
@@ -805,9 +812,6 @@ ul li:nth-child(even) .hidden {
 /* Size of screen */
 @media screen and (max-width: 500px) {
   #countdown {
-    background-position: bottom center;
-    background-size: contain;
-    height: 100vh;
   }
 
   .countdownNumber {
@@ -877,7 +881,12 @@ ul li:nth-child(even) .hidden {
     border-radius: 10px;
     background-size: 200px, 200px;
     height: 700px !important;
+    transform: translateY(100vh);
   }
+  .showSaveDate {
+    transform: translateY(0vh);
+  }
+
   .hrSave {
     font-size: 24px;
     width: 100%;
