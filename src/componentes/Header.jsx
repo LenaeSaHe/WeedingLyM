@@ -10,15 +10,13 @@ function Header({ invitado }) {
     <>
       <header>
         <div className="background">
-          <div className="content">
-            <div className="fontSize45 text-shadow">¡Nos casamos!</div>
-            <div className="fontSize90 font-bold text-shadow front">
-              Lena & Marcos
-            </div>
-            <div className="fontSize30 text-shadow fadeIn back ">
-              {invitado?.nickname},<br />
-              te invitamos a formar parte de este momento
-            </div>
+          <div className="fontSize45 text-shadow fadeIn">¡Nos casamos!</div>
+          <div className="fontSize90 font-bold text-shadow fadeIn gradient">
+            Lena & Marcos
+          </div>
+          <div className="fontSize30 text-shadow fadeIn">
+            {invitado?.nickname}, te invitamos a formar parte de este momento
+            tan importante para nosotros
           </div>
         </div>
       </header>

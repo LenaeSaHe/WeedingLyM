@@ -99,9 +99,6 @@ section {
   filter: drop-shadow(0 8px 2px rgba(11, 11, 110, 0.3));
 }
 .txtText /* Nombre*/ {
-  font-size: 40px;
-  font-family: "Niconne", cursive;
-  color: #000000;
 }
 .widthLovequote {
   width: 50%;
@@ -252,21 +249,55 @@ section {
 
 /* __________ 1ra sección Head __________ */
 header {
-  background-image: url(../img/mainLyM3.jpg);
+  position: relative;
+  background: url(../img/mainLyM.jpg);
   background-position: center center;
   min-height: 100vh;
   max-height: 100vh;
   width: 100%;
   left: 0;
   overflow: hidden;
+  background-size: 100%;
   background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   font-family: var(--fuenteTitulo2);
   text-align: center;
   flex-direction: column;
+  box-sizing: border-box;
+  padding-bottom: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    0deg,
+    rgb(96, 64, 36) 0%,
+    rgba(255, 255, 255, 0) 75%
+  );
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.gradient {
+  position: relative;
+
+  color: #ffc107;
+  background-image: -webkit-linear-gradient(135deg, #ffc107 5%, #ffe500 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
 }
 
 #mainLyM {
@@ -536,13 +567,17 @@ ul {
 
 #timeline {
   overflow-x: hidden;
+  background-image: url(../img/flores-03.jpg), url(../img/flores-02.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 150px, center bottom;
+  background-size: 400px, 400px;
 }
 
 #timeline ul li {
   position: relative;
   list-style-type: none;
-  width: 6px;
-  background-color: #000000;
+  width: 3px;
+  background-color: #6e3d10;
   margin: 0 auto;
   padding-top: 50px;
 }
@@ -551,7 +586,7 @@ ul {
 }
 
 #timeline ul li::after {
-  background: #000000;
+  background: #6e3d10;
   content: "";
   width: 25px;
   height: 25px;
@@ -574,19 +609,25 @@ ul {
   min-height: 150px;
   top: -25px;
 }
+#timeline .eventContainer .eventInfo {
+  font-family: var(--fuenteTitulo2);
+  color: #000000;
+  text-transform: uppercase;
+}
 #timeline .eventContainer .eventInfo time {
   padding-left: 20px;
+  font-family: inherit;
 }
 #timeline .eventContainer .icon {
   margin-right: 20px;
   margin-left: 20px;
 }
 #timeline .eventContainer h3 {
-  font-size: 48px;
-  border-bottom: dotted 2px #6b5d0f;
+  font-size: 38px;
+  border-bottom: dotted 3px #6e3d10;
   width: 100%;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 #timeline .eventContainer time {
   font-size: 24px;
@@ -863,6 +904,10 @@ ul li:nth-child(even) .hidden {
   .widthLovequote {
     width: 100%;
   }
+
+  header {
+    background-size: cover;
+  }
   #secDate {
     padding: 0 0 0 0px !important;
   }
@@ -1003,6 +1048,16 @@ ul li:nth-child(even) .hidden {
     object-fit: cover;
     height: 150px;
     width: auto;
+  }
+
+  .fontSize90 {
+    font-size: 65px;
+  }
+  .fontSize45 {
+    font-size: 33px;
+  }
+  .fontSize30 {
+    font-size: 20px;
   }
 }
 
