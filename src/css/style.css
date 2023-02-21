@@ -472,11 +472,52 @@ h2 {
 }
 
 /* __________ 5ta sección Family __________ */
+.familyContainer {
+  --family-bg-size: 700px;
+  background-image: url(../img/fondo-acuarela.png),
+    url(../img/fondo-acuarela-2.png);
+  background-size: var(--family-bg-size), var(--family-bg-size);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right top, left bottom;
+}
 .photofam {
-  border-radius: 50%;
   max-width: 350px;
+  height: 350px;
   min-width: 200px;
   width: 100%;
+}
+
+.famNames {
+  font-family: var(--fuenteTitulo2);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.famNames,
+.famPhotos {
+  transform: scale(2);
+  filter: blur(20px);
+  opacity: 0;
+
+  transition: all 0.4s ease-out;
+}
+.photoPapasMarcos {
+  background-image: url(../img/circulo-flores.png), url(../img/papas.png);
+  background-size: contain, 210px 210px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center, center;
+}
+.photoPapasLena {
+  background-image: url(../img/circulo-flores.png), url(../img/papas.png);
+  background-size: contain, 210px 210px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center, center;
+}
+
+.showFam {
+  transform: scale(1);
+  filter: blur(0);
+  opacity: 1;
 }
 
 /* _________ 6ta sección Location _________ */
