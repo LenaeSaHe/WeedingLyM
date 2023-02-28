@@ -570,7 +570,53 @@ h2 {
 /* _________ 7ma sección Give away _________ */
 
 #idSecGive {
-  padding-top: 50px !important;
+  padding-top: 100px 50px !important;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "area01 area02 area03";
+  gap: 20px;
+  align-items: center;
+}
+.giveMainTitle {
+  text-align: center;
+  font-size: 48px;
+  color: #222;
+  font-family: var(--fuenteTitulo2);
+  padding-bottom: 10px;
+  font-style: italic;
+}
+.giveTitle {
+  text-align: center;
+  font-size: 32px;
+  color: #222;
+  font-family: var(--fuenteTitulo2);
+}
+.giveLetterContainer {
+  background-color: #fafafa;
+  padding: 10px;
+  width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+.giveLetterContent {
+  padding: 20px;
+  border: double 4px #ccc;
+}
+.giveGoContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.principalLetter {
+  grid-area: area02;
+}
+.liverpoolLetter {
+  grid-area: area01;
+}
+.amazonLetter {
+  grid-area: area03;
 }
 .tableMessage {
   display: flex;
@@ -893,9 +939,6 @@ ul li:nth-child(even) .hidden {
 
 /* Size of screen */
 @media screen and (max-width: 500px) {
-  #countdown {
-  }
-
   .countdownNumber {
     padding: 10px;
   }
@@ -1099,6 +1142,29 @@ ul li:nth-child(even) .hidden {
   }
   .fontSize30 {
     font-size: 20px;
+  }
+
+  #idSecGive {
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "area01" "area02" "area03";
+    align-items: center;
+  }
+  .giveLetterContainer {
+    width: 80%;
+  }
+  .principalLetter {
+    grid-area: area01;
+  }
+  .liverpoolLetter {
+    grid-area: area02;
+  }
+  .amazonLetter {
+    grid-area: area03;
+  }
+  .giveTitle {
+    font-size: 24px;
   }
 }
 
