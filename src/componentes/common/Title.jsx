@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import classNames from "classnames";
-import ornament from "../../img/ornamenta-titulo.gif";
+import ornament from "../../img/divider.png";
 
 let options = {
   root: null,
@@ -52,7 +52,7 @@ export default function Title({ children, white, separator = true }) {
 function Separator() {
   return (
     <div className="ornamentTitle">
-      <img src={ornament} width="300" />
+      <img src={ornament} width="150" />
     </div>
   );
 }

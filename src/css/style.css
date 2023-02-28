@@ -136,7 +136,7 @@ section {
   opacity: 0.5;
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 .showTitle {
   transform: translateY(0);
