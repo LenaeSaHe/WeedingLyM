@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { getPhotos, submitPhoto } from "../datos/firebase";
 import Title from "./common/Title";
 import camera from "../img/camera-2-32.ico";
-import photo from "../img/photo.png";
 import Photo from "./Photo";
 
 const stages = {
@@ -55,7 +54,7 @@ function GooglePhotos({ invitado }) {
     <section className="photosSection">
       <div className="photosContainer">
         <div className="photosWrapper">
-          {photos.map((photo, index) => (
+            {photos.map((photo, index) => (
             <Photo photo={photo} key={index} />
           ))}
         </div>
@@ -64,15 +63,11 @@ function GooglePhotos({ invitado }) {
         <div className="">
           <Title white>Compartenos tus momentos</Title>
         </div>
-        <div id="sharephotos">
-          <button className="btn py-3" onClick={handleClick} id="btnCam">
-            <img src={photo} />
-          </button>
-        </div>
-        <button className="btn btnGold py-2" onClick={handleClick} id="btnCam">
-          <img src={camera} />
-          {submitStatus}
-        </button>
+        <div className="addphoto">
+          <button className="btn btnGold py-2" onClick={handleClick} id="btnCam">
+            <img src={camera} />{submitStatus}
+         </button>
+         </div>
         <input type="file" onChange={handleChange} ref={ref} id="hidebutton" />
       </div>
     </section>

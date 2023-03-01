@@ -508,7 +508,7 @@ h2 {
   background-position: center center, center, center;
 }
 .photoPapasLena {
-  background-image: url(../img/circulo-flores.png), url(../img/papas.png);
+  background-image: url(../img/circulo-flores.png), url(../img/jym.jpeg);
   background-size: contain, 210px 210px;
   background-repeat: no-repeat, no-repeat;
   background-position: center center, center, center;
@@ -722,13 +722,10 @@ ul li:nth-child(even) .hidden {
 }
 .btnGold {
   background-color: var(--colorChamp);
+
 }
 
-#sharephotos {
-  background-size: cover;
-  font-family: sans-serif;
-  background-position: center;
-}
+
 
 /* ________ ticket ___________________ */
 .content .bottom {
@@ -882,13 +879,21 @@ ul li:nth-child(even) .hidden {
   text-align: center;
 }
 
-.formPhotos {
+.formPhotos 
+{
   position: relative;
   top: -90vh;
   width: 500px;
+  height: 69vh;
   margin: 0 auto;
   margin-bottom: -68vh;
   color: white !important;
+  text-align: center;
+}
+.addphoto
+{
+  display:flex;
+  justify-content: center;
 }
 
 /* Size of screen */
@@ -1100,6 +1105,12 @@ ul li:nth-child(even) .hidden {
   .fontSize30 {
     font-size: 20px;
   }
+  .formPhotos
+  {
+    width: 90%;
+    height: 52vh;
+  }
+
 }
 
 @media screen and (max-width: 900px) {

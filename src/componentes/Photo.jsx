@@ -4,7 +4,7 @@ export default function Photo({ photo }) {
       <div>
         <img src={photo.url} width="200" />
       </div>
-      <div className="desc">Subida por {photo.submitedBy}</div>
+      <div className="desc">Compartida por {photo.submitedBy}</div>
     </div>
   );
 }
