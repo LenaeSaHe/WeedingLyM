@@ -167,6 +167,13 @@ section {
   align-items: center;
   justify-content: center;
 }
+.loadingContainer
+{
+  background-image: url(../img/loadingWeeding.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 115px;
+}
 
 .greetingBackdrop
 {
@@ -684,7 +691,10 @@ ul {
 #timeline ul li:first-child {
   border-radius: 10px 10px 0 0;
 }
-
+#timeline ul
+{
+  padding-top: 110px;
+}
 #timeline ul li::after {
   background: #6e3d10;
   content: "";
