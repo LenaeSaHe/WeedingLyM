@@ -207,6 +207,11 @@ section {
   font-size: 32px;
 }
 
+#messagePercent {
+  font-family: var(--fuenteCursiva);
+  font-size: 20px;
+}
+
 .hidden {
   opacity: 0;
 }
