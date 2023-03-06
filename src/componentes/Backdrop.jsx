@@ -58,7 +58,7 @@ function Backdrop({ invitado }) {
     >
       <div className="backdropContainer">
         <div>
-          <span className={classNames("fadeIn delay-5", "txtTitles")}>
+          <span className={classNames("fadeIn delay-5", "greetingBackdrop")}>
             ¡Hola, {invitado ? invitado.nickname.split(" ")[0] : ""}!
           </span>
         </div>

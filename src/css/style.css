@@ -167,6 +167,14 @@ section {
   align-items: center;
   justify-content: center;
 }
+
+.greetingBackdrop
+{
+  font-size: 40px;
+  font-family: var(--fuenteTitulo2);
+  font-style: italic;
+  line-height: 1;
+}
 .backdropAnimation {
   animation: frontMonoGif var(--introDuracion) ease var(--introDelay);
   animation-iteration-count: 1;
