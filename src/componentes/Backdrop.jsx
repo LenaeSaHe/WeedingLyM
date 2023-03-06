@@ -1,5 +1,5 @@
 import { useEffect, useRef, useReducer, useState } from "react";
-import logo from "../img/mono.gif";
+import logo from "../img/L&M.png";
 import classNames from "classnames";
 
 import { preloadImages } from "../datos/util";
