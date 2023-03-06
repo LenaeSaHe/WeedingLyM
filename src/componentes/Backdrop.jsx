@@ -1,5 +1,6 @@
 import { useEffect, useRef, useReducer, useState } from "react";
 import logo from "../img/L&M.png";
+import loadingGif from "../img/loadingWeeding.gif";
 import classNames from "classnames";
 
 import { preloadImages } from "../datos/util";
@@ -62,14 +63,12 @@ function Backdrop({ invitado }) {
           </span>
         </div>
         <img className="logo mt-3" src={logo} />
-        <div ref={loadingRef} className="loadingContainer">
-          Loading {progressRef.current}% ...
-        </div>
-        <div
-          className={classNames("fadeIn delay-5", "message w-50 m-auto mt-3")}
-        >
+        <div className={classNames("fadeIn delay-5", "message m-auto mt-3")}>
           Te invitamos a compartir este bello momento con nosotros
         </div>
+        <div ref={loadingRef} className="loadingContainer"></div>
+        <div className="message">{progressRef.current}% ...</div>
+
       </div>
     </div>
   );

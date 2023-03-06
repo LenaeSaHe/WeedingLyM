@@ -953,8 +953,9 @@ ul li:nth-child(even) .hidden {
   }
 
   #backdrop .logo {
-    width: 150px !important;
-    height: 150px !important;
+    width: 100% !important;
+    height: auto !important;
+    
   }
   #backdrop {
     left: 0;
@@ -968,6 +969,13 @@ ul li:nth-child(even) .hidden {
   }
   #backdrop .message {
     font-size: 24px;
+  }
+  .loadingContainer
+  {
+    background-image: url(../img/loadingWeeding.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 125px;
   }
 
   h2 {
