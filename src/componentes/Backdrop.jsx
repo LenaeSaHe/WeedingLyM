@@ -67,7 +67,7 @@ function Backdrop({ invitado }) {
           Te invitamos a compartir este bello momento con nosotros
         </div>
         <div ref={loadingRef} className="loadingContainer"></div>
-        <div className="message">{progressRef.current}% ...</div>
+        <div className="messagePercent">{progressRef.current}% ...</div>
 
       </div>
     </div>

@@ -207,7 +207,7 @@ section {
   font-size: 32px;
 }
 
-#messagePercent {
+.messagePercent {
   font-family: var(--fuenteCursiva);
   font-size: 20px;
 }
