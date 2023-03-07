@@ -590,14 +590,21 @@ h2 {
 /* _________ 7ma sección Give away _________ */
 
 #idSecGive {
-  padding-top: 100px 50px !important;
+  /*padding-top: 100px 50px !important;
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "area01 area02 area03";
   gap: 20px;
-  align-items: center;
+  align-items: center;*/
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 20px; 
+  grid-template-areas: 
+    "area01 area02"
+    "area01 area03"; 
 }
 .giveMainTitle {
   text-align: center;
@@ -623,6 +630,7 @@ h2 {
 .giveLetterContent {
   padding: 20px;
   border: double 4px #ccc;
+  height: 100%;
 }
 .giveGoContainer {
   display: flex;
@@ -630,10 +638,11 @@ h2 {
   text-align: center;
 }
 .principalLetter {
-  grid-area: area02;
+  grid-area: area01;
+  align-self: center;
 }
 .liverpoolLetter {
-  grid-area: area01;
+  grid-area: area02;
 }
 .amazonLetter {
   grid-area: area03;
@@ -1187,12 +1196,13 @@ ul li:nth-child(even) .hidden {
 
 
   #idSecGive {
-    grid-auto-columns: 1fr;
+  grid-auto-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
     grid-template-areas: "area01" "area02" "area03";
     align-items: center;
   }
+
   .giveLetterContainer {
     width: 80%;
   }
