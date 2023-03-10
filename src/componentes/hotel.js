@@ -46,6 +46,13 @@ function Hotel() {
             link={hotel2}
           />
 
+          <OpcHotel
+            titulo="Villas Cuernavaca Hotel"
+            image={villas}
+            linkweb={hotel2Web}
+            link={hotel2}
+          />
+          
           <OpcAirbnb
             titulo="Casa de descanso con alberca y cancha de frontón"
             image={airbnbA}
@@ -58,6 +65,14 @@ function Hotel() {
             linkweb={airbnb2}
             logo={airbnbLogo}
           />
+
+          <OpcAirbnb
+            titulo="Casita Rústica"
+            image={airbnbB}
+            linkweb={airbnb2}
+            logo={airbnbLogo}
+          />
+
         </div>
       </div>
     </section>
