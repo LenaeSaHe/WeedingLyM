@@ -805,10 +805,19 @@ ul li:nth-child(even) .hidden {
 }
 .btnGold {
   background-color: var(--colorChamp);
-
 }
 
-
+.galleryContent
+{
+ display: flex;
+ flex-wrap: wrap;
+}
+.photoGallery img
+{
+ height: 200px;
+ width: 200px;
+ object-fit: cover;
+}
 
 /* ________ ticket ___________________ */
 .content .bottom {
@@ -976,7 +985,7 @@ ul li:nth-child(even) .hidden {
 .addphoto
 {
   display:flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 /* Size of screen */

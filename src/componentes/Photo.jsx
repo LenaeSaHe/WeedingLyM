@@ -8,3 +8,16 @@ export default function Photo({ photo }) {
     </div>
   );
 }
+
+
+
+export  function PhotoGallery({ photo }) {
+  return (
+    <div className="photoGallery">
+      <div>
+        <img src={photo.url} width="200" />
+      </div>
+      <div className="desc">Compartida por {photo.submitedBy}</div>
+    </div>
+  );
+}

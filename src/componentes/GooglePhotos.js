@@ -3,7 +3,9 @@ import { useEffect } from "react";
 import { getPhotos, submitPhoto } from "../datos/firebase";
 import Title from "./common/Title";
 import camera from "../img/camera-2-32.ico";
+import view from "../img/photo-32.ico";
 import Photo from "./Photo";
+import { Link } from "react-router-dom";
 
 const stages = {
   normal: "Sube tu foto",
@@ -60,14 +62,15 @@ function GooglePhotos({ invitado }) {
         </div>
       </div>
       <div className="formPhotos">
-        <div className="">
+        <div className="">  
           <Title white>Compartenos tus momentos</Title>
         </div>
         <div className="addphoto">
           <button className="btn btnGold py-2" onClick={handleClick} id="btnCam">
             <img src={camera} />{submitStatus}
          </button>
-         </div>
+         <Link to="/masFotos" target="_blank" className="btn btnGold py-2 wh-2" id="btnCam"><img src={view}/>Ver más fotos</Link>
+        </div>
         <input type="file" onChange={handleChange} ref={ref} id="hidebutton" />
       </div>
     </section>

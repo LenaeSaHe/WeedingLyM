@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./componentes/ErrorPage";
 import InvitadoState from "./datos/store";
+import MasFotos from "./componentes/MasFotos";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -19,6 +20,11 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/masFotos",
+    element: <MasFotos/>,
+    errorElement: <ErrorPage />,
+  }
 ]);
 
 root.render(
