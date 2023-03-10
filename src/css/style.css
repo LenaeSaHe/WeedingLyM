@@ -786,7 +786,12 @@ ul li:nth-child(even) .hidden {
 /* hotel */
 .txtCardHotel {
   font-size: 20px;
+  height: 45px;
   font-family: var(--fuenteParrafo);
+}
+.card-img-top
+{
+  height: 280px;
 }
 
 /* _________ 10ma lodgement _________ */

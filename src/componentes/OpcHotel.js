@@ -1,7 +1,7 @@
 function OpcHotel({ titulo, image, linkweb, link }) {
   return (
     <div className=" col-12 col-lg-4 txtTitles d-flex align-items-center justify-content-center">
-      <div className="card" style={{ width: "25rem", marginBottom:"10px", height:"380px" }}>
+      <div className="card" style={{ width: "25rem", marginBottom:"10px", height:"400px" }}>
         <img src={image} className="card-img-top" />
         <div className="card-body">
           <h5 className="txtCardHotel center">{titulo}</h5>

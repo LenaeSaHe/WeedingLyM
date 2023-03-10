@@ -8,7 +8,7 @@ function OpcAirbnb({ titulo, image, linkweb, logo }) {
           <div className="d-flex justify-content-center">
             <img
               src={logo}
-              className="card-img-top"
+              className=""
               style={{ width: "5rem" }}
             />
           </div>
