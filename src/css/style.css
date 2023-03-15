@@ -167,16 +167,14 @@ section {
   align-items: center;
   justify-content: center;
 }
-.loadingContainer
-{
+.loadingContainer {
   background-image: url(../img/loadingWeeding.gif);
   background-repeat: no-repeat;
   background-position: center center;
   height: 115px;
 }
 
-.greetingBackdrop
-{
+.greetingBackdrop {
   font-size: 40px;
   font-family: var(--fuenteTitulo2);
   font-style: italic;
@@ -528,7 +526,7 @@ h2 {
   background-position: center center, center, center;
 }
 .photoPapasLena {
-  background-image: url(../img/circulo-flores.png), url(../img/jym.jpeg);
+  background-image: url(../img/circulo-flores.png), url(../img/jym.png);
   background-size: contain, 210px 210px;
   background-repeat: no-repeat, no-repeat;
   background-position: center center, center, center;
@@ -598,13 +596,13 @@ h2 {
   grid-template-areas: "area01 area02 area03";
   gap: 20px;
   align-items: center;*/
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
-  gap: 20px; 
-  grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  grid-template-areas:
     "area01 area02"
-    "area01 area03"; 
+    "area01 area03";
 }
 .giveMainTitle {
   text-align: center;
@@ -700,8 +698,7 @@ ul {
 #timeline ul li:first-child {
   border-radius: 10px 10px 0 0;
 }
-#timeline ul
-{
+#timeline ul {
   padding-top: 110px;
 }
 #timeline ul li::after {
@@ -789,8 +786,7 @@ ul li:nth-child(even) .hidden {
   height: 45px;
   font-family: var(--fuenteParrafo);
 }
-.card-img-top
-{
+.card-img-top {
   height: 280px;
 }
 
@@ -807,16 +803,14 @@ ul li:nth-child(even) .hidden {
   background-color: var(--colorChamp);
 }
 
-.galleryContent
-{
- display: flex;
- flex-wrap: wrap;
+.galleryContent {
+  display: flex;
+  flex-wrap: wrap;
 }
-.photoGallery img
-{
- height: 200px;
- width: 200px;
- object-fit: cover;
+.photoGallery img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
 }
 
 /* ________ ticket ___________________ */
@@ -971,8 +965,7 @@ ul li:nth-child(even) .hidden {
   text-align: center;
 }
 
-.formPhotos 
-{
+.formPhotos {
   position: relative;
   top: -90vh;
   width: 500px;
@@ -982,9 +975,8 @@ ul li:nth-child(even) .hidden {
   color: white !important;
   text-align: center;
 }
-.addphoto
-{
-  display:flex;
+.addphoto {
+  display: flex;
   justify-content: space-evenly;
 }
 
@@ -1001,7 +993,6 @@ ul li:nth-child(even) .hidden {
   #backdrop .logo {
     width: 100% !important;
     height: auto !important;
-    
   }
   #backdrop {
     left: 0;
@@ -1016,8 +1007,7 @@ ul li:nth-child(even) .hidden {
   #backdrop .message {
     font-size: 24px;
   }
-  .loadingContainer
-  {
+  .loadingContainer {
     background-image: url(../img/loadingWeeding.gif);
     background-repeat: no-repeat;
     background-position: center center;
@@ -1202,15 +1192,13 @@ ul li:nth-child(even) .hidden {
   .fontSize30 {
     font-size: 20px;
   }
-  .formPhotos
-  {
+  .formPhotos {
     width: 90%;
     height: 52vh;
   }
 
-
   #idSecGive {
-  grid-auto-columns: 1fr;
+    grid-auto-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
     grid-template-areas: "area01" "area02" "area03";
