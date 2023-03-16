@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import { consInvitado, sumaInvitado } from "../../datos/firebase";
 import { useAppContext } from "../../datos/store";
 import { getInvitadosNumber } from "../../datos/util";
-import monogramaticket from "../../img/monolymticket1.png";
+import monogramaticket from "../../img/logoml-full.png";
 import TicketBack from "./ticketBack";
 import TicketRSVP from "./ticketRSVP";
 
@@ -85,8 +85,7 @@ export default function TicketContent({ id }) {
   return (
     <div className="ticketContent">
       <div className="ticketInfo">
-        <img src={monogramaticket} height="150" />
-        <div className="txtTitles4">Lena & Marcos</div>
+        <img src={monogramaticket} height="220" />
         <div>Finca San Pedro</div>
         <div>Bugambilias 2 Fracc, Brisas, 62584 Temixco, Morelos</div>
         <div>14:00 hrs</div>
