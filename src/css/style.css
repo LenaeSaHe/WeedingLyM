@@ -184,8 +184,6 @@ section {
 /* establecer la opacidad inicial de las capas a 0 */
 .bd-background-layer {
   opacity: 0;
-  width: 395px;
-  height: 400px;
   position: relative;
 }
 
@@ -1099,6 +1097,19 @@ ul li:nth-child(even) .hidden {
     background-repeat: no-repeat;
     background-position: center center;
     height: 115px;
+  }
+  .bd-background {
+    --bd-width: 295px;
+    --bd-height: 300px;
+    width: var(--bd-width);
+    height: var(--bd-height);
+  }
+  .bd-background-layer {
+    --bd-width: 295px;
+    --bd-height: 300px;
+    width: var(--bd-width);
+    height: var(--bd-height);
+    background-size: var(--bd-width) var(--bd-height);
   }
 
   h2 {
