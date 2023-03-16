@@ -173,6 +173,93 @@ section {
   background-position: center center;
   height: 115px;
 }
+/* establecer la posición y tamaño de las capas */
+.bd-background {
+  width: 395px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* establecer la opacidad inicial de las capas a 0 */
+.bd-background-layer {
+  opacity: 0;
+  width: 395px;
+  height: 400px;
+  position: relative;
+}
+
+/* establecer la animación para las capas */
+@keyframes fadeInLogo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* aplicar la animación a todas las capas */
+.bd-background-layer {
+  --bd-width: 395px;
+  --bd-height: 400px;
+  width: var(--bd-width);
+  height: var(--bd-height);
+  animation: fadeInLogo 1s ease-in-out forwards;
+}
+
+/* establecer el orden de apilamiento de las capas */
+.layer1 {
+  animation-delay: 0.2s;
+  background-image: url(../img/logoml-02.png);
+  z-index: 1;
+}
+
+.layer2 {
+  animation-delay: 0.4s;
+  background-image: url(../img/logoml-03.png);
+  z-index: 2;
+  top: calc(-1 * var(--bd-height));
+}
+
+.layer3 {
+  animation-delay: 0.6s;
+  z-index: 3;
+  background-image: url(../img/logoml-01.png);
+  top: calc(-2 * var(--bd-height));
+}
+
+.layer4 {
+  animation-delay: 1s;
+  z-index: 4;
+  background-image: url(../img/logoml-08.png);
+  top: calc(-3 * var(--bd-height));
+}
+
+.layer5 {
+  animation-delay: 1.2s;
+  z-index: 5;
+  background-image: url(../img/logoml-04.png);
+  top: calc(-4 * var(--bd-height));
+}
+.layer6 {
+  animation-delay: 1.4s;
+  z-index: 6;
+  background-image: url(../img/logoml-05.png);
+  top: calc(-5 * var(--bd-height));
+}
+.layer7 {
+  animation-delay: 1.6s;
+  z-index: 7;
+  background-image: url(../img/logoml-06.png);
+  top: calc(-6 * var(--bd-height));
+}
+.layer8 {
+  animation-delay: 1.8s;
+  z-index: 8;
+  background-image: url(../img/logoml-07.png);
+  top: calc(-7 * var(--bd-height));
+}
 
 .greetingBackdrop {
   font-size: 40px;

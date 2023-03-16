@@ -62,13 +62,21 @@ function Backdrop({ invitado }) {
             ¡Hola, {invitado ? invitado.nickname.split(" ")[0] : ""}!
           </span>
         </div>
-        <img className="logo mt-3" src={logo} />
+        <div class="bd-background">
+          <div class="bd-background-layer layer1"></div>
+          <div class="bd-background-layer layer2"></div>
+          <div class="bd-background-layer layer3"></div>
+          <div class="bd-background-layer layer4"></div>
+          <div class="bd-background-layer layer5"></div>
+          <div class="bd-background-layer layer6"></div>
+          <div class="bd-background-layer layer7"></div>
+          <div class="bd-background-layer layer8"></div>
+        </div>
         <div className={classNames("fadeIn delay-5", "message m-auto mt-3")}>
           Te invitamos a compartir este bello momento con nosotros
         </div>
         <div ref={loadingRef} className="loadingContainer"></div>
         <div className="messagePercent">{progressRef.current}% ...</div>
-
       </div>
     </div>
   );
