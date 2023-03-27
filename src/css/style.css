@@ -634,6 +634,7 @@ h2 {
 }
 /* _________ Nuestras Fotitos _________ */
 .ourPhoto {
+  object-fit: contain;
   width: 100%;
   opacity: 0;
   filter: blur(10px);
