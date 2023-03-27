@@ -6,11 +6,13 @@ import Lovequote from "./componentes/Lovequote";
 import Savethedate from "./componentes/Savethedate";
 import Countdown from "./componentes/Countdown";
 import Family from "./componentes/Family";
+import GalleryOne from "./componentes/GalleryOne";
 import Location from "./componentes/Location";
 import Giveaway from "./componentes/Giveaway";
 import Hotel from "./componentes/hotel";
 import Footer from "./componentes/Footer";
 import Timeline from "./componentes/Timeline";
+import GalleryTwo from "./componentes/GalleryTwo";
 import Backdrop from "./componentes/Backdrop.jsx";
 import { useParams } from "react-router-dom";
 import data from "./datos/invitados.json";
@@ -61,12 +63,16 @@ function App() {
       <Countdown />
       {/* Family */}
       <Family />
+      {/* Gallery 1 (2)*/}
+      <GalleryOne />
       {/*Location*/}
       <Location />
       {/* Give away */}
       <Giveaway />
       {/* timeline */}
       <Timeline />
+      {/* GalleryTwo */}
+      <GalleryTwo />
       {/* Hotel */}
       <Hotel />
       {/* Instagram */}

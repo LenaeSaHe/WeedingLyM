@@ -622,6 +622,12 @@ h2 {
   filter: blur(0);
   opacity: 1;
 }
+/* _________ Nuestras Fotitos _________ */
+.ourPhoto
+{
+  width: 100%;
+}
+
 
 /* _________ 6ta sección Location _________ */
 .contLoc {
@@ -1180,6 +1186,11 @@ ul li:nth-child(even) .hidden {
     width: 70%;
   }
 
+  .galleryOneContainer
+  {
+    gap:20px;
+  }
+
   #timeline ul li {
     position: static;
     list-style-type: none;
@@ -1344,3 +1355,4 @@ ul li:nth-child(even) .hidden {
 .fontcovid {
   font-size: 15px !important;
 }
+

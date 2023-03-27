@@ -33,7 +33,7 @@ const airbnb2 =
 
 function Hotel() {
   return (
-    <section className="contA">
+    <section className="contB">
       <div className="container">
         <Title>Sugerencias de hospedaje</Title>
         <Paragraph>
