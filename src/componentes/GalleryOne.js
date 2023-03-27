@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import classNames from "classnames";
 import foto1 from "../img/mainLyM4.jpg";
+import OurPhoto from "./OurPhoto";
 
 let options = {
   root: null,
@@ -33,34 +34,13 @@ function GalleryOne() {
     <section className="contA" ref={ref}>
       <div className="row d-flex align-items-center justify-content-center galleryOneContainer">
         <div className="col-lg-4">
-          <img
-            src={foto1}
-            className={classNames(
-              "ourPhoto",
-              "delay-01",
-              show ? "showOurPhoto" : ""
-            )}
-          />
+          <OurPhoto photo={foto1} delay="1" />
         </div>
         <div className="col-lg-4">
-          <img
-            src={foto1}
-            className={classNames(
-              "ourPhoto",
-              "delay-02",
-              show ? "showOurPhoto" : ""
-            )}
-          />
+          <OurPhoto photo={foto1} delay="2" />
         </div>
         <div className="col-lg-4">
-          <img
-            src={foto1}
-            className={classNames(
-              "ourPhoto",
-              "delay-03",
-              show ? "showOurPhoto" : ""
-            )}
-          />
+          <OurPhoto photo={foto1} delay="3" />
         </div>
       </div>
     </section>

@@ -1,15 +1,13 @@
 import { useRef, useState, useEffect } from "react";
 import classNames from "classnames";
-import foto1 from "../img/mainLyM4.jpg";
-import OurPhoto from "./OurPhoto";
 
 let options = {
   root: null,
-  rootMargin: "0px",
+  rootMargin: "20px",
   threshold: 0.4,
 };
-
-function GalleryTwo() {
+const delayOptions = ["delay-01", "delay-02", "delay-03"];
+export default function OurPhoto({ photo, delay }) {
   const ref = useRef(null);
   const [show, setShow] = useState(false);
   const callbackFunc = (entries) => {
@@ -31,18 +29,14 @@ function GalleryTwo() {
     };
   }, []);
   return (
-    <section className="contA" ref={ref}>
-      <div className="container">
-        <div className="row d-flex align-items-center justify-content-center galleryOneContainer">
-          <div className="col-lg-6">
-            <OurPhoto photo={foto1} delay="1" />
-          </div>
-          <div className="col-lg-6">
-            <OurPhoto photo={foto1} delay="2" />
-          </div>
-        </div>
-      </div>
-    </section>
+    <img
+      ref={ref}
+      src={photo}
+      className={classNames(
+        "ourPhoto",
+        show ? "showOurPhoto" : "",
+        show ? delayOptions[delay - 1] : ""
+      )}
+    />
   );
 }
-export default GalleryTwo;
