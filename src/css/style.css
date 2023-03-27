@@ -318,6 +318,16 @@ section {
   animation: fadeIn 1s ease-in-out forwards;
 }
 
+.delay-01 {
+  animation-delay: 0.2s;
+}
+.delay-02 {
+  animation-delay: 0.4s;
+}
+.delay-03 {
+  animation-delay: 0.6s;
+}
+
 .delay-5 {
   animation-delay: 0.5s;
 }
@@ -623,11 +633,26 @@ h2 {
   opacity: 1;
 }
 /* _________ Nuestras Fotitos _________ */
-.ourPhoto
-{
+.ourPhoto {
   width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
+.showOurPhoto {
+  animation-name: showOurPhotoAnimation;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes showOurPhotoAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /* _________ 6ta sección Location _________ */
 .contLoc {
@@ -1186,9 +1211,8 @@ ul li:nth-child(even) .hidden {
     width: 70%;
   }
 
-  .galleryOneContainer
-  {
-    gap:20px;
+  .galleryOneContainer {
+    gap: 20px;
   }
 
   #timeline ul li {
@@ -1355,4 +1379,3 @@ ul li:nth-child(even) .hidden {
 .fontcovid {
   font-size: 15px !important;
 }
-
