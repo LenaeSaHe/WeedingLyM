@@ -6,6 +6,7 @@ import camera from "../img/camera-2-32.ico";
 import view from "../img/photo-32.ico";
 import Photo from "./Photo";
 import { Link } from "react-router-dom";
+import Paragraph from "./common/Paragraph";
 
 const stages = {
   normal: "Sube tu foto",
@@ -31,20 +32,20 @@ function GooglePhotos({ invitado }) {
   }
 
   function handleChange(e) {
-    setSubmitStatus(stages["loading"]);
+    //setSubmitStatus(stages["loading"]);
     try {
       const fileName = invitado.nickname + "-" + crypto.randomUUID();
       console.log(e.target.files);
       submitPhoto(e.target.files[0], fileName)
         .then(() => {
-          setSubmitStatus(stages["success"]);
+          //setSubmitStatus(stages["success"]);
           loadPhotos();
         })
         .error(() => {
-          setSubmitStatus(stages["error"]);
+          //  setSubmitStatus(stages["error"]);
         });
     } catch (error) {
-      setSubmitStatus(stages["error"]);
+      //setSubmitStatus(stages["error"]);
     }
   }
   function handleClick() {
@@ -56,22 +57,46 @@ function GooglePhotos({ invitado }) {
     <section className="photosSection">
       <div className="photosContainer">
         <div className="photosWrapper">
-            {photos.map((photo, index) => (
+          {photos.map((photo, index) => (
             <Photo photo={photo} key={index} />
           ))}
         </div>
-      </div>
-      <div className="formPhotos">
-        <div className="">  
-          <Title white>Compartenos tus momentos</Title>
+        <div className="formPhotos">
+          <div className="">
+            <Title white>Compartenos tus momentos con nosotros</Title>
+            <div className="formPhotosDescription">
+              <Paragraph>
+                Nos encantaria que pudieras compartirnos las fotos que tomaste
+                con nosotros
+              </Paragraph>
+            </div>
+          </div>
+          <div className="addphoto">
+            <button
+              className="btn btnGold py-2"
+              onClick={handleClick}
+              id="btnCam"
+            >
+              <img src={camera} />
+              Subir fotos
+            </button>
+            <Link
+              to="/masFotos"
+              target="_blank"
+              className="btn btnGold py-2 wh-2"
+              id="btnCam"
+            >
+              <img src={view} />
+              Ver más fotos
+            </Link>
+          </div>
+          <input
+            type="file"
+            onChange={handleChange}
+            ref={ref}
+            id="hidebutton"
+          />
         </div>
-        <div className="addphoto">
-          <button className="btn btnGold py-2" onClick={handleClick} id="btnCam">
-            <img src={camera} />{submitStatus}
-         </button>
-         <Link to="/masFotos" target="_blank" className="btn btnGold py-2 wh-2" id="btnCam"><img src={view}/>Ver más fotos</Link>
-        </div>
-        <input type="file" onChange={handleChange} ref={ref} id="hidebutton" />
       </div>
     </section>
   );

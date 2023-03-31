@@ -1025,6 +1025,7 @@ ul li:nth-child(even) .hidden {
 }
 
 .photosSection {
+  position: relative;
   padding: 0 !important;
   background-color: black;
 }
@@ -1040,6 +1041,8 @@ ul li:nth-child(even) .hidden {
 }
 
 .photosWrapper {
+  overflow: hidden;
+  max-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   flex: auto;
@@ -1048,7 +1051,7 @@ ul li:nth-child(even) .hidden {
 }
 
 .photo {
-  opacity: 0.5;
+  opacity: 0.8;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -1074,18 +1077,33 @@ ul li:nth-child(even) .hidden {
 }
 
 .formPhotos {
+  background-color: rgba(255, 0, 0, 0.5);
   position: relative;
-  top: -90vh;
-  width: 500px;
-  height: 69vh;
+  top: -50vh;
+  width: 100%;
+  height: 50vh;
   margin: 0 auto;
-  margin-bottom: -68vh;
   color: white !important;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 38%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.formPhotosDescription {
+  margin-top: -30px;
+  font-size: 20px;
 }
 .addphoto {
   display: flex;
   justify-content: space-evenly;
+  gap: 20px;
 }
 
 /* Size of screen */
@@ -1295,7 +1313,7 @@ ul li:nth-child(even) .hidden {
   }
 
   .photo {
-    height: 150px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     width: auto;
@@ -1304,7 +1322,7 @@ ul li:nth-child(even) .hidden {
 
   .photo img {
     object-fit: cover;
-    height: 150px;
+    height: 200px;
     width: auto;
   }
 
@@ -1316,10 +1334,6 @@ ul li:nth-child(even) .hidden {
   }
   .fontSize30 {
     font-size: 20px;
-  }
-  .formPhotos {
-    width: 90%;
-    height: 52vh;
   }
 
   #idSecGive {
