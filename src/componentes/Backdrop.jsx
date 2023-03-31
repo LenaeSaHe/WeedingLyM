@@ -23,7 +23,7 @@ function Backdrop({ invitado }) {
         setTimeout(() => {
           setHideBackdrop(true);
           setLoading(false);
-        }, 1000);
+        }, 3000);
       },
       (progress) => {
         /* onProgress */
@@ -62,6 +62,9 @@ const LoadingScreen = forwardRef((props, ref) => {
       </div>
       <div className="messagePercent">
         <span>Preparando tu invitacion...</span> <br />
+        <div className="progressBar">
+          <div className="progress" style={{ width: `${ref.current}%` }}></div>
+        </div>
         {ref.current}% lista
       </div>
     </>

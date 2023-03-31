@@ -317,6 +317,17 @@ section {
   font-size: 24px;
 }
 
+.progressBar {
+  margin: 0 auto;
+  width: 350px;
+  display: flex;
+  background-color: #ddd;
+}
+.progressBar .progress {
+  background: rgb(255, 145, 0);
+  height: 5px;
+}
+
 .hidden {
   opacity: 0;
 }
@@ -1194,7 +1205,7 @@ ul li:nth-child(even) .hidden {
   html,
   body {
     height: -webkit-fill-available;
-    overflow: hidden;
+    overflow: hidden !important;
     height: 100vh;
   }
 
