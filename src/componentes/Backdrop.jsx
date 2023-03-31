@@ -5,7 +5,7 @@ import { default as images } from "../datos/images";
 import rings from "../img/loadingWeeding02.gif";
 
 const reducer = (p) => !p;
-
+let timer = null;
 function Backdrop({ invitado }) {
   const progressRef = useRef(0);
   const [, render] = useReducer(reducer, false);
@@ -20,9 +20,12 @@ function Backdrop({ invitado }) {
       images,
       () => {
         /* onFinish */
-        setTimeout(() => {
+        render();
+        progressRef.current = 100;
+        timer = setTimeout(() => {
           setHideBackdrop(true);
           setLoading(false);
+          clearTimeout(timer);
         }, 3000);
       },
       (progress) => {
@@ -37,7 +40,7 @@ function Backdrop({ invitado }) {
    */
   function addScroll() {
     ref.current.addEventListener("animationend", function () {
-      document.querySelector("body").style.overflow = "auto";
+      document.querySelector("html").style.overflowY = "auto";
     });
   }
   return (

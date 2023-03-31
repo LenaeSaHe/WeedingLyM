@@ -5,14 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  max-width: 100%;
 }
 
-body,
 html {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden !important;
+  overflow: hidden;
 }
 
 code {
