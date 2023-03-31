@@ -12,7 +12,7 @@ export default function Photo({ photo }) {
 export function PhotoGallery({ photo }) {
   return (
     <div className="photoGallery">
-      <div>
+      <div className="photoContainer">
         <img src={photo.url} width="200" loading="lazy" />
       </div>
       <div className="desc">Compartida por {photo.submitedBy}</div>

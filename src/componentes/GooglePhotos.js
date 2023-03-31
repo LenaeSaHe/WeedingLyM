@@ -12,8 +12,8 @@ import AlbumButton from "./AlbumButton";
 const stages = {
   normal: "Sube tus fotos",
   loading: "Subiendo fotos...",
-  succcess: "Foto guardada. Sube más fotos!",
-  error: "Erro al guardar la foto, intenta más tarde",
+  succcess: "Fotos guardadas. ¡Sube más fotos!",
+  error: "Hubo un error, intenta más tarde",
 };
 
 function GooglePhotos({ invitado }) {
@@ -63,7 +63,7 @@ function GooglePhotos({ invitado }) {
         </div>
         <div className="formPhotos">
           <div className="">
-            <Title white>Compartenos tus momentos con nosotros</Title>
+            <Title white>Comparte tus momentos con nosotros</Title>
             <div className="formPhotosDescription">
               <Paragraph>
                 Nos encantaria que pudieras compartirnos las fotos que tomaste
