@@ -1208,7 +1208,6 @@ ul li:nth-child(even) .hidden {
   html,
   body {
     height: -webkit-fill-available;
-    overflow: hidden !important;
     height: 100vh;
   }
 

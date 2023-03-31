@@ -41,6 +41,7 @@ function Backdrop({ invitado }) {
   function addScroll() {
     ref.current.addEventListener("animationend", function () {
       document.querySelector("html").style.overflowY = "auto";
+      document.querySelector("body").style.overflowY = "auto";
     });
   }
   return (
