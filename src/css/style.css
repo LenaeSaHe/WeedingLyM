@@ -168,10 +168,11 @@ section {
   justify-content: center;
 }
 .loadingContainer {
-  background-image: url(../img/loadingWeeding.gif);
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 115px;
+  text-align: center;
+}
+.loadingContainer img {
+  width: 320px;
+  height: 240px;
 }
 /* establecer la posición y tamaño de las capas */
 .bd-background {
@@ -270,6 +271,11 @@ section {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+.fadeOutloadingAnimation {
+  animation: fadeOutLoadingAnimation 1s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
 .backdropContainer {
   width: 70%;
@@ -301,13 +307,14 @@ section {
 }
 
 #backdrop .message {
-  font-family: var(--fuenteCursiva);
+  font-family: var(--fuenteTitulo2);
   font-size: 32px;
 }
 
 .messagePercent {
-  font-family: var(--fuenteCursiva);
-  font-size: 20px;
+  font-family: var(--fuenteTitulo2);
+  font-style: italic;
+  font-size: 24px;
 }
 
 .hidden {
@@ -348,6 +355,18 @@ section {
     opacity: 0;
     display: none;
     top: -100vh;
+  }
+}
+@keyframes fadeOutLoadingAnimation {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
   }
 }
 
@@ -1153,12 +1172,7 @@ ul li:nth-child(even) .hidden {
   #backdrop .message {
     font-size: 24px;
   }
-  .loadingContainer {
-    background-image: url(../img/loadingWeeding.gif);
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 115px;
-  }
+
   .bd-background {
     --bd-width: 295px;
     --bd-height: 300px;
