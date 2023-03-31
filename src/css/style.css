@@ -472,6 +472,9 @@ header::before {
   width: 400px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0.5));
 }
+.progressBar {
+  width: 200px;
+}
 
 /* __________ 2da sección Love card  __________ */
 
