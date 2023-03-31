@@ -7,17 +7,18 @@ import view from "../img/photo-32.ico";
 import Photo from "./Photo";
 import { Link } from "react-router-dom";
 import Paragraph from "./common/Paragraph";
+import AlbumButton from "./AlbumButton";
 
 const stages = {
-  normal: "Sube tu foto",
-  loading: "Subiendo foto...",
+  normal: "Sube tus fotos",
+  loading: "Subiendo fotos...",
   succcess: "Foto guardada. Sube más fotos!",
   error: "Erro al guardar la foto, intenta más tarde",
 };
 
 function GooglePhotos({ invitado }) {
   const [photos, setPhotos] = useState([]);
-  const [submitStatus, setSubmitStatus] = useState(stages["normal"]);
+  const [submitStatus, setSubmitStatus] = useState(stages.normal);
   const ref = useRef();
   useEffect(() => {
     loadPhotos();
@@ -26,26 +27,25 @@ function GooglePhotos({ invitado }) {
   async function loadPhotos() {
     const data = await getPhotos();
     if (data && data.length > 0) {
-      console.log("datos de photos", data);
+      //console.log("datos de photos", data);
       setPhotos([...data]);
     }
   }
 
-  function handleChange(e) {
-    //setSubmitStatus(stages["loading"]);
+  async function handleChange(e) {
+    setSubmitStatus(stages.loading);
+    const fileName = invitado.nickname + "-" + crypto.randomUUID();
+    const photos = e.target.files;
+
     try {
-      const fileName = invitado.nickname + "-" + crypto.randomUUID();
-      console.log(e.target.files);
-      submitPhoto(e.target.files[0], fileName)
-        .then(() => {
-          //setSubmitStatus(stages["success"]);
-          loadPhotos();
-        })
-        .error(() => {
-          //  setSubmitStatus(stages["error"]);
-        });
+      await Promise.all(
+        [...photos].map((photo) => submitPhoto(photo, fileName))
+      );
+      loadPhotos();
+      setSubmitStatus(stages.succcess);
     } catch (error) {
-      //setSubmitStatus(stages["error"]);
+      console.error(error);
+      setSubmitStatus(stages.error);
     }
   }
   function handleClick() {
@@ -72,22 +72,19 @@ function GooglePhotos({ invitado }) {
             </div>
           </div>
           <div className="addphoto">
-            <button
-              className="btn btnGold py-2"
+            <AlbumButton
               onClick={handleClick}
-              id="btnCam"
-            >
-              <img src={camera} />
-              Subir fotos
-            </button>
+              icon={camera}
+              text={submitStatus}
+            />
             <Link
               to="/masFotos"
               target="_blank"
-              className="btn btnGold py-2 wh-2"
+              className="btnAlbum"
               id="btnCam"
             >
               <img src={view} />
-              Ver más fotos
+              Ver todas las fotos
             </Link>
           </div>
           <input
@@ -95,6 +92,8 @@ function GooglePhotos({ invitado }) {
             onChange={handleChange}
             ref={ref}
             id="hidebutton"
+            multiple
+            accept="image/*"
           />
         </div>
       </div>
