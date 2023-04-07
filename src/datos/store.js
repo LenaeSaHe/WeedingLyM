@@ -17,6 +17,8 @@ export default function InvitadoState({ children }) {
       local.confirmacion = inv.confirmacion;
       setInvitado({ ...local });
       return inv;
+    } else {
+      setInvitado({ ...local });
     }
     console.log("loadInvitado", "No se cargó nada");
     return null;
