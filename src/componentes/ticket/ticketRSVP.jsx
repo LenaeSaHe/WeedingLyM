@@ -5,6 +5,17 @@ export default function TicketRSVP({
   onChange,
   onConfirm,
 }) {
+  function getInvitadosName() {
+    if (invitado) {
+      if (invitado.nombreInvitados) {
+        return `Boletos para ${invitado.nombreInvitados}`;
+      } else {
+        return `${invitado.boletos} boletos`;
+      }
+    } else {
+      return "";
+    }
+  }
   return (
     <div className="ticketRSVP">
       {/* <p className="text-center titleticket">
@@ -14,12 +25,7 @@ export default function TicketRSVP({
       <p>Por favor responde antes del 20 de agosto de 2023</p>
       <form>
         <div>
-          <div className="ticketsNumbe text-center">
-            {invitado?.boletos} Boletos
-            {invitado?.ninos && invitado.ninos !== 0 && invitado.boletos > 0
-              ? ", " + invitado.ninos + "niño(s)"
-              : null}
-          </div>
+          <div className="ticketsNumbe text-center">{getInvitadosName()}</div>
         </div>
         <div className="d-grid gap-2 mt-4">
           {confirmed ? (

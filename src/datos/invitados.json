@@ -5,7 +5,8 @@
     "nickname": "Mary",
     "boletos": 2,
     "maxBoletos": 2,
-    "ninos": 0
+    "ninos": 0,
+    "nombreInvitados": "Mamá y papá"
   },
   {
     "id": "2",
@@ -13,7 +14,8 @@
     "nickname": "Julio",
     "boletos": 2,
     "maxBoletos": 2,
-    "ninos": 0
+    "ninos": 0,
+    "nombreInvitados": ""
   },
   {
     "id": "3",
@@ -22,39 +24,16 @@
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 1,
-    "invitados": [
-      {
-        "nombre": "Novia"
-      },
-      {
-        "nombre": "bebe"
-      }
-    ]
+    "nombreInvitados": "Pozillos y una acompañante"
   },
   {
     "id": "4",
-    "nickname": "Pepito",
-    "nombre": "Pedro",
-    "boletos": 3,
-    "maxBoletos": 3,
-    "ninos": 3,
-    "invitados": [
-      {
-        "nombre": "Juanito"
-      },
-      {
-        "nombre": "Pedrito"
-      },
-      {
-        "nombre": "Julia"
-      },
-      {
-        "nombre": "Capi"
-      },
-      {
-        "nombre": "Tony"
-      }
-    ]
+    "nickname": "Bee",
+    "nombre": "Lupita",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 0,
+    "nombreInvitados": "Bee e Iván"
   },
   {
     "id": "5",
@@ -63,16 +42,24 @@
     "boletos": 4,
     "maxBoletos": 4,
     "ninos": 0,
-    "invitados": [
-      {
-        "nombre": "Marcos"
-      },
-      {
-        "nombre": "Ari"
-      },
-      {
-        "nombre": "Bee"
-      }
-    ]
+    "nombreInvitados": "Mamá y papá"
+  },
+  {
+    "id": "6",
+    "nickname": "Ari",
+    "nombre": "Ariadne",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 0,
+    "invitados": "Ari y Byron"
+  },
+  {
+    "id": "7",
+    "nickname": "Vicky",
+    "nombre": "Victoria",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 1,
+    "invitados": "Vicky, Eric y Luciana"
   }
 ]
