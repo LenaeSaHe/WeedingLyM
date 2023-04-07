@@ -25,7 +25,7 @@ export default function TicketRSVP({
       <p>Por favor responde antes del 20 de agosto de 2023</p>
       <form>
         <div>
-          <div className="ticketsNumbe text-center">{getInvitadosName()}</div>
+          <div className="ticketsNumbe text-center"><strong>{getInvitadosName()}</strong></div>
         </div>
         <div className="d-grid gap-2 mt-4">
           {confirmed ? (
@@ -52,13 +52,16 @@ export default function TicketRSVP({
               >
                 Confirmar elección
               </button>
-              <button
-                id="bChange"
-                className="ticketButton btn btn-outline-secondary text-center"
-                onClick={onConfirm}
-              >
-                No usare todos los boletos
-              </button>
+              {
+                invitado?.modificar ?
+                <button
+                  id="bChange"
+                  className="ticketButton btn btn-outline-secondary text-center"
+                  onClick={onConfirm}
+                >
+                  No usare todos los boletos
+                </button>: null
+              }
               <button
                 id="bNo"
                 className="ticketButton btn btn-outline-danger"
