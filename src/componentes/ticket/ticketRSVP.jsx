@@ -1,3 +1,6 @@
+import Confetti from "react-confetti";
+import useWindowSize from "react-use/lib/useWindowSize";
+
 export default function TicketRSVP({
   invitado,
   confirmed,
@@ -5,6 +8,7 @@ export default function TicketRSVP({
   onChange,
   onConfirm,
 }) {
+  const { width, height } = useWindowSize();
   function getInvitadosName() {
     if (invitado) {
       if (invitado.nombreInvitados) {
@@ -25,7 +29,9 @@ export default function TicketRSVP({
       <p>Por favor responde antes del 20 de agosto de 2023</p>
       <form>
         <div>
-          <div className="ticketsNumbe text-center"><strong>{getInvitadosName()}</strong></div>
+          <div className="ticketsNumbe text-center">
+            <strong>{getInvitadosName()}</strong>
+          </div>
         </div>
         <div className="d-grid gap-2 mt-4">
           {confirmed ? (
@@ -52,16 +58,15 @@ export default function TicketRSVP({
               >
                 Confirmar elección
               </button>
-              {
-                invitado?.modificar ?
+              {invitado?.modificar ? (
                 <button
                   id="bChange"
                   className="ticketButton btn btn-outline-secondary text-center"
                   onClick={onConfirm}
                 >
                   No usare todos los boletos
-                </button>: null
-              }
+                </button>
+              ) : null}
               <button
                 id="bNo"
                 className="ticketButton btn btn-outline-danger"
@@ -74,6 +79,12 @@ export default function TicketRSVP({
         </div>
         {confirmed ? (
           <div className="d-grid">
+            <Confetti
+              numberOfPieces={400}
+              width={width}
+              height={height}
+              recycle={false}
+            />
             <button
               className="ticketButton btn btn-outline-success text-center"
               onClick={onChange}
