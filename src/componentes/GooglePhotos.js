@@ -78,7 +78,7 @@ function GooglePhotos({ invitado }) {
               text={submitStatus}
             />
             <Link
-              to="/masFotos"
+              to="/v/masFotos"
               target="_blank"
               className="btnAlbum"
               id="btnCam"

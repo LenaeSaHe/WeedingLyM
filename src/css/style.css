@@ -943,12 +943,15 @@ ul li:nth-child(even) .hidden {
 
 .galleryContent {
   background-color: var(--colorChamp);
+  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 .photoGallery {
   flex: calc(100% / 4);
   padding: 5px;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 .photoGallery img {
   height: auto;
@@ -960,6 +963,10 @@ ul li:nth-child(even) .hidden {
 .photoGallery .photosContainer,
 .photoGallery .photoDescription {
   position: relative;
+}
+
+.photoGallery .photoContainer {
+  width: 100%;
 }
 
 .photoGallery .photoDescription {

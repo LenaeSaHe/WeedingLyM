@@ -27,8 +27,8 @@ export default function MasFotos() {
           col02.push(data[i]);
         } else if (i % 4 === 2) {
           col03.push(data[i]);
-        } else if (i % 4 === 3) {
           col04.push(data[i]);
+        } else if (i % 4 === 3) {
         }
       }
       setPhotosCol01(col01);
