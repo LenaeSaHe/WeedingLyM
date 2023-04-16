@@ -15,7 +15,7 @@ export function PhotoGallery({ photo }) {
       <div className="photoContainer">
         <img src={photo.url} width="200" loading="lazy" />
       </div>
-      <div className="desc">Compartida por {photo.submitedBy}</div>
+      <div className="photoDescription">Compartida por {photo.submitedBy}</div>
     </div>
   );
 }

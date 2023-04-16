@@ -21,10 +21,10 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/masFotos",
-    element: <MasFotos/>,
+    path: "/v/masFotos",
+    element: <MasFotos />,
     errorElement: <ErrorPage />,
-  }
+  },
 ]);
 
 root.render(

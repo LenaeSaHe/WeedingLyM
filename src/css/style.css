@@ -942,13 +942,43 @@ ul li:nth-child(even) .hidden {
 }
 
 .galleryContent {
-  display: flex;
-  flex-wrap: wrap;
+  background-color: var(--colorChamp);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.photoGallery {
+  flex: calc(100% / 4);
+  padding: 5px;
 }
 .photoGallery img {
-  height: 200px;
-  width: 200px;
+  height: auto;
+  width: 100%;
   object-fit: cover;
+  border-radius: 10px;
+}
+
+.photoGallery .photosContainer,
+.photoGallery .photoDescription {
+  position: relative;
+}
+
+.photoGallery .photoDescription {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: -100px;
+  height: 100px;
+  margin-bottom: -100px;
+  /* gradient */
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  border-radius: 10px;
 }
 
 /* ________ ticket ___________________ */
@@ -1422,6 +1452,10 @@ ul li:nth-child(even) .hidden {
   }
   .giveTitle {
     font-size: 24px;
+  }
+
+  .galleryContent {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
