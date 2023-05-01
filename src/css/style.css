@@ -1400,7 +1400,7 @@ ul li:nth-child(even) .hidden {
   }
   #questionWhatsApp a
   {
-    width: 380px;
+    width: 350px;
     height: 80px;
     display:flex;
     justify-content: space-between;
