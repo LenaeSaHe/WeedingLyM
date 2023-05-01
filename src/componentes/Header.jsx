@@ -15,7 +15,7 @@ function Header({ invitado }) {
             Lena & Marcos
           </div>
           <div className="fontSize30 text-shadow fadeIn">
-            {invitado?.nickname}, te invitamos a formar parte de este momento
+            {invitado?.nickname}, {invitado?.nickname.split(" ").length>1 ? "los invitamos" : "te invitamos"} a formar parte de este momento
             tan importante para nosotros
           </div>
         </div>

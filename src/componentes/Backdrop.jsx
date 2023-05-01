@@ -80,7 +80,7 @@ function WelcomeScreen({ invitado }) {
     <div>
       <div>
         <span className={classNames("fadeIn", "greetingBackdrop")}>
-          ¡Hola, {invitado ? invitado.nickname.split(" ")[0] : ""}!
+          ¡Hola, {invitado ? invitado.nickname : ""}!
         </span>
       </div>
       <div className="bd-background">
@@ -94,7 +94,7 @@ function WelcomeScreen({ invitado }) {
         <div className="bd-background-layer layer8"></div>
       </div>
       <div className={classNames("fadeIn", "message m-auto mt-3")}>
-        Te invitamos a compartir este bello momento con nosotros
+       {invitado?.nickname.split(" ").length>1 ? "Los invitamos" : "Te invitamos"} a compartir este bello momento con nosotros
       </div>
     </div>
   );

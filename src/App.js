@@ -15,7 +15,7 @@ import Timeline from "./componentes/Timeline";
 import GalleryTwo from "./componentes/GalleryTwo";
 import Backdrop from "./componentes/Backdrop.jsx";
 import { useParams } from "react-router-dom";
-import data from "./datos/invitados.json";
+import data from "./datos/dataInvitados.json";
 import Protocolocovid from "./componentes/Protocolocovid";
 import GooglePhotos from "./componentes/GooglePhotos";
 import { useAppContext } from "./datos/store";

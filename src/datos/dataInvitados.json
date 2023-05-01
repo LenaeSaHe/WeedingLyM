@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nombre": "Julio César Sánchez Rivera",
+    "nickname": "Julio y Maria Elena",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 0,
+    "nombreInvitados": "Papi y Mami",
+    "modificar": false
+  },
+  {
+    "id": 2,
+    "nombre": "Marcos Rivas Arzaluz",
+    "nickname": "Marcos y Alejandra",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 0,
+    "nombreInvitados": "Papá y Mamá",
+    "modificar": false
+  },
+  {
+    "id": 3,
+    "nombre": "Guadalupe Montserrat Rivas Rojas",
+    "nickname": "Bee",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 0,
+    "nombreInvitados": "Bee e Ivan",
+    "modificar": false
+  },
+  {
+    "id": 4,
+    "nombre": "Ariadne Irais Rivas Rojas",
+    "nickname": "Ari",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 0,
+    "nombreInvitados": "Ari y Byron",
+    "modificar": false
+  }
+]
