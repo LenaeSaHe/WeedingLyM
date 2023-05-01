@@ -56,7 +56,7 @@ export default function TicketBack({ invitado, onCancel, onChangeTickets }) {
           className="ticketButton btn btn-outline-success text-center"
           onClick={onCancel}
         >
-          Regresar
+          Confirmar
         </button>
       </div>
     </div>
