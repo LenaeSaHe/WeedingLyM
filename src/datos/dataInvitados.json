@@ -64,5 +64,16 @@
     "nombreInvitados": "Eric, Victoria y Lu",
     "modificar": true,
     "de": "Lena"
+  },
+  {
+    "id": 7,
+    "nombre": "Marcos Rivas Rojas",
+    "nickname": "Rivas",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 0,
+    "nombreInvitados": "Lena y Marcos",
+    "modificar": false,
+    "de": "Marcos"
   }
 ]
