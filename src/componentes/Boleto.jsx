@@ -1,6 +1,10 @@
 import Transition from "./common/Transition";
 import TicketContent from "./ticket/ticketContent";
-import { useAppContext } from "../datos/store";  
+import { useAppContext } from "../datos/store";
+import Whatsapp from "../img/whatsapp-48.ico";
+
+let phoneL = "https://wa.me/5537309542?text=Hola Lena, tengo una duda";
+let phoneM = "https://wa.me/7221496010?text=Hola Marcos, tengo una duda";
 
 export default function Boleto({ id }) 
 {
@@ -17,6 +21,15 @@ export default function Boleto({ id })
           Niños menores de 7 años no cuentan como boleto. Solo niños entre 3 y 7
           años tendrán menu infantil</small>
           }      
+      </div>
+      <div className="text-center p-3">
+        Si tienes dudas, por favor contactanos: 
+          {         
+          store.invitado?.de === "Lena" ? 
+          <a href={phoneL} target="_blank"><img src={Whatsapp} width="32"/> Lena</a> : 
+          <a href={phoneM} target="_blank"><img src={Whatsapp} width="32"/> Marcos</a> 
+         
+          }
       </div>
     </Transition>
   );
