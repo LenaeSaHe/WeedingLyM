@@ -1,13 +1,14 @@
 [
   {
     "id": 1,
-    "nombre": "Julio César Spenchez Rivera",
+    "nombre": "Julio César Sánchez Rivera",
     "nickname": "Julio y Maria Elena",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Papi y Mami",
-    "modificar": false
+    "modificar": false,
+    "de": "Lena"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Papá y Mamá",
-    "modificar": false
+    "modificar": false,
+    "de": "Marcos"
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Bee e Ivan",
-    "modificar": false
+    "modificar": false,
+    "de": "Marcos"
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Ari y Byron",
-    "modificar": false
+    "modificar": false,
+    "de": "Marcos"
   },
   {
     "id": 5,
@@ -47,6 +51,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Beti + 1",
-    "modificar": true
+    "modificar": true,
+    "de": "Lena"
   }
 ]
