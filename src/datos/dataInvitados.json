@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "nombre": "Julio César Sánchez Rivera",
+    "nombre": "Julio César Spenchez Rivera",
     "nickname": "Julio y Maria Elena",
     "boletos": 2,
     "maxBoletos": 2,
@@ -38,5 +38,15 @@
     "ninos": 0,
     "nombreInvitados": "Ari y Byron",
     "modificar": false
+  },
+  {
+    "id": 5,
+    "nombre": "Beatriz Coria",
+    "nickname": "Beti",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 0,
+    "nombreInvitados": "Beti + 1",
+    "modificar": true
   }
 ]
