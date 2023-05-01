@@ -18,19 +18,19 @@ export default function Boleto({ id })
       <div className="text-center p-3">
           {         
           !!store.invitado?.ninos && <small>
-          Niños menores de 7 años no cuentan como boleto. Solo niños entre 3 y 7
-          años tendrán menu infantil</small>
+           Niñ@s a partir de 3 años tendrán menu infantil</small>
           }      
       </div>
-      <div className="text-center p-3">
-        Si tienes dudas, por favor contactanos: 
-          {         
-          store.invitado?.de === "Lena" ? 
-          <a href={phoneL} target="_blank"><img src={Whatsapp} width="32"/> Lena</a> : 
-          <a href={phoneM} target="_blank"><img src={Whatsapp} width="32"/> Marcos</a> 
-         
-          }
+
+      <div className="text-center p-3" id="questionWhatsApp">
+      <a href={ store.invitado?.de === "Lena" ? phoneL : phoneM } target="_blank">
+        <img src={Whatsapp} width="36" height="36" className="logoWhatsApp"/>
+        <div className="txtSearch"> Tienes dudas, por favor, contacta a:&nbsp;
+          {store.invitado?.de}
+        </div>
+      </a>
       </div>
+
     </Transition>
   );
 }

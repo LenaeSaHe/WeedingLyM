@@ -1091,6 +1091,29 @@ ul li:nth-child(even) .hidden {
   opacity: 0;
 }
 
+#questionWhatsApp a
+{
+  width: 420px;
+  height: 60px;
+  border: #ccc solid 1px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 15px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  color:#000000;
+  text-decoration: none;
+}
+.logoWhatsApp
+{
+  margin-left: 15px;
+}
+.txtSearch
+{
+  text-align: left;
+  padding-right: 30px;
+}
 .photosSection {
   position: relative;
   padding: 0 !important;
@@ -1375,6 +1398,19 @@ ul li:nth-child(even) .hidden {
     border: none;
     border-top: dashed 2px #ccc;
   }
+  #questionWhatsApp a
+  {
+    width: 380px;
+    height: 80px;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .txtSearch
+  {
+    text-align: center;
+    padding-right: 50px;
+  } 
   #heartsave {
     padding: 10px 0;
     width: 170px;

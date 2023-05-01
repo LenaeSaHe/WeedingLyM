@@ -53,5 +53,16 @@
     "nombreInvitados": "Beti + 1",
     "modificar": true,
     "de": "Lena"
+  },
+  {
+    "id": 6,
+    "nombre": "Eric López",
+    "nickname": "Eric",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 1,
+    "nombreInvitados": "Eric, Victoria y Lu",
+    "modificar": true,
+    "de": "Lena"
   }
 ]
