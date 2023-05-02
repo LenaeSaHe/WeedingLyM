@@ -673,15 +673,13 @@ h2 {
   filter: blur(10px);
   transition: all 0.5s ease-in-out;
   aspect-ratio: 16/9;
-  object-fit:cover ;
-
+  object-fit: cover;
 }
 
 .showOurPhoto {
   filter: blur(0px);
   opacity: 1;
 }
-
 
 /* _________ 6ta sección Location _________ */
 .contLoc {
@@ -1095,26 +1093,23 @@ ul li:nth-child(even) .hidden {
   opacity: 0;
 }
 
-#questionWhatsApp a
-{
+#questionWhatsApp a {
   width: 420px;
   height: 60px;
   border: #ccc solid 1px;
   background-color: #ffffff;
   margin: 0 auto;
   border-radius: 15px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  color:#000000;
+  color: #000000;
   text-decoration: none;
 }
-.logoWhatsApp
-{
+.logoWhatsApp {
   margin-left: 15px;
 }
-.txtSearch
-{
+.txtSearch {
   text-align: left;
   padding-right: 30px;
 }
@@ -1142,6 +1137,7 @@ ul li:nth-child(even) .hidden {
   flex: auto;
   gap: 5px;
   width: 110%;
+  height: 100vh;
 }
 
 .photo {
@@ -1402,19 +1398,17 @@ ul li:nth-child(even) .hidden {
     border: none;
     border-top: dashed 2px #ccc;
   }
-  #questionWhatsApp a
-  {
+  #questionWhatsApp a {
     width: 350px;
     height: 80px;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     text-align: center;
   }
-  .txtSearch
-  {
+  .txtSearch {
     text-align: center;
     padding-right: 50px;
-  } 
+  }
   #heartsave {
     padding: 10px 0;
     width: 170px;

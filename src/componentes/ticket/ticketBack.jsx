@@ -18,34 +18,42 @@ const marks = [
     label: "4",
   },
 ];
-export default function TicketBack({ invitado, onCancel, onChangeTickets }) {
-  const [tickets, setTickets] = useState(invitado?.boletos || 1);
+export default function TicketBack({
+  invitado,
+  onConfirm,
+  onCancel,
+  onChangeTickets,
+}) {
+  const [tickets, setTickets] = useState(invitado?.maxBoletos || 1);
 
   function handleConfirm(e) {
     e.preventDefault();
-    onChangeTickets(tickets);
+    onConfirm(tickets);
   }
 
   function handleChange(e) {
     const value = e.target.value;
-    if (value !== invitado?.boletos) {
-      onChangeTickets(value);
-    }
+    setTickets(value);
+    //if (value !== invitado?.boletos) {
+    onChangeTickets(value);
+    //}
   }
 
   return (
     <div className="ticketRSVP">
       <h3 className="center">Confirmar boletos</h3>
-      <p className="text-center">Cuantos boletos vas a ocupar?</p>
+      <p className="text-center">
+        Cuantos boletos vas a ocupar {invitado.maxBoletos}?
+      </p>
 
       <div className="px-2 pt-2">
         <Slider
           aria-label="Always visible"
-          value={invitado?.boletos || 1}
+          value={tickets || 1}
           onChange={handleChange}
           step={1}
           min={1}
-          max={invitado?.maxBoletos || 1}
+          max={invitado.maxBoletos || 1}
           marks={marks}
           valueLabelDisplay="on"
         />
@@ -54,9 +62,9 @@ export default function TicketBack({ invitado, onCancel, onChangeTickets }) {
         <button
           id="bYes"
           className="ticketButton btn btn-outline-success text-center"
-          onClick={onCancel}
+          onClick={handleConfirm}
         >
-          Confirmar
+          Confirmar Asistencia
         </button>
       </div>
     </div>

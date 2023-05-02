@@ -21,7 +21,7 @@ export default function TicketContent({ id }) {
       setAssist(store.invitado.confirmacion);
       console.log("Confirmacion", store.invitado.confirmacion);
     }
-  }, [store]);
+  }, [store.invitado]);
 
   function handleConfirm(e) {
     e.preventDefault();
@@ -29,10 +29,14 @@ export default function TicketContent({ id }) {
     const name = e.target.id;
 
     if (name === "bChange") {
+      //cambiar  el numero de tickets
       setChangeTickets(true);
     } else {
+      //cambianos a que ya se confirmo
+      //una opcion, que va a asistir o no
       setConfirmed(true);
       if (name === "bYes") {
+        //si va a asistir
         setAssist(true);
         store.saveInvitado(
           id,
@@ -42,6 +46,7 @@ export default function TicketContent({ id }) {
           store.invitado?.ninos
         );
       } else if (name === "bNo") {
+        //no va a asistir
         setAssist(false);
         store.saveInvitado(
           id,
@@ -70,6 +75,21 @@ export default function TicketContent({ id }) {
     setChangeTickets(false);
   }
 
+  function handleConfirmTickets(ticketsUpdated) {
+    setChangeTickets(false);
+
+    setConfirmed(true);
+    setAssist(true);
+
+    store.saveInvitado(
+      id,
+      store.invitado?.nombre,
+      true,
+      ticketsUpdated,
+      store.invitado?.ninos
+    );
+  }
+
   function handleChangeTickets(ticketsUpdated) {
     setConfirmed(true);
     setAssist(true);
@@ -95,6 +115,7 @@ export default function TicketContent({ id }) {
           onCancel={handleCancelChangeTickets}
           invitado={store.invitado}
           onChangeTickets={handleChangeTickets}
+          onConfirm={handleConfirmTickets}
         />
       ) : (
         <TicketRSVP
