@@ -12,7 +12,7 @@ export default function Boleto({ id })
   return (
     <Transition initialClassName={""} finalClassName="ticketTransition">
       <div className="ticketContainer my-5">
-        <div className="ticketDate">Sabado 04 de noviembre de 2023</div>
+        <div className="ticketDate">Sábado 04 de noviembre de 2023</div>
         <TicketContent id={id} />
       </div>
       <div className="text-center p-3">

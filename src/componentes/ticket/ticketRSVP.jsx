@@ -22,7 +22,7 @@ export default function TicketRSVP({
         return (
           <div className="text-center" id="denymsg">
             <strong>
-              No va a ser posible acompañarnos <br />
+              No me será posible acompañarlos <br />
               ¿Cambiaste de opinión?
             </strong>
           </div>
@@ -59,7 +59,7 @@ export default function TicketRSVP({
           className="ticketButton btn btn-outline-secondary text-center"
           onClick={onConfirm}
         >
-          No usare todos los boletos
+          No usaré todos los boletos
         </button>
       );
     }
