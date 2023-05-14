@@ -7,7 +7,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Papi y Mami",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Lena"
   },
   {
@@ -18,7 +18,7 @@
     "maxBoletos": 4,
     "ninos": 0,
     "nombreInvitados": "Lety, Fran, Karen y Luisito",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -29,7 +29,7 @@
     "maxBoletos": 4,
     "ninos": 2,
     "nombreInvitados": "Jano, Fina, Ian y Fatima",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -40,7 +40,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Irma y José Luis",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -51,7 +51,7 @@
     "maxBoletos": 5,
     "ninos": 0,
     "nombreInvitados": "Tere, Jaime, Ali, Aime+1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -62,7 +62,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Sonia y Alvaro",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -73,7 +73,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Barbie",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -84,7 +84,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Beti + 1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -95,7 +95,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Arely + 1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -106,7 +106,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Omar + 1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -117,7 +117,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Jav + 1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -128,7 +128,7 @@
     "maxBoletos": 2,
     "ninos": 1,
     "nombreInvitados": "Deu + 1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -139,7 +139,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Kat y Fer",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -150,7 +150,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Emilio + 1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -161,7 +161,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Silvia y Ausencio",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -172,7 +172,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Tere y Antonio",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -183,7 +183,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Saúl + 1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -194,7 +194,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Diana + 1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -205,7 +205,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Gus + 1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -216,7 +216,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Blanca y Luis",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -227,7 +227,7 @@
     "maxBoletos": 2,
     "ninos": 1,
     "nombreInvitados": "Eric, Victoria y Lu",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -238,7 +238,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Gaby y Juan Carlos",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -248,8 +248,8 @@
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 2,
-    "nombreInvitados": "Alejandra y Miguel",
-    "modificar": "TRUE",
+    "nombreInvitados": "Alejandra, Miguel, Emma, Giuliana, Enzo y Nico",
+    "modificar": true,
     "de": "Lena"
   },
   {
@@ -260,7 +260,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Papá y Mamá",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -271,7 +271,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Bee e Ivan",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -282,7 +282,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Ari y Byron",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -293,7 +293,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Para y Mamá",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -304,7 +304,7 @@
     "maxBoletos": 1,
     "ninos": 0,
     "nombreInvitados": "Osvaldo",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -315,7 +315,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Abuelitos",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -326,7 +326,7 @@
     "maxBoletos": 3,
     "ninos": 0,
     "nombreInvitados": "Moni, Manuelito y Monis",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -337,7 +337,7 @@
     "maxBoletos": 4,
     "ninos": 0,
     "nombreInvitados": "Mari, Pépe, Dani y Marianita",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -348,7 +348,7 @@
     "maxBoletos": 2,
     "ninos": 1,
     "nombreInvitados": "Isa, Blanca y Lu",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -359,7 +359,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Arma y Miriam",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -370,7 +370,7 @@
     "maxBoletos": 2,
     "ninos": 1,
     "nombreInvitados": "Lalo, Edna y Julieta",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -381,7 +381,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Dani e Itzel",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -392,7 +392,7 @@
     "maxBoletos": 2,
     "ninos": 1,
     "nombreInvitados": "Marco, Gali y Galita",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -403,7 +403,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Alejando +1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Marcos"
   },
   {
@@ -414,7 +414,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "César e Irais",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Marcos"
   },
   {
@@ -425,7 +425,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "César y",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Marcos"
   },
   {
@@ -436,7 +436,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Alex +1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Marcos"
   },
   {
@@ -447,7 +447,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Ismael y Jimena",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -458,7 +458,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Tomás y Daniela",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -469,7 +469,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Omar y Daniela",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -480,7 +480,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Omar +1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Marcos"
   },
   {
@@ -491,7 +491,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Alberto y Andrea",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -502,7 +502,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Pozos +1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Marcos"
   },
   {
@@ -513,7 +513,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Carolina +1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Marcos"
   },
   {
@@ -524,7 +524,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "MF y Karen",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -535,7 +535,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "MF y Edith",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -546,7 +546,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Abacú y Nadya",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -557,7 +557,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Pedro +1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Marcos"
   },
   {
@@ -568,7 +568,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Esperanza +1",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -579,7 +579,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Mario +1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Marcos"
   },
   {
@@ -590,7 +590,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Paola +1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Marcos"
   },
   {
@@ -601,7 +601,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Ivonne +1",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -612,7 +612,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Diana +1",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -623,7 +623,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Eva +1",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -634,7 +634,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Ricardo y Natalia",
-    "modificar": "FALSE",
+    "modificar": false,
     "de": "Marcos"
   },
   {
@@ -645,7 +645,7 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Alejandro + 1",
-    "modificar": "TRUE",
+    "modificar": true,
     "de": "Marcos"
   }
 ]
