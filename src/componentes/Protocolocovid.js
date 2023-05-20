@@ -15,6 +15,11 @@ function Protocolocovid() {
             Por favor, respeta las medidas de sanidad.
           </div>
           <div className="col-6 col-lg-3 text-center smallletter py-1">
+            <img src={distancia} width="70" />
+            <br />
+            Mantén la sana distancia.
+          </div>
+          <div className="col-6 col-lg-3 text-center smallletter py-1">
             <img src={mask} width="48" />
             <br />
             Continua con el uso de cubrebocas y gel antibacteríal.
@@ -24,11 +29,7 @@ function Protocolocovid() {
             <br />
             Evita el contacto de tus manos con nariz y boca.
           </div>
-          <div className="col-6 col-lg-3 text-center smallletter py-1">
-            <img src={distancia} width="70" />
-            <br />
-            Mantén la sana distancia.
-          </div>
+          
         </div>
         <div className="row mt-3">
           <div className="fontcovid col-12 text-center">

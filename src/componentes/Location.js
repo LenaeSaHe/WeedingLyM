@@ -82,7 +82,7 @@ function Location() {
                   target="_blank"
                   onClick={handleRequestLocation}
                 >
-                  Desde tu ubicacion
+                  Desde tu ubicación
                 </a>
               </div>
             </div>

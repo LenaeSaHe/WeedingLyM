@@ -43,7 +43,7 @@ export default function TicketBack({
     <div className="ticketRSVP">
       <h3 className="center">Confirmar boletos</h3>
       <p className="text-center">
-        Cuantos boletos vas a ocupar {invitado.maxBoletos}?
+        ¿Cuántos boletos deseas ocupar?
       </p>
 
       <div className="px-2 pt-2">

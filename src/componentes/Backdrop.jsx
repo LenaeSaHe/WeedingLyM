@@ -65,7 +65,7 @@ const LoadingScreen = forwardRef((props, ref) => {
         <img src={rings} />
       </div>
       <div className="messagePercent">
-        <span>Preparando tu invitacion...</span> <br />
+        <span>Preparando tu invitación...</span> <br />
         <div className="progressBar">
           <div className="progress" style={{ width: `${ref.current}%` }}></div>
         </div>

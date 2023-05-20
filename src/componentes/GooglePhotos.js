@@ -66,8 +66,8 @@ function GooglePhotos({ invitado }) {
             <Title white>Comparte tus momentos con nosotros</Title>
             <div className="formPhotosDescription">
               <Paragraph>
-                Nos encantaria que pudieras compartirnos las fotos que tomaste
-                con nosotros
+                Nos encantaría que pudieras compartirnos las fotos que tomaste
+                durante nuestra boda
               </Paragraph>
             </div>
           </div>
