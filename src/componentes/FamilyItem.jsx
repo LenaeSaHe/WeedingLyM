@@ -8,7 +8,7 @@ let options = {
   threshold: 0.4,
 };
 
-export default function FamilyItem({ title, father, mother }) {
+export default function FamilyItem({ title, father, mother, stylePhoto }) {
   const ref = useRef(null);
   const [show, setShow] = useState(false);
   const callbackFunc = (entries) => {
@@ -44,7 +44,7 @@ export default function FamilyItem({ title, father, mother }) {
             "center",
             "photofam",
             "famPhotos",
-            "photoPapasLena",
+            stylePhoto,
             show ? "showFam" : ""
           )}
         ></div>

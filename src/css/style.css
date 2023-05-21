@@ -648,10 +648,11 @@ h2 {
   transition: all 0.4s ease-out;
 }
 .photoPapasMarcos {
-  background-image: url(../img/circulo-flores.png), url(../img/papas.png);
+  background-image: url(../img/circulo-flores.png), url(../img/aym01.png);
   background-size: contain, 210px 210px;
   background-repeat: no-repeat, no-repeat;
   background-position: center center, center, center;
+  border-radius: 50%;
 }
 .photoPapasLena {
   background-image: url(../img/circulo-flores.png), url(../img/jym.png);
