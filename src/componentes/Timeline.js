@@ -32,15 +32,22 @@ function Timeline() {
                 <Event
                   titulo="Coctel de bienvenida"
                   imagen={coctel}
-                  time="16:00 hrs"
+                  time="15:00 hrs"
                 />
               </li>
               <li>
-                <Event titulo="Recepción" imagen={party} time="17:00 hrs" />
+                <Event titulo="Recepción" imagen={party} time="16:00 hrs" />
               </li>
               <li>
                 <Event
-                  titulo="Pachangon masivo"
+                  titulo="Pachangón masivo"
+                  imagen={party}
+                  time="16:30 hrs"
+                />
+              </li>
+              <li>
+                <Event
+                  titulo="Sorpresas"
                   imagen={party}
                   time="17:00 hrs"
                 />
