@@ -1,9 +1,7 @@
-import googleCalendar from "../img/calendar_google.png";
 import googleicon from "../img/google.png";
 import Paragraph from "./common/Paragraph";
 import Title from "./common/Title";
 import heartsave from "../img/imgsave.png";
-import argollas from "../img/argollas.png";
 import classNames from "classnames";
 import { useRef, useState, useEffect } from "react";
 

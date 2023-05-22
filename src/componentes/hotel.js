@@ -3,7 +3,6 @@ import villas from "../img/villashotel.jpg";
 import holidayinn from "../img/holidayinn.jpg";
 import fiestaamericana from "../img/fiestaamericana.jpg";
 
-import airbnbLogo2 from "../img/airbnb-logo.png";
 import airbnbA from "../img/airbnb1.webp";
 import airbnbB from "../img/airbnb2.webp";
 import airbnbLogo from "../img/circleairbnb.png";

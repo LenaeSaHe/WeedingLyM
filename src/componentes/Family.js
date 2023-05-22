@@ -1,7 +1,4 @@
-import photoFamM from "../img/papas.jpg";
-import photoFamL from "../img/jym.jpeg";
-import flowersCircle from "../img/circulo-flores.png";
-import Title from "./common/Title";
+
 import FamilyItem from "./FamilyItem";
 function Family() {
   return (
