@@ -1,9 +1,5 @@
-import { useRef } from "react";
-import { useEffect } from "react";
-import monograma from "../img/Imagen2.png";
-import cover from "../img/mainLyM.jpg";
+
 import florCentral from "../img/flor-central.png";
-import CarrouselHeader from "./CarrouselHeader";
 
 function Header({ invitado }) {
   return (

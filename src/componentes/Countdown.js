@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import CountdownNumber from "./CountdownNumber";
-import mainYard from "../img/fondo-salon.png";
-import Title from "./common/Title";
 
 function Countdown() {
   const [days, setDays] = useState(0);

@@ -17,9 +17,18 @@ export default function Boleto({ id })
       </div>
       <div className="text-center p-3">
           {         
-          !!store.invitado?.ninos && <small>
-           Niñ@s a partir de 3 años tendrán menu infantil</small>
+            !!store.invitado?.ninos && 
+            <small><b>Niñ@s entre 3 y 12 años tendrán menu infantil</b></small>
+          }
+          {         
+            !!!store.invitado?.ninos && 
+            <small><b>
+              Para una mejor experiencia para todos los presentes, 
+              hemos decidido celebrar este momento sin niños. 
+              Deseamos que esta decisión no les impida asistir a nuestra celebración. 
+            </b></small>
           }      
+      
       </div>
 
       <div className="text-center p-3" id="questionWhatsApp">

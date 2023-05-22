@@ -1,9 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { useMemo } from "react";
-import { consInvitado, sumaInvitado } from "../../datos/firebase";
 import { useAppContext } from "../../datos/store";
-import { getInvitadosNumber } from "../../datos/util";
 import monogramaticket from "../../img/logoml-full.png";
 import TicketBack from "./ticketBack";
 import TicketRSVP from "./ticketRSVP";
