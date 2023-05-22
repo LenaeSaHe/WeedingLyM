@@ -23,8 +23,8 @@ export default function Boleto({ id })
           {         
             !!!store.invitado?.ninos && 
             <small><b>
-              Para una mejor experiencia para todos los presentes, 
-              hemos decidido celebrar este momento sin niños. 
+              Para contar con una mejor experiencia durante el evento, 
+              hemos decidido celebrar este momento sin niños.
               Deseamos que esta decisión no les impida asistir a nuestra celebración. 
             </b></small>
           }      
