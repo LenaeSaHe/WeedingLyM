@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./componentes/ErrorPage";
 import InvitadoState from "./datos/store";
 import MasFotos from "./componentes/MasFotos";
+import data from "./datos/dataInvitados.json";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -18,6 +19,20 @@ const router = createBrowserRouter([
   {
     path: "/:id",
     element: <App />,
+    loader: async ({ params }) => {
+      if (params.id) {
+        console.log(params.id);
+        //Buscamos en los datos locales
+        const found = data.find(
+          (item) => item.id.toString() === params.id.toString()
+        );
+
+        if (!found) {
+          throw new Response("Not Found", { status: 404 });
+        }
+        return found;
+      }
+    },
     errorElement: <ErrorPage />,
   },
   {

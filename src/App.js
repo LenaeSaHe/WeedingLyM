@@ -14,7 +14,7 @@ import Footer from "./componentes/Footer";
 import Timeline from "./componentes/Timeline";
 import GalleryTwo from "./componentes/GalleryTwo";
 import Backdrop from "./componentes/Backdrop.jsx";
-import { useParams } from "react-router-dom";
+import { useParams, useLoaderData } from "react-router-dom";
 import data from "./datos/dataInvitados.json";
 import Protocolocovid from "./componentes/Protocolocovid";
 import GooglePhotos from "./componentes/GooglePhotos";
@@ -24,25 +24,11 @@ function App() {
   /* Función = Componente debe llevar un return dentro de la funcion jsx */
   const params = useParams();
   const store = useAppContext();
+  const data = useLoaderData();
 
   async function loadInvitadoInfo() {
-    if (params.id) {
-      console.log(data);
-
-      //Buscamos en los datos locales
-      const found = data.find(
-        (item) => item.id.toString() === params.id.toString()
-      );
-      if (found) {
-        //si lo encontramos buscamos en firebase
-        if (await store.loadInvitado(params.id, found)) {
-          //Si lo encontró actualizamos las propiedades con las locales
-        } else {
-          //No pasa nada
-        }
-      } else {
-        throw new Response("Not Found", { status: 404 });
-      }
+    console.log("❤️❤️", data);
+    if (await store.loadInvitado(params.id, data)) {
     }
   }
   useEffect(() => {
