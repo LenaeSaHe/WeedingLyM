@@ -21,28 +21,43 @@ import img14 from "../img/fotos/14.jpeg";
 import img15 from "../img/fotos/15.jpeg";
 import img16 from "../img/fotos/16.jpeg";
 import img17 from "../img/fotos/17.jpeg";
-import img18 from "../img/fotos/18.jpeg";
+import img18 from "../img/fotos/18.jpg";
 
-const list = [img01,img02,img03,img04,img05,img06,img07,img08,img09,img10,img11,img12,img13,img14,img15,img16,img17,img18]
+const list = [
+  img01,
+  img02,
+  img03,
+  img04,
+  img05,
+  img06,
+  img07,
+  img08,
+  img09,
+  img10,
+  img11,
+  img12,
+  img13,
+  img14,
+  img15,
+  img16,
+  img17,
+  img18,
+];
 const copy = [...list];
 
-export function getImages()
-{
-    const slots = 5;
-    const res =[]; 
-    for(let i=0; i<slots; i++)
-    {
-      const index=Math.floor(Math.random()*copy.length)
-      console.log(index);
-      res.push(copy[parseInt(index)]);
-      copy.splice(index,1);
-    }
-    return res;
+export function getImages() {
+  const slots = 5;
+  const res = [];
+  for (let i = 0; i < slots; i++) {
+    const index = Math.floor(Math.random() * copy.length);
+    console.log(index);
+    res.push(copy[parseInt(index)]);
+    copy.splice(index, 1);
+  }
+  return res;
 }
-const images=getImages();
+const images = getImages();
 console.log(images);
-export {images};
+export { images };
 
 export default [logo, mainMyL, mainMyL2, mainMyL3, mainMyL4];
-
-
