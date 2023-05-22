@@ -34,14 +34,15 @@ export default function Transition({
   }, []);
 
   return (
-    <div
-      ref={ref}
-      className={classNames(
-        "transition",
-        show ? initialClassName : finalClassName
-      )}
-    >
-      {children}
+    <div ref={ref}>
+      <div
+        className={classNames(
+          "transition",
+          show ? initialClassName : finalClassName
+        )}
+      >
+        {children}
+      </div>
     </div>
   );
 }
