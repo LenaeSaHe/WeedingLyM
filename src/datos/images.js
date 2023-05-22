@@ -23,6 +23,8 @@ import img16 from "../img/fotos/16.jpeg";
 import img17 from "../img/fotos/17.jpeg";
 import img18 from "../img/fotos/18.jpg";
 import img19 from "../img/fotos/19.jpg";
+import img21 from "../img/fotos/21.jpg";
+import img22 from "../img/fotos/22.jpg";
 
 const list = [
   img01,
@@ -44,9 +46,8 @@ const list = [
   img17,
   img18,
   img19,
-  img19,
-  img19,
-  img19
+  img21,
+  img22
 ];
 const copy = [...list];
 
