@@ -8,6 +8,7 @@ import ErrorPage from "./componentes/ErrorPage";
 import InvitadoState from "./datos/store";
 import MasFotos from "./componentes/MasFotos";
 import data from "./datos/dataInvitados.json";
+import Admin from "./componentes/Admin";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/v/admin",
+    element: <Admin />,
   },
   {
     path: "/:id",

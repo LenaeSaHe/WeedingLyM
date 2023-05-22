@@ -1240,6 +1240,33 @@ ul li:nth-child(even) .hidden {
   padding: 10px 0 30px 0;
 }
 
+.inviteItem {
+  background-color: rgb(255, 231, 187);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.confirmations {
+  max-width: 500px;
+  width: 100%;
+  margin: 50px auto;
+  gap: 10px;
+}
+
+.confirmationItem {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.confirmationSi {
+  background-color: rgb(187, 255, 205);
+}
+.confirmationNo {
+  background-color: rgb(255, 187, 187);
+}
+
 /* Size of screen */
 @media screen and (max-width: 500px) {
   .countdownNumber {

@@ -5,7 +5,7 @@ import { initializeApp } from "firebase/app";
 
 import { getFirestore } from "firebase/firestore";
 
-import { doc, setDoc, getDoc } from "firebase/firestore";
+import { doc, setDoc, getDoc, getDocs, collection } from "firebase/firestore";
 
 import {
   getStorage,
@@ -95,4 +95,15 @@ async function getDownloadUrl(fullpath, name) {
 
   console.log({ url, submitedBy: name.split("/")[0] });
   return { url, submitedBy: name.split("-")[0] };
+}
+
+export async function getConfirmaciones() {
+  const res = [];
+  const querySnapshot = await getDocs(collection(db, "invitados"));
+  querySnapshot.forEach((doc) => {
+    console.log(`${doc.id} => ${doc.data()}`);
+    res.push(doc.data());
+  });
+
+  return res;
 }
