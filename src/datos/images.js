@@ -47,7 +47,7 @@ const list = [
   img18,
   img19,
   img21,
-  img22
+  img22,
 ];
 const copy = [...list];
 
@@ -66,4 +66,4 @@ const images = getImages();
 console.log(images);
 export { images };
 
-export default [logo, mainMyL, mainMyL2, mainMyL3, mainMyL4];
+export default [logo, mainMyL, mainMyL2, mainMyL3, mainMyL4, ...images];
