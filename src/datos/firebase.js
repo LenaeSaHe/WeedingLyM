@@ -46,11 +46,11 @@ export async function consInvitado(id) {
   const docSnap = await getDoc(docRef);
 
   if (docSnap.exists()) {
-    console.log("Document data:", docSnap.data());
+    //console.log("Document data:", docSnap.data());
     return docSnap.data();
   } else {
     // doc.data() will be undefined in this case
-    console.log("No such document!");
+    // console.log("No such document!");
     return null;
   }
 }
@@ -64,7 +64,7 @@ export async function submitPhoto(file, filename) {
 
   // 'file' comes from the Blob or File API
   const res = await uploadBytes(storageRef, file);
-  console.log("Uploaded a blob or file!");
+  //console.log("Uploaded a blob or file!");
 
   return res;
 }
@@ -81,7 +81,7 @@ export async function getPhotos() {
     const urls = [];
     response.items.forEach((itemRef) => {
       // All the items under listRef.
-      console.log(itemRef);
+      //console.log(itemRef);
       urls.push(getDownloadUrl(itemRef.fullPath, itemRef.name));
     });
     return await Promise.all(urls);
@@ -93,7 +93,7 @@ export async function getPhotos() {
 async function getDownloadUrl(fullpath, name) {
   const url = await getDownloadURL(ref(storage, fullpath));
 
-  console.log({ url, submitedBy: name.split("/")[0] });
+  //console.log({ url, submitedBy: name.split("/")[0] });
   return { url, submitedBy: name.split("-")[0] };
 }
 
@@ -101,7 +101,7 @@ export async function getConfirmaciones() {
   const res = [];
   const querySnapshot = await getDocs(collection(db, "invitados"));
   querySnapshot.forEach((doc) => {
-    console.log(`${doc.id} => ${doc.data()}`);
+    //console.log(`${doc.id} => ${doc.data()}`);
     res.push(doc.data());
   });
 

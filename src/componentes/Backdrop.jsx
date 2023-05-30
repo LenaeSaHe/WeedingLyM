@@ -1,6 +1,6 @@
 import { useEffect, useRef, useReducer, useState, forwardRef } from "react";
 import classNames from "classnames";
-import { preloadImages } from "../datos/util";
+import { getImages } from "../datos/util";
 import { default as images } from "../datos/images";
 import rings from "../img/loadingWeeding02.gif";
 
@@ -16,23 +16,19 @@ function Backdrop({ invitado }) {
   useEffect(function () {
     addScroll();
 
-    preloadImages(
+    getImages(
       images,
-      () => {
-        /* onFinish */
+      (progress) => {
+        progressRef.current = progress;
         render();
-        progressRef.current = 100;
+        console.log("progress", progress);
         timer = setTimeout(() => {
           setHideBackdrop(true);
           setLoading(false);
           clearTimeout(timer);
         }, 3000);
       },
-      (progress) => {
-        /* onProgress */
-        progressRef.current = progress * 100;
-        render();
-      }
+      () => {}
     );
   }, []);
   /**
