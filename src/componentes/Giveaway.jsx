@@ -28,7 +28,7 @@ function Giveaway() {
             ¡ Valoramos mucho tu asistencia !<br />
             Si deseas tener algún detalle con nosotros, te dejamos algunas
             sugerencias
-            <p className="txtTitles">¡ Gracias !</p>
+            <div className="txtTitles">¡ Gracias !</div>
           </Paragraph>
         </div>
       </div>

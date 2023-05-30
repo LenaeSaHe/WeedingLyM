@@ -1,7 +1,8 @@
 import mainMyL from "../img/mainLyM.jpg";
-import mainMyL2 from "../img/mainLyM2.jpg";
-import mainMyL3 from "../img/mainLyM3.jpg";
-import mainMyL4 from "../img/mainLyM4.jpg";
+import saveTheDate from "../img/savethedate2.jpg";
+import jym from "../img/jym.png";
+import aym01 from "../img/aym01.png";
+import finca from "../img/finca.jpeg";
 import logo from "../img/L&M.png";
 
 import img01 from "../img/fotos/01.jpeg";
@@ -66,4 +67,4 @@ const images = getImages();
 console.log(images);
 export { images };
 
-export default [logo, mainMyL, mainMyL2, mainMyL3, mainMyL4, ...images];
+export default [logo, mainMyL, saveTheDate, jym, aym01, finca, ...images];

@@ -27,9 +27,8 @@ async function prefetchResource(
   try {
     onChangeProgress(n / total);
     console.log("loading item", n, n / total);
-    const res = await promises[0];
+    const item = await promises.pop();
     console.log("Item", n, "completed");
-    promises.shift();
     prefetchResource(promises, total, n + 1, onFinish, onChangeProgress);
   } catch (err) {
     console.error(err);

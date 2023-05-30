@@ -11,6 +11,9 @@ export default function InvitadoState({ children }) {
   const [invitado, setInvitado] = useState(null);
 
   async function loadInvitado(id, local) {
+    if (!id) {
+      return null;
+    }
     const inv = await consInvitado(id);
     if (inv) {
       local.boletos = inv.boletos;

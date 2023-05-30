@@ -69,7 +69,7 @@ const LoadingScreen = forwardRef((props, ref) => {
         <div className="progressBar">
           <div className="progress" style={{ width: `${ref.current}%` }}></div>
         </div>
-        {ref.current}% lista
+        {Math.floor(ref.current)}% lista
       </div>
     </>
   );
@@ -94,7 +94,10 @@ function WelcomeScreen({ invitado }) {
         <div className="bd-background-layer layer8"></div>
       </div>
       <div className={classNames("fadeIn", "message m-auto mt-3")}>
-       {invitado?.nickname.split(" ").length>1 ? "Los invitamos" : "Te invitamos"} a compartir este bello momento con nosotros
+        {invitado?.nickname.split(" ").length > 1
+          ? "Los invitamos"
+          : "Te invitamos"}{" "}
+        a compartir este bello momento con nosotros
       </div>
     </div>
   );
