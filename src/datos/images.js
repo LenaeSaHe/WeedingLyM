@@ -4,6 +4,14 @@ import jym from "../img/jym.png";
 import aym01 from "../img/aym01.png";
 import finca from "../img/finca.jpeg";
 import logo from "../img/L&M.png";
+import logolm01 from "../img/logoml-01.png";
+import logolm02 from "../img/logoml-02.png";
+import logolm03 from "../img/logoml-03.png";
+import logolm04 from "../img/logoml-04.png";
+import logolm05 from "../img/logoml-05.png";
+import logolm06 from "../img/logoml-06.png";
+import logolm07 from "../img/logoml-07.png";
+import logolm08 from "../img/logoml-08.png";
 
 import img01 from "../img/fotos/01.jpeg";
 import img02 from "../img/fotos/02.jpeg";
@@ -67,4 +75,20 @@ const images = getImages();
 console.log(images);
 export { images };
 
-export default [logo, mainMyL, saveTheDate, jym, aym01, finca, ...images];
+export default [
+  logo,
+  mainMyL,
+  saveTheDate,
+  jym,
+  aym01,
+  finca,
+  logolm01,
+  logolm02,
+  logolm03,
+  logolm04,
+  logolm05,
+  logolm06,
+  logolm07,
+  logolm08,
+  ...images,
+];
