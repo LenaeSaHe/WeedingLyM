@@ -76,12 +76,6 @@ console.log(images);
 export { images };
 
 export default [
-  logo,
-  mainMyL,
-  saveTheDate,
-  jym,
-  aym01,
-  finca,
   logolm01,
   logolm02,
   logolm03,
@@ -90,5 +84,11 @@ export default [
   logolm06,
   logolm07,
   logolm08,
+  logo,
+  mainMyL,
+  saveTheDate,
+  jym,
+  aym01,
+  finca,
   ...images,
 ];
