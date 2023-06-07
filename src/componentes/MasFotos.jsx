@@ -8,6 +8,7 @@ export default function MasFotos() {
   const [photosCol03, setPhotosCol03] = useState([]);
   const [photosCol04, setPhotosCol04] = useState([]);
   useEffect(() => {
+    console.log(window.innerWidth);
     document.querySelector("html").style.overflowY = "auto";
     document.querySelector("body").style.overflowY = "auto";
     loadPhotos();
@@ -15,19 +16,20 @@ export default function MasFotos() {
 
   async function loadPhotos() {
     const data = await getPhotos();
+    const columns = window.innerWidth < 600 ? 2 : 4;
     if (data && data.length > 0) {
       const col01 = [];
       const col02 = [];
       const col03 = [];
       const col04 = [];
       for (let i = 0; i < data.length; i++) {
-        if (i % 4 === 0) {
+        if (i % columns === 0) {
           col01.push(data[i]);
-        } else if (i % 4 === 1) {
+        } else if (i % columns === 1) {
           col02.push(data[i]);
-        } else if (i % 4 === 2) {
+        } else if (i % columns === 2) {
           col03.push(data[i]);
-        } else if (i % 4 === 3) {
+        } else if (i % columns === 3) {
           col04.push(data[i]);
         }
       }
