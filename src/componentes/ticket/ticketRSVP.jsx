@@ -85,10 +85,12 @@ export default function TicketRSVP({
     ¡Gracias, {invitado ? invitado.nickname : ""}!
   </p> */}
       <h3 className="center">RSVP</h3>
-      <p>Por favor responde antes del 20 de agosto de 2023</p>
+      <p className="center">
+        Por favor responde antes del 20 de agosto de 2023
+      </p>
       <form>
         <div>
-          <div className="ticketsNumbe text-center">
+          <div className="ticketsNumber text-center">
             <strong>{getInvitadosName()}</strong>
           </div>
         </div>
