@@ -647,5 +647,27 @@
     "nombreInvitados": "Alejandro + 1",
     "modificar": true,
     "de": "Marcos"
+  },
+  {
+    "id": "test1",
+    "nombre": "Juan Test",
+    "nickname": "Juan",
+    "boletos": 3,
+    "maxBoletos": 3,
+    "ninos": 0,
+    "nombreInvitados": "Juan +2",
+    "modificar": true,
+    "de": "Marcos"
+  },
+  {
+    "id": "test2",
+    "nombre": "Lucia Test",
+    "nickname": "Lucy",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 2,
+    "nombreInvitados": "Lucia y Ornaldo",
+    "modificar": true,
+    "de": "Lena"
   }
 ]

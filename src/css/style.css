@@ -59,6 +59,7 @@ section {
 }
 .txtParagraph {
   font-family: var(--fuenteParrafo);
+  padding: 10px 0;
 }
 
 .txtTitles2 {
@@ -1057,9 +1058,11 @@ ul li:nth-child(even) .hidden {
   text-align: center;
 }
 .ticketContainer .ticketRSVP {
+  font-family: var(--fuenteParrafo);
   width: 370px;
   padding: 16px;
   border-left: dashed 2px #ccc;
+  font-family: ;
 }
 
 .ticketContainer .ticketRSVP .ticketsNumber {
@@ -1133,17 +1136,19 @@ ul li:nth-child(even) .hidden {
 .photosWrapper {
   overflow: hidden;
   max-height: 100vh;
+  padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
   flex: auto;
   gap: 5px;
   width: 110%;
   height: 100vh;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 
 .photo {
   opacity: 0.8;
-  height: 300px;
   display: flex;
   flex-direction: column;
   width: auto;
@@ -1153,9 +1158,13 @@ ul li:nth-child(even) .hidden {
 .photo:hover {
   opacity: 1;
 }
+
+.photo,
+.photo img {
+  height: 350px;
+}
 .photo img {
   object-fit: cover;
-  height: 300px;
   width: auto;
   border-radius: 5px;
 }
@@ -1479,7 +1488,6 @@ ul li:nth-child(even) .hidden {
   }
 
   .photo {
-    height: 200px;
     display: flex;
     flex-direction: column;
     width: auto;
@@ -1488,8 +1496,12 @@ ul li:nth-child(even) .hidden {
 
   .photo img {
     object-fit: cover;
-    height: 200px;
     width: auto;
+  }
+
+  .photo,
+  .photo img {
+    height: 200px;
   }
 
   .fontSize90 {
