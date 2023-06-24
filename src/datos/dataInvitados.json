@@ -292,7 +292,7 @@
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
-    "nombreInvitados": "Para y Mamá",
+    "nombreInvitados": "Papá y Mamá",
     "modificar": false,
     "de": "Marcos"
   },
@@ -325,36 +325,36 @@
     "boletos": 3,
     "maxBoletos": 3,
     "ninos": 0,
-    "nombreInvitados": "Moni, Manuelito y Monis",
+    "nombreInvitados": "Tia Moni, Manuelito y Monis",
     "modificar": false,
     "de": "Marcos"
   },
   {
     "id": "7f72e4f8",
     "nombre": "Maria de Lourdes Rivas Arzaluz",
-    "nickname": "Tía Mari",
+    "nickname": "Tíos Pépe y Mari",
     "boletos": 4,
     "maxBoletos": 4,
     "ninos": 0,
-    "nombreInvitados": "Mari, Pépe, Dani y Marianita",
+    "nombreInvitados": "Tíos Pépe, Mari, Dani y Marianita",
     "modificar": false,
     "de": "Marcos"
   },
   {
     "id": "f76f37ec",
     "nombre": "Isaias Rivas Arzaluz",
-    "nickname": "Tío Isa",
+    "nickname": "Tío Isa y Blanca",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 1,
-    "nombreInvitados": "Isa, Blanca y Lu",
+    "nombreInvitados": "Tío Isa, Blanca y Lu",
     "modificar": false,
     "de": "Marcos"
   },
   {
     "id": "8c3c4a21",
     "nombre": "Armando Rivas Arzaluz",
-    "nickname": "Tío Arma",
+    "nickname": "Tío Arma y Miriam",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
@@ -365,7 +365,7 @@
   {
     "id": "9d3ec2cd",
     "nombre": "Eduardo Rodriguez Castellanos",
-    "nickname": "Eduardo",
+    "nickname": "Eduardo y Edna",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 1,
@@ -376,7 +376,7 @@
   {
     "id": "bb64d4ed",
     "nombre": "Daniel Benitez Ballina",
-    "nickname": "Daniel",
+    "nickname": "Daniel e Itzel",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
@@ -387,7 +387,7 @@
   {
     "id": "671080a8",
     "nombre": "Marco Maza",
-    "nickname": "Marco",
+    "nickname": "Marco y Gali",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 1,
@@ -413,7 +413,7 @@
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
-    "nombreInvitados": "César e Irais",
+    "nombreInvitados": "César +1",
     "modificar": true,
     "de": "Marcos"
   },
@@ -424,7 +424,7 @@
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
-    "nombreInvitados": "César y",
+    "nombreInvitados": "César +1",
     "modificar": true,
     "de": "Marcos"
   },
@@ -453,7 +453,7 @@
   {
     "id": "dc9f4ae7",
     "nombre": "Tomás Perez Posada",
-    "nickname": "Tomás",
+    "nickname": "Tomás y Daniela",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
@@ -468,7 +468,7 @@
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
-    "nombreInvitados": "Omar y Daniela",
+    "nombreInvitados": "Omar y Dani",
     "modificar": false,
     "de": "Marcos"
   },
@@ -490,14 +490,14 @@
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
-    "nombreInvitados": "Alberto y Andrea",
+    "nombreInvitados": "Alberto +1",
     "modificar": false,
     "de": "Marcos"
   },
   {
     "id": "ec5155a5",
     "nombre": "Omar Pozos Tovar",
-    "nickname": "Pozos",
+    "nickname": "Pozillos",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
@@ -534,7 +534,7 @@
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
-    "nombreInvitados": "MF y Edith",
+    "nombreInvitados": "Victor y Edith",
     "modificar": false,
     "de": "Marcos"
   },
@@ -563,7 +563,7 @@
   {
     "id": "43b45db2",
     "nombre": "Esperanza Salazar",
-    "nickname": "Esperanza",
+    "nickname": "Espe",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,

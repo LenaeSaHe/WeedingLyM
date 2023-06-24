@@ -36,7 +36,7 @@ export default function TicketRSVP({
             className="ticketButton btn btn-outline-success text-center"
             onClick={onConfirm}
           >
-            Confirmar elección
+            Confirmar asistencia
           </button>
           <ModifyTickets modificar={invitado?.modificar} />
           <button
