@@ -322,10 +322,10 @@
     "id": "591bbd45",
     "nombre": "Monica Rivas Arzaluz",
     "nickname": "Tía Moni",
-    "boletos": 3,
-    "maxBoletos": 3,
+    "boletos": 4,
+    "maxBoletos": 4,
     "ninos": 0,
-    "nombreInvitados": "Tia Moni, Manuelito y Monis",
+    "nombreInvitados": "Tia Moni, Ricardo, Manuelito y Monis",
     "modificar": false,
     "de": "Marcos"
   },
@@ -343,11 +343,11 @@
   {
     "id": "f76f37ec",
     "nombre": "Isaias Rivas Arzaluz",
-    "nickname": "Tío Isa y Blanca",
+    "nickname": "Tíos Isa y Blanca",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 1,
-    "nombreInvitados": "Tío Isa, Blanca y Lu",
+    "nombreInvitados": "Tíos Isa, Blanca y Lu",
     "modificar": false,
     "de": "Marcos"
   },
