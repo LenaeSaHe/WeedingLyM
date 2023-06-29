@@ -88,7 +88,7 @@ export default function Admin() {
               confirmado.confirmacion ? "confirmationSi" : "confirmationNo"
             )}
           >
-            <div>{confirmado.nombre}</div>
+            <div style={{ width: "250px" }}>{confirmado.nombre}</div>
             <div>{confirmado.confirmacion ? "SI ASISTIRA" : "NO ASISTIRA"}</div>
             <div>{confirmado.boletos} Boletos</div>
           </div>
