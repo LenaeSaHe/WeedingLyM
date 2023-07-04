@@ -649,6 +649,28 @@
     "de": "Marcos"
   },
   {
+    "id": "19bef312",
+    "nombre": "Felipe Vargas",
+    "nickname": "Felipe",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 0,
+    "nombreInvitados": "Felipe y Diana",
+    "modificar": true,
+    "de": "Marcos"
+  },
+  {
+    "id": "2af0ddc1",
+    "nombre": "CP. Artemio Bringas Castañeda",
+    "nickname": "CP. Artemio y Lic. Maya",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 0,
+    "nombreInvitados": "CP. Artemio y Lic. Maya",
+    "modificar": false,
+    "de": "Marcos"
+  },
+  {
     "id": "test1",
     "nombre": "Juan Test",
     "nickname": "Juan",
