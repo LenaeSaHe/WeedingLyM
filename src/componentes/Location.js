@@ -53,7 +53,7 @@ function Location() {
               <h3 className="cardLoc-title text-center">Finca San Pedro</h3>
               <p className="text-center">
                 Bugambilias 2 Fracc, Brisas, 62584 Temixco, Mor. <br />
-                00:00 hrs.
+                13:30 hrs.
               </p>
               <p className="text-center">
                 <small>Da clic en el botón inferior para acceder al mapa</small>
