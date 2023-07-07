@@ -1062,11 +1062,10 @@ ul li:nth-child(even) .hidden {
   width: 370px;
   padding: 16px;
   border-left: dashed 2px #ccc;
-  font-family: ;
 }
 
 .ticketContainer .ticketRSVP .ticketsNumber {
-  font-size: 40px;
+  font-size: 24px;
   text-align: center;
   font-weight: bold;
 }
@@ -1274,6 +1273,14 @@ ul li:nth-child(even) .hidden {
 }
 .confirmationNo {
   background-color: rgb(255, 187, 187);
+}
+
+.searchInviteContainer {
+  padding: 10px;
+}
+.searchInvite {
+  padding: 5px;
+  width: 100%;
 }
 
 /* Size of screen */
