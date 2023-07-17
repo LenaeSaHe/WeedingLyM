@@ -61,7 +61,7 @@ function Location() {
               <div className="d-grid gap-2">
                 <a
                   className="text-center"
-                  href="https://www.google.com/maps/dir/Miguel+Hidalgo,+50250+San+Felipe+Tlalmimilolpan,+M%C3%A9x.,+M%C3%A9xico/Tecnologico+de+Monterrey+in+Cuernavaca,+M%C3%A9xico+95D+km+104,+Real+del+Puente,+62790+Mor./@19.1238613,-99.3802373,10.83z/data=!4m14!4m13!1m5!1m1!1s0x85cd895e86254ab7:0x70952364520b22af!2m2!1d-99.6385445!2d19.2388561!1m5!1m1!1s0x85cdd819736a4029:0xeaee3fb10b32a22c!2m2!1d-99.221492!2d18.805884!3e0"
+                  href="https://www.google.com/maps/dir/Museo+Torres+Bicentenario,+Reforma+y+FFCC+Nacionales,+Toluca,+State+of+Mexico/Finca+San+Pedro+Jard%C3%ADn+Para+Bodas,+Bugambilias,+Brisas,+Temixco,+Morelos/@19.0440469,-99.4005983,11.44z/data=!4m14!4m13!1m5!1m1!1s0x85cd8a21854e8977:0xeb4f4e4e99df1781!2m2!1d-99.6290893!2d19.2876233!1m5!1m1!1s0x85cdd8cf8fdd2f77:0xd75bcd27c8767a40!2m2!1d-99.2211285!2d18.852295!3e0?entry=ttu"
                   id="btnlink"
                   target="_blank"
                 >
@@ -69,7 +69,7 @@ function Location() {
                 </a>
                 <a
                   className="text-center"
-                  href="https://www.google.com/maps/dir/Caseta+Tlalpan,+Carr.+Federal+A+Cuernavaca,+Los+Cipreses,+Mexico+City,+CDMX/Tecnologico+de+Monterrey+in+Cuernavaca,+M%C3%A9xico+95D+km+104,+Real+del+Puente,+62790+Mor./@19.0244356,-99.3257639,11z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x85ce072b1da5fe5f:0x13582479334cf1e9!2m2!1d-99.1487313!2d19.2424994!1m5!1m1!1s0x85cdd819736a4029:0xeaee3fb10b32a22c!2m2!1d-99.221492!2d18.805884!3e0"
+                  href="https://www.google.com/maps/dir/Caseta+Tlalpan,+Carr.+Federal+A+Cuernavaca,+Los+Cipreses,+Mexico+City,+CDMX/Finca+San+Pedro+Jard%C3%ADn+Para+Bodas,+Bugambilias,+Brisas,+Temixco,+Morelos/@19.0473241,-99.3501428,11z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x85ce072b1da5fe5f:0x13582479334cf1e9!2m2!1d-99.1487313!2d19.2424994!1m5!1m1!1s0x85cdd8cf8fdd2f77:0xd75bcd27c8767a40!2m2!1d-99.2211285!2d18.852295!3e0?entry=ttu"
                   id="btnlink"
                   target="_blank"
                 >
@@ -77,7 +77,7 @@ function Location() {
                 </a>
                 <a
                   className="text-center"
-                  href="https://www.google.com/maps/dir/Caseta+Tlalpan,+Carr.+Federal+A+Cuernavaca,+Los+Cipreses,+Mexico+City,+CDMX/Tecnologico+de+Monterrey+in+Cuernavaca,+M%C3%A9xico+95D+km+104,+Real+del+Puente,+62790+Mor./@19.0244356,-99.3257639,11z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x85ce072b1da5fe5f:0x13582479334cf1e9!2m2!1d-99.1487313!2d19.2424994!1m5!1m1!1s0x85cdd819736a4029:0xeaee3fb10b32a22c!2m2!1d-99.221492!2d18.805884!3e0"
+                  href="https://www.google.com/maps/dir/Caseta+Tlalpan,+Carretera+Federal+A+Cuernavaca,+Los+Cipreses,+Mexico+City,+CDMX/Finca+San+Pedro+Jard%C3%ADn+Para+Bodas,+Bugambilias,+Brisas,+Temixco,+Morelos/@18.9684582,-99.235476,11.94z/data=!4m14!4m13!1m5!1m1!1s0x85ce072b1da5fe5f:0x13582479334cf1e9!2m2!1d-99.1487313!2d19.2424994!1m5!1m1!1s0x85cdd8cf8fdd2f77:0xd75bcd27c8767a40!2m2!1d-99.2211285!2d18.852295!3e0?entry=ttu"
                   id="btnlink"
                   target="_blank"
                   onClick={handleRequestLocation}
