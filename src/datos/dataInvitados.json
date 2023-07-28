@@ -656,6 +656,28 @@
     "maxBoletos": 2,
     "ninos": 0,
     "nombreInvitados": "Felipe y Diana",
+    "modificar": false,
+    "de": "Marcos"
+  },
+  {
+    "id": "17721cd1",
+    "nombre": "Arturo Mandujano",
+    "nickname": "Arturo",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 0,
+    "nombreInvitados": "Arturo +1",
+    "modificar": true,
+    "de": "Marcos"
+  },
+  {
+    "id": "5c96e5aa",
+    "nombre": "Enrique García",
+    "nickname": "Enrique",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 0,
+    "nombreInvitados": "Enrique +1",
     "modificar": true,
     "de": "Marcos"
   },
