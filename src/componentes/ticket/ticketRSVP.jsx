@@ -86,7 +86,8 @@ export default function TicketRSVP({
   </p> */}
       <h3 className="center">RSVP</h3>
       <p className="center">
-        Por favor responde antes del 20 de agosto de 2023
+        Por favor responde antes del{" "}
+        {invitado.deadline ?? "20 de agosto de 2023"}
       </p>
       <form>
         <div>

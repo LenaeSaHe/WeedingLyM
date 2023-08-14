@@ -27,7 +27,6 @@ const router = createBrowserRouter([
     element: <App />,
     loader: async ({ params }) => {
       if (params.id) {
-        console.log(params.id);
         //Buscamos en los datos locales
         const found = data.find(
           (item) => item.id.toString() === params.id.toString()

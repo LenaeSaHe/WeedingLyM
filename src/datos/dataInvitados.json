@@ -536,7 +536,8 @@
     "ninos": 0,
     "nombreInvitados": "Victor y Edith",
     "modificar": false,
-    "de": "Marcos"
+    "de": "Marcos",
+    "deadline": "1 de septiembre de 2023"
   },
   {
     "id": "c31d22aa",
@@ -580,7 +581,8 @@
     "ninos": 0,
     "nombreInvitados": "Mario +1",
     "modificar": true,
-    "de": "Marcos"
+    "de": "Marcos",
+    "deadline": "1 de septiembre de 2023"
   },
   {
     "id": "037f0747",
@@ -591,7 +593,8 @@
     "ninos": 0,
     "nombreInvitados": "Paola +1",
     "modificar": true,
-    "de": "Marcos"
+    "de": "Marcos",
+    "deadline": "1 de septiembre de 2023"
   },
   {
     "id": "b7a915c6",
@@ -602,7 +605,8 @@
     "ninos": 0,
     "nombreInvitados": "Ivonne +1",
     "modificar": false,
-    "de": "Marcos"
+    "de": "Marcos",
+    "deadline": "1 de septiembre de 2023"
   },
   {
     "id": "7cb6083c",
