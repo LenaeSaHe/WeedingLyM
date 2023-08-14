@@ -705,7 +705,8 @@
     "ninos": 0,
     "nombreInvitados": "Juan +2",
     "modificar": true,
-    "de": "Marcos"
+    "de": "Marcos",
+    "deadline": "1 de septiembre de 2023"
   },
   {
     "id": "test2",
@@ -716,6 +717,7 @@
     "ninos": 2,
     "nombreInvitados": "Lucia y Ornaldo",
     "modificar": true,
-    "de": "Lena"
+    "de": "Lena",
+    "deadline": "15 de septiembre de 2023"
   }
 ]
