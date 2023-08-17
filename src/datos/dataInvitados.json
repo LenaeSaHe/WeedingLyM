@@ -217,7 +217,8 @@
     "ninos": 0,
     "nombreInvitados": "Jonathan + 1",
     "modificar": true,
-    "de": "Lena"
+    "de": "Lena",
+    "deadline": "1 de septiembre de 2023"
   },
   {
     "id": "de599596",
@@ -231,6 +232,18 @@
     "de": "Lena"
   },
   {
+    "id": "d061fc10",
+    "nombre": "Gustavo y Mari",
+    "nickname": "Gustavo y Mari",
+    "boletos": 2,
+    "maxBoletos": 2,
+    "ninos": 0,
+    "nombreInvitados": "Gustavo y Mari",
+    "modificar": true,
+    "de": "Lena",
+    "deadline": "1 de septiembre de 2023"
+  },
+  {
     "id": "d561fc45",
     "nombre": "Dani Coriche",
     "nickname": "Dani",
@@ -239,7 +252,8 @@
     "ninos": 0,
     "nombreInvitados": "Dani + 1",
     "modificar": true,
-    "de": "Lena"
+    "de": "Lena",
+    "deadline": "1 de septiembre de 2023"
   },
   {
     "id": "f8df2c82",
@@ -250,7 +264,8 @@
     "ninos": 2,
     "nombreInvitados": "Ernesto + 1",
     "modificar": true,
-    "de": "Lena"
+    "de": "Lena",
+    "deadline": "1 de septiembre de 2023"
   },
   {
     "id": "07e0f599",
@@ -698,20 +713,20 @@
   },
   {
     "id": "test1",
-    "nombre": "Juan Test",
-    "nickname": "Juan",
+    "nombre": "Test Test",
+    "nickname": "Test",
     "boletos": 3,
     "maxBoletos": 3,
     "ninos": 0,
-    "nombreInvitados": "Juan +2",
+    "nombreInvitados": "Test +2",
     "modificar": true,
     "de": "Marcos",
     "deadline": "1 de septiembre de 2023"
   },
   {
     "id": "test2",
-    "nombre": "Lucia Test",
-    "nickname": "Lucy",
+    "nombre": "Test Test",
+    "nickname": "Test",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 2,
