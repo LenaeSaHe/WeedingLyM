@@ -121,15 +121,16 @@
     "de": "Lena"
   },
   {
-    "id": "c31e0c03",
-    "nombre": "Deura Torres",
-    "nickname": "Deura Torres",
+    "id": "c31e0c00",
+    "nombre": "Pamela Ramirez",
+    "nickname": "Pamela Ramirez",
     "boletos": 2,
     "maxBoletos": 2,
-    "ninos": 1,
-    "nombreInvitados": "Deu + 1",
+    "ninos": 0,
+    "nombreInvitados": "Pame y Carlos",
     "modificar": true,
-    "de": "Lena"
+    "de": "Lena",
+    "deadline": "15 de septiembre de 2023"
   },
   {
     "id": "b854c7e1",
