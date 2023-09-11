@@ -35,6 +35,12 @@ function App() {
     loadInvitadoInfo();
   }, []);
 
+  useEffect(() => {
+    if (store.invitado) {
+      document.title = `Lena & Marcos 2023 - ${store.invitado.nickname}`;
+    }
+  }, [store.invitado]);
+
   return (
     <>
       {/*Backdrop*/}
@@ -64,7 +70,7 @@ function App() {
       {/* Instagram */}
       <GooglePhotos invitado={store.invitado} />
       {/* Confirm */}
-      <Footer id={params.id} />
+      <Footer id={params.id} invitado={store.invitado} />
       {/* Protocolo covid*/}
       <Protocolocovid />
     </>

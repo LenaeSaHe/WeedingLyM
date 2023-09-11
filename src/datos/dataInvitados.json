@@ -222,7 +222,7 @@
     "deadline": "1 de septiembre de 2023"
   },
   {
-    "id": "535d0a71",
+    "id": "535d1a71",
     "nombre": "Gaby y Juan Carlos",
     "nickname": "Gaby y Juan Carlos",
     "boletos": 2,
@@ -645,7 +645,7 @@
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
-    "nombreInvitados": "Diana +1",
+    "nombreInvitados": "Diana y Jonathan",
     "modificar": false,
     "de": "Marcos",
     "deadline": "1 de octubre de 2023"
@@ -653,11 +653,11 @@
   {
     "id": "6d1b7edc",
     "nombre": "Evamaria Chavez",
-    "nickname": "Evamaria",
+    "nickname": "Eva",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
-    "nombreInvitados": "Eva +1",
+    "nombreInvitados": "Eva y Fernando",
     "modificar": false,
     "de": "Marcos",
     "deadline": "1 de octubre de 2023"
