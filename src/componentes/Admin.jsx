@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import data from "../datos/dataInvitados.json";
-import { useRef } from "react";
+import dataInvites from "../datos/dataInvitados.json";
 import InviteItem from "./InviteItem";
 import { getConfirmaciones } from "../datos/firebase";
 import classNames from "classnames";
@@ -13,7 +12,9 @@ export default function Admin() {
   const [sivanBoletos, setSivanBoletos] = useState(0);
   const [novanBoletos, setNovanBoletos] = useState(0);
   const [search, setSearch] = useState("");
-  const [invitados, setInvitados] = useState(data);
+  const [invitados, setInvitados] = useState(dataInvites);
+  const [invitadosMarcos, setInvitadosMarcos] = useState([]);
+  const [invitadosLena, setInvitadosLena] = useState([]);
 
   useEffect(() => {
     document.querySelector("html").style.overflowY = "auto";
@@ -22,6 +23,21 @@ export default function Admin() {
     getConfirmaciones().then((data) => {
       const si = data.filter((item) => item.confirmacion);
       const no = data.filter((item) => !item.confirmacion);
+      const invitadosMarcos = si.filter((item) => {
+        const invite = dataInvites.find((inv) => inv.nombre === item.nombre);
+        if (invite) {
+          return invite.de === "Marcos";
+        }
+      });
+      const invitadosLena = si.filter((item) => {
+        const invite = dataInvites.find((inv) => inv.nombre === item.nombre);
+        if (invite) {
+          return invite.de === "Lena";
+        }
+      });
+      console.log(invitadosMarcos, invitadosLena);
+      setInvitadosLena(invitadosLena);
+      setInvitadosMarcos(invitadosMarcos);
       setSivan(si);
       setNovan(no);
 
@@ -39,7 +55,7 @@ export default function Admin() {
     setSearch(e.target.value);
 
     if (search.length >= 2) {
-      const inv = data.filter((invitado) => {
+      const inv = dataInvites.filter((invitado) => {
         return invitado.nombre
           .toLowerCase()
           .includes(search.toLocaleLowerCase());
@@ -47,7 +63,7 @@ export default function Admin() {
 
       setInvitados(inv);
     } else {
-      setInvitados(data);
+      setInvitados(dataInvites);
     }
   }
 
@@ -76,24 +92,41 @@ export default function Admin() {
         className="confirmations"
         style={{ display: tab === "confirmaciones" ? "block" : "none" }}
       >
-        <div className="px-4">
-          <p>Si asistiran {sivanBoletos}</p>
-          <p>No asistiran {novanBoletos}</p>
+        <div className="text-center">
+          <h3>Si asistiran {sivanBoletos}</h3>
         </div>
-        {confirmados.map((confirmado, index) => (
-          <div
-            key={index}
-            className={classNames(
-              "confirmationItem",
-              confirmado.confirmacion ? "confirmationSi" : "confirmationNo"
-            )}
-          >
-            <div style={{ width: "250px" }}>{confirmado.nombre}</div>
-            <div>{confirmado.confirmacion ? "SI ASISTIRA" : "NO ASISTIRA"}</div>
-            <div>{confirmado.boletos} Boletos</div>
-          </div>
-        ))}
+        <ShowConfirmed confirmados={invitadosLena} side="Lena" />
+        <ShowConfirmed confirmados={invitadosMarcos} side="Marcos" />
       </div>
+    </div>
+  );
+}
+
+function ShowConfirmed({ confirmados, side }) {
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    const total = confirmados.reduce((acc, item) => acc + item.boletos, 0);
+    setTotal(total);
+  }, [confirmados]);
+  return (
+    <div>
+      <h3 className="text-center">
+        {side} - {total} boletos
+      </h3>
+      {confirmados.map((confirmado, index) => (
+        <div
+          key={index}
+          className={classNames(
+            "confirmationItem",
+            confirmado.confirmacion ? "confirmationSi" : "confirmationNo"
+          )}
+        >
+          <div style={{ width: "250px" }}>{confirmado.nombre}</div>
+          <div>{confirmado.confirmacion ? "SI ASISTIRA" : "NO ASISTIRA"}</div>
+          <div>{confirmado.boletos} Boletos</div>
+        </div>
+      ))}
     </div>
   );
 }
