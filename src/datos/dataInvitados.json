@@ -731,6 +731,30 @@
     "deadline": "15 de septiembre de 2023"
   },
   {
+    "id": "de233f7f",
+    "nombre": "Arturo y Angie",
+    "nickname": "Arturo y Angie",
+    "boletos": 3,
+    "maxBoletos": 3,
+    "ninos": 0,
+    "nombreInvitados": "Arturo, Angie y Karla",
+    "modificar": false,
+    "de": "Marcos",
+    "deadline": "1 de octubre de 2023"
+  },
+  {
+    "id": "b28403bc",
+    "nombre": "",
+    "nickname": "",
+    "boletos": 0,
+    "maxBoletos": 0,
+    "ninos": 0,
+    "nombreInvitados": "",
+    "modificar": false,
+    "de": "Marcos",
+    "deadline": "1 de octubre de 2023"
+  },
+  {
     "id": "test1",
     "nombre": "Test Test",
     "nickname": "Test",
