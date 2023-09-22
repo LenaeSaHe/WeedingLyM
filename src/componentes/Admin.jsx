@@ -105,6 +105,7 @@ export default function Admin() {
         </div>
         <ShowConfirmed confirmados={invitadosLena} side="Lena" />
         <ShowConfirmed confirmados={invitadosMarcos} side="Marcos" />
+        <ShowConfirmed confirmados={novan} side="" />
       </div>
 
       <div
@@ -138,7 +139,13 @@ function ShowConfirmed({ confirmados, side }) {
   return (
     <div>
       <h3 className="text-center">
-        {side} - {total} boletos
+        {!!side ? (
+          <>
+            {side} - {total} boletos
+          </>
+        ) : (
+          <>No asistiran</>
+        )}
       </h3>
       {confirmados.map((confirmado, index) => (
         <div
