@@ -19,6 +19,7 @@ import data from "./datos/dataInvitados.json";
 import Protocolocovid from "./componentes/Protocolocovid";
 import GooglePhotos from "./componentes/GooglePhotos";
 import { useAppContext } from "./datos/store";
+import { logAccess } from "./datos/firebase";
 
 function App() {
   /* Función = Componente debe llevar un return dentro de la funcion jsx */
@@ -38,6 +39,12 @@ function App() {
   useEffect(() => {
     if (store.invitado) {
       document.title = `Lena & Marcos 2023 - ${store.invitado.nickname}`;
+      const access = {
+        id: store.invitado.id,
+        nickname: store.invitado.nickname,
+        lastAccess: new Date(),
+      };
+      logAccess(store.invitado.id, store.invitado.nickname, new Date());
     }
   }, [store.invitado]);
 

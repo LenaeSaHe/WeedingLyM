@@ -777,5 +777,27 @@
     "modificar": true,
     "de": "Lena",
     "deadline": "15 de septiembre de 2023"
+  },
+  {
+    "id": "marcos",
+    "nombre": "Marcos Rivas Rojas",
+    "nickname": "Marcos",
+    "boletos": 1,
+    "maxBoletos": 1,
+    "ninos": 0,
+    "nombreInvitados": "Marcos",
+    "modificar": false,
+    "de": "Marcos"
+  },
+  {
+    "id": "lena",
+    "nombre": "Lena Elizabeth Sanchez Hernandez",
+    "nickname": "Lena",
+    "boletos": 1,
+    "maxBoletos": 1,
+    "ninos": 0,
+    "nombreInvitados": "Lena",
+    "modificar": false,
+    "de": "Lena"
   }
 ]

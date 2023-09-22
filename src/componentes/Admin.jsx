@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import dataInvites from "../datos/dataInvitados.json";
 import InviteItem from "./InviteItem";
-import { getConfirmaciones } from "../datos/firebase";
+import { getConfirmaciones, getAccess } from "../datos/firebase";
 import classNames from "classnames";
 
 export default function Admin() {
@@ -15,14 +15,19 @@ export default function Admin() {
   const [invitados, setInvitados] = useState(dataInvites);
   const [invitadosMarcos, setInvitadosMarcos] = useState([]);
   const [invitadosLena, setInvitadosLena] = useState([]);
+  const [lastAccess, setLastAccess] = useState([]);
 
   useEffect(() => {
     document.querySelector("html").style.overflowY = "auto";
     document.querySelector("body").style.overflowY = "auto";
 
-    getConfirmaciones().then((data) => {
+    getConfirmaciones().then(async (data) => {
       const si = data.filter((item) => item.confirmacion);
       const no = data.filter((item) => !item.confirmacion);
+
+      const _lastAccess = await getAccess();
+      setLastAccess(_lastAccess);
+
       const invitadosMarcos = si.filter((item) => {
         const invite = dataInvites.find((inv) => inv.nombre === item.nombre);
         if (invite) {
@@ -73,6 +78,7 @@ export default function Admin() {
       <div className="px-4">
         <button onClick={() => setTab("invitaciones")}>Invitaciones</button>
         <button onClick={() => setTab("confirmaciones")}>Confirmaciones</button>
+        <button onClick={() => setTab("accesos")}>Accesos</button>
       </div>
       <div style={{ display: tab === "invitaciones" ? "block" : "none" }}>
         <div className="searchInviteContainer">
@@ -85,7 +91,9 @@ export default function Admin() {
           />
         </div>
         {invitados.map((invitado, index) => (
-          <InviteItem invitado={invitado} key={index} />
+          <>
+            <InviteItem invitado={invitado} key={index} />
+          </>
         ))}
       </div>
       <div
@@ -97,6 +105,24 @@ export default function Admin() {
         </div>
         <ShowConfirmed confirmados={invitadosLena} side="Lena" />
         <ShowConfirmed confirmados={invitadosMarcos} side="Marcos" />
+      </div>
+
+      <div
+        className="confirmations"
+        style={{ display: tab === "accesos" ? "block" : "none" }}
+      >
+        <div className="text-center">
+          <h3>Ultimo acceso</h3>
+        </div>
+        {lastAccess.map((access, index) => (
+          <div className="p-4">
+            <h3>{access.nombre}</h3>
+            {new Date(
+              access.lastAccess.seconds * 1000 +
+                access.lastAccess.nanoseconds / 1000000
+            ).toLocaleString()}
+          </div>
+        ))}
       </div>
     </div>
   );
