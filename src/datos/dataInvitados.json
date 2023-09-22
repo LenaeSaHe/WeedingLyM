@@ -351,10 +351,10 @@
     "id": "591bbd45",
     "nombre": "Monica Rivas Arzaluz",
     "nickname": "Tía Moni",
-    "boletos": 4,
-    "maxBoletos": 4,
+    "boletos": 3,
+    "maxBoletos": 3,
     "ninos": 0,
-    "nombreInvitados": "Tia Moni, Ricardo, Manuelito y Monis",
+    "nombreInvitados": "Moni, Manuelito y Monis",
     "modificar": false,
     "de": "Marcos"
   },
