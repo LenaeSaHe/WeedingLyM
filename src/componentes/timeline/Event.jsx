@@ -7,7 +7,7 @@ let options = {
   threshold: 0.5,
 };
 
-function Event({ imagen, titulo, time }) {
+function Event({ imagen, titulo, time, special = false }) {
   const ref = useRef(null);
   const [show, setShow] = useState(false);
   const callbackFunc = (entries) => {
@@ -26,7 +26,9 @@ function Event({ imagen, titulo, time }) {
     }
 
     return () => {
-      observer.unobserve(ref.current);
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
     };
   }, []);
   return (
@@ -48,4 +50,11 @@ function Event({ imagen, titulo, time }) {
     </div>
   );
 }
+
+/* function OnlyForYou({ special }) {
+  if (special) {
+    return <> - Solo para ti </>;
+  }
+  return "";
+} */
 export default Event;

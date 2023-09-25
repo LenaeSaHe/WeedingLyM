@@ -28,7 +28,6 @@ function App() {
   const data = useLoaderData();
 
   async function loadInvitadoInfo() {
-    console.log("❤️❤️", data);
     if (await store.loadInvitado(params.id, data)) {
     }
   }
@@ -69,7 +68,7 @@ function App() {
       {/* Give away */}
       <Giveaway />
       {/* timeline */}
-      <Timeline />
+      <Timeline invitado={store.invitado} />
       {/* GalleryTwo */}
       <GalleryTwo />
       {/* Hotel */}
