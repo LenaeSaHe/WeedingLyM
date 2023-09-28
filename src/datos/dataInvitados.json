@@ -363,10 +363,10 @@
     "id": "591bbd45",
     "nombre": "Monica Rivas Arzaluz",
     "nickname": "Tía Moni",
-    "boletos": 3,
-    "maxBoletos": 3,
+    "boletos": 5,
+    "maxBoletos": 5,
     "ninos": 0,
-    "nombreInvitados": "Moni, Manuelito y Monis",
+    "nombreInvitados": "Moni, Manuelito, Monis, Ricardo y Valeria",
     "modificar": false,
     "de": "Marcos"
   },
@@ -442,11 +442,11 @@
   {
     "id": "ee29d3d3",
     "nombre": "Alejandro Garcia Basave",
-    "nickname": "Mosh",
+    "nickname": "Mosh y Mara",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
-    "nombreInvitados": "Alejando +1",
+    "nombreInvitados": "Alejando y Mara",
     "modificar": true,
     "de": "Marcos"
   },
