@@ -8,6 +8,7 @@
     "ninos": 0,
     "nombreInvitados": "Papi y Mami",
     "modificar": false,
+    "civil": true,
     "de": "Lena"
   },
   {
@@ -74,6 +75,8 @@
     "ninos": 0,
     "nombreInvitados": "Barbie",
     "modificar": true,
+    "civil": true,
+    "dama": true,
     "de": "Lena"
   },
   {
@@ -85,6 +88,8 @@
     "ninos": 0,
     "nombreInvitados": "Beti + 1",
     "modificar": true,
+    "civil": true,
+    "dama": true,
     "de": "Lena"
   },
   {
@@ -96,6 +101,7 @@
     "ninos": 0,
     "nombreInvitados": "Arely + 1",
     "modificar": true,
+    "dama": true,
     "de": "Lena"
   },
   {
@@ -222,7 +228,7 @@
     "deadline": "1 de septiembre de 2023"
   },
   {
-    "id": "535d0a71",
+    "id": "535d1a71",
     "nombre": "Gaby y Juan Carlos",
     "nickname": "Gaby y Juan Carlos",
     "boletos": 2,
@@ -289,6 +295,7 @@
     "ninos": 0,
     "nombreInvitados": "Papá y Mamá",
     "modificar": false,
+    "civil": true,
     "de": "Marcos"
   },
   {
@@ -300,6 +307,8 @@
     "ninos": 0,
     "nombreInvitados": "Bee e Ivan",
     "modificar": false,
+    "civil": true,
+    "dama": true,
     "de": "Marcos"
   },
   {
@@ -311,6 +320,8 @@
     "ninos": 0,
     "nombreInvitados": "Ari y Byron",
     "modificar": false,
+    "civil": true,
+    "dama": true,
     "de": "Marcos"
   },
   {
@@ -322,6 +333,7 @@
     "ninos": 0,
     "nombreInvitados": "Papá y Mamá",
     "modificar": false,
+    "civil": true,
     "de": "Marcos"
   },
   {
@@ -351,10 +363,10 @@
     "id": "591bbd45",
     "nombre": "Monica Rivas Arzaluz",
     "nickname": "Tía Moni",
-    "boletos": 4,
-    "maxBoletos": 4,
+    "boletos": 5,
+    "maxBoletos": 5,
     "ninos": 0,
-    "nombreInvitados": "Tia Moni, Ricardo, Manuelito y Monis",
+    "nombreInvitados": "Moni, Manuelito, Monis, Ricardo y Valeria",
     "modificar": false,
     "de": "Marcos"
   },
@@ -400,6 +412,7 @@
     "ninos": 1,
     "nombreInvitados": "Lalo, Edna y Julieta",
     "modificar": false,
+    "damo": true,
     "de": "Marcos"
   },
   {
@@ -411,6 +424,8 @@
     "ninos": 0,
     "nombreInvitados": "Dani e Itzel",
     "modificar": false,
+    "civil": true,
+    "damo": true,
     "de": "Marcos"
   },
   {
@@ -427,11 +442,11 @@
   {
     "id": "ee29d3d3",
     "nombre": "Alejandro Garcia Basave",
-    "nickname": "Mosh",
+    "nickname": "Mosh y Mara",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
-    "nombreInvitados": "Alejando +1",
+    "nombreInvitados": "Alejando y Mara",
     "modificar": true,
     "de": "Marcos"
   },
@@ -521,6 +536,7 @@
     "ninos": 0,
     "nombreInvitados": "Chiavo y Andrea",
     "modificar": false,
+    "damo": true,
     "de": "Marcos"
   },
   {
@@ -532,6 +548,8 @@
     "ninos": 0,
     "nombreInvitados": "Pozos +1",
     "modificar": true,
+    "civil": true,
+    "damo": true,
     "de": "Marcos"
   },
   {
@@ -633,7 +651,7 @@
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
-    "nombreInvitados": "Ivonne +1",
+    "nombreInvitados": "Ivonne y Ramzi",
     "modificar": false,
     "de": "Marcos",
     "deadline": "1 de octubre de 2023"
@@ -645,7 +663,7 @@
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
-    "nombreInvitados": "Diana +1",
+    "nombreInvitados": "Diana y Jonathan",
     "modificar": false,
     "de": "Marcos",
     "deadline": "1 de octubre de 2023"
@@ -653,11 +671,11 @@
   {
     "id": "6d1b7edc",
     "nombre": "Evamaria Chavez",
-    "nickname": "Evamaria",
+    "nickname": "Eva",
     "boletos": 2,
     "maxBoletos": 2,
     "ninos": 0,
-    "nombreInvitados": "Eva +1",
+    "nombreInvitados": "Eva y Fernando",
     "modificar": false,
     "de": "Marcos",
     "deadline": "1 de octubre de 2023"
@@ -731,6 +749,30 @@
     "deadline": "15 de septiembre de 2023"
   },
   {
+    "id": "de233f7f",
+    "nombre": "Arturo y Angie",
+    "nickname": "Arturo y Angie",
+    "boletos": 3,
+    "maxBoletos": 3,
+    "ninos": 0,
+    "nombreInvitados": "Arturo, Angie y Karla",
+    "modificar": false,
+    "de": "Marcos",
+    "deadline": "1 de octubre de 2023"
+  },
+  {
+    "id": "b28403bc",
+    "nombre": "",
+    "nickname": "",
+    "boletos": 0,
+    "maxBoletos": 0,
+    "ninos": 0,
+    "nombreInvitados": "",
+    "modificar": false,
+    "de": "Marcos",
+    "deadline": "1 de octubre de 2023"
+  },
+  {
     "id": "test1",
     "nombre": "Test Test",
     "nickname": "Test",
@@ -753,5 +795,31 @@
     "modificar": true,
     "de": "Lena",
     "deadline": "15 de septiembre de 2023"
+  },
+  {
+    "id": "marcos",
+    "nombre": "Marcos Rivas Rojas",
+    "nickname": "Marcos",
+    "boletos": 1,
+    "maxBoletos": 1,
+    "ninos": 0,
+    "nombreInvitados": "Marcos",
+    "modificar": false,
+    "civil": true,
+    "damo": true,
+    "de": "Marcos"
+  },
+  {
+    "id": "lena",
+    "nombre": "Lena Elizabeth Sanchez Hernandez",
+    "nickname": "Lena",
+    "boletos": 1,
+    "maxBoletos": 1,
+    "ninos": 0,
+    "nombreInvitados": "Lena",
+    "modificar": false,
+    "civil": true,
+    "dama": true,
+    "de": "Lena"
   }
 ]

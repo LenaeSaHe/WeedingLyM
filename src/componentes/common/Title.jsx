@@ -26,7 +26,9 @@ export default function Title({ children, white, separator = true }) {
     }
 
     return () => {
-      observer.unobserve(ref.current);
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
     };
   }, []);
 

@@ -107,3 +107,22 @@ export async function getConfirmaciones() {
 
   return res;
 }
+
+export async function logAccess(id, nombre, lastAccess) {
+  await setDoc(doc(db, "access", id), {
+    nombre,
+    lastAccess,
+  });
+}
+
+export async function getAccess() {
+  const res = [];
+  const querySnapshot = await getDocs(collection(db, "access"));
+  querySnapshot.forEach((doc) => {
+    res.push(doc.data());
+  });
+
+  console.log({ res });
+
+  return res;
+}
