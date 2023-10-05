@@ -234,13 +234,13 @@
     "deadline": "10 de septiembre de 2023"
   },
   {
-    "id": "de599596",
-    "nombre": "Rogelio Franco",
-    "nickname": "Rogelio Franco",
-    "boletos": 2,
-    "maxBoletos": 2,
+    "id": "de599590",
+    "nombre": "Armando Sánchez",
+    "nickname": "Armando Sánchez",
+    "boletos": 1,
+    "maxBoletos": 1,
     "ninos": 0,
-    "nombreInvitados": "Rogelio Franco + 1",
+    "nombreInvitados": "Armando Sánchez",
     "modificar": true,
     "de": "Lena"
   },
