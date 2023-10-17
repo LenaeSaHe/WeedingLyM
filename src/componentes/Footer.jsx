@@ -7,11 +7,7 @@ function Footer({ id }) {
   const store = useAppContext();
   return (
     <section className="contA ticketsContainer">
-      {store.invitado?.confirmacion ? (
-        <ShowClosedTicket store={store} />
-      ) : (
-        <ShowTicket id={id} />
-      )}
+      <ShowTicket id={id} />
     </section>
   );
 }

@@ -11,6 +11,12 @@ function Giveaway() {
   if (store.invitado?.regalo) {
     return (
       <section className="contA" id="thanksGift">
+        <Confetti
+          numberOfPieces={400}
+          width={width}
+          height={height}
+          recycle={false}
+        />
         <ThanksGift width={width} height={height} />
       </section>
     );
@@ -73,12 +79,6 @@ function ThanksGift({ width, height }) {
   return (
     <div className="giveMainTitle">
       <Paragraph>
-        <Confetti
-          numberOfPieces={400}
-          width={width}
-          height={height}
-          recycle={false}
-        />
         ¡Muchas gracias por tu regalo! <br />
         🎁🎁🎁
       </Paragraph>
