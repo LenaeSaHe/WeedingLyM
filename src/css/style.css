@@ -15,8 +15,8 @@
   --fuenteCursiva3: "Pacifico", cursive;
   --fuenteParrafo: "Source Serif Pro", serif;
   --fuenteTitulo2: "Crimson Text", serif;
-  --introDuracion: 1s;
-  --introDelay: 5s;
+  --introDuracion: 0.5s;
+  --introDelay: 2s;
 }
 
 section {
@@ -145,7 +145,7 @@ section {
 }
 
 .fadeOut {
-  animation: fadeOut 1s ease forwards;
+  animation: fadeOut 0.5s ease forwards;
 }
 @keyframes fadeOut {
   from {
@@ -210,52 +210,52 @@ section {
 
 /* establecer el orden de apilamiento de las capas */
 .layer1 {
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
   background-image: url(../img/logoml-02.png);
   z-index: 1;
 }
 
 .layer2 {
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
   background-image: url(../img/logoml-03.png);
   z-index: 2;
   top: calc(-1 * var(--bd-height));
 }
 
 .layer3 {
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
   z-index: 3;
   background-image: url(../img/logoml-01.png);
   top: calc(-2 * var(--bd-height));
 }
 
 .layer4 {
-  animation-delay: 1s;
+  animation-delay: 0.4s;
   z-index: 4;
   background-image: url(../img/logoml-08.png);
   top: calc(-3 * var(--bd-height));
 }
 
 .layer5 {
-  animation-delay: 1.2s;
+  animation-delay: 0.5s;
   z-index: 5;
   background-image: url(../img/logoml-04.png);
   top: calc(-4 * var(--bd-height));
 }
 .layer6 {
-  animation-delay: 1.4s;
+  animation-delay: 0.6s;
   z-index: 6;
   background-image: url(../img/logoml-05.png);
   top: calc(-5 * var(--bd-height));
 }
 .layer7 {
-  animation-delay: 1.6s;
+  animation-delay: 0.7s;
   z-index: 7;
   background-image: url(../img/logoml-06.png);
   top: calc(-6 * var(--bd-height));
 }
 .layer8 {
-  animation-delay: 1.8s;
+  animation-delay: 0.8s;
   z-index: 8;
   background-image: url(../img/logoml-07.png);
   top: calc(-7 * var(--bd-height));
@@ -749,6 +749,9 @@ h2 {
     "area01 area02"
     "area01 area03";
 }
+#thanksGift {
+  text-align: center;
+}
 .giveMainTitle {
   text-align: center;
   font-size: 48px;
@@ -1064,7 +1067,8 @@ ul li:nth-child(even) .hidden {
   border-left: dashed 2px #ccc;
 }
 
-.ticketContainer .ticketRSVP .ticketsNumber {
+.ticketContainer .ticketRSVP .ticketsNumber,
+.ticketsNumber {
   font-size: 24px;
   text-align: center;
   font-weight: bold;

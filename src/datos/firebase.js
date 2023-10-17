@@ -122,6 +122,10 @@ export async function getAccess() {
     res.push(doc.data());
   });
 
+  res.sort((a, b) => {
+    return b.lastAccess - a.lastAccess;
+  });
+
   console.log({ res });
 
   return res;

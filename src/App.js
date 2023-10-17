@@ -43,7 +43,9 @@ function App() {
         nickname: store.invitado.nickname,
         lastAccess: new Date(),
       };
-      logAccess(store.invitado.id, store.invitado.nickname, new Date());
+      if (window.location.hostname !== "localhost") {
+        logAccess(store.invitado.id, store.invitado.nickname, new Date());
+      }
     }
   }, [store.invitado]);
 

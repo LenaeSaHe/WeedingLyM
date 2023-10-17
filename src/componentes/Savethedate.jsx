@@ -47,11 +47,15 @@ function Savethedate({ invitado }) {
         <Title separator={false}>Save the date</Title>
         <img src={heartsave} width="380" id="heartsave" />
         <Paragraph short>
-          {invitado ? invitado.nickname : ""}, {invitado?.nickname.split(" ").length>1 ? "son " : "eres "} 
-          muy importante para nostros,
-          y en este día tan especial en el que frente a Dios y a nuestros seres
-          amados recibiremos la bendición de un nuevo capítulo en nuestras
-          vidas, deseamos nos acompañe{invitado?.nickname.split(" ").length>1 ? "n" : "s"} el próximo
+          {invitado ? invitado.nickname : ""},{" "}
+          {invitado?.nickname.split(" ").length > 1 ? "son " : "eres "}
+          muy importante{invitado?.nickname.split(" ").length > 1
+            ? "s"
+            : ""}{" "}
+          para nostros, y en este día tan especial en el que frente a Dios y a
+          nuestros seres amados recibiremos la bendición de un nuevo capítulo en
+          nuestras vidas, deseamos nos acompañe
+          {invitado?.nickname.split(" ").length > 1 ? "n" : "s"} el próximo
         </Paragraph>
 
         <div className="hrSave">

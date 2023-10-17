@@ -71,7 +71,7 @@ export default function TicketRSVP({
       if (invitado.boletos === 1) {
         return `1 boleto para ${invitado.nickname}`;
       } else if (invitado.nombreInvitados) {
-        return `Boletos para ${invitado.nombreInvitados}`;
+        return `${invitado.boletos} Boletos para ${invitado.nombreInvitados}`;
       } else {
         return `${invitado.boletos} boletos`;
       }

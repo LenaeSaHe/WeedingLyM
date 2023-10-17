@@ -1,6 +1,21 @@
 import Title from "./common/Title";
 import Paragraph from "./common/Paragraph";
+import { useAppContext } from "../datos/store";
+import Confetti from "react-confetti";
+import useWindowSize from "react-use/lib/useWindowSize";
+
 function Giveaway() {
+  const store = useAppContext();
+  const { width, height } = useWindowSize();
+
+  if (store.invitado?.regalo) {
+    return (
+      <section className="contA" id="thanksGift">
+        <ThanksGift width={width} height={height} />
+      </section>
+    );
+  }
+
   return (
     <section className="contA" id="idSecGive">
       <div className="giveLetterContainer liverpoolLetter">
@@ -51,6 +66,23 @@ function Giveaway() {
         </div>
       </div>
     </section>
+  );
+}
+
+function ThanksGift({ width, height }) {
+  return (
+    <div className="giveMainTitle">
+      <Paragraph>
+        <Confetti
+          numberOfPieces={400}
+          width={width}
+          height={height}
+          recycle={false}
+        />
+        ¡Muchas gracias por tu regalo! <br />
+        🎁🎁🎁
+      </Paragraph>
+    </div>
   );
 }
 export default Giveaway;

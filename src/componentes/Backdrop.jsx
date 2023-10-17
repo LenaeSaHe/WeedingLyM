@@ -26,7 +26,7 @@ function Backdrop({ invitado }) {
           setHideBackdrop(true);
           setLoading(false);
           clearTimeout(timer);
-        }, 3000);
+        }, 1000);
       },
       () => {}
     );
