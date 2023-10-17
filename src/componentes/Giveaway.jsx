@@ -24,6 +24,12 @@ function Giveaway() {
 
   return (
     <section className="contA" id="idSecGive">
+      <Confetti
+        numberOfPieces={400}
+        width={width}
+        height={height}
+        recycle={false}
+      />
       <div className="giveLetterContainer liverpoolLetter">
         <div className="giveLetterContent">
           <div className="giveTitle">LIVERPOOL</div>
