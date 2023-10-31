@@ -51,6 +51,7 @@ function Location() {
                 <img src={maps} width="100" height="100" className="center" />
               </p>
               <h3 className="cardLoc-title text-center">Finca San Pedro</h3>
+              <p>Ceremonia religiosa y celebración</p>
               <p className="text-center">
                 Bugambilias 2 Fracc, Brisas, 62584 Temixco, Mor. <br />
                 13:30 hrs.

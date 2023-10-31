@@ -10,7 +10,7 @@ const civilEvent = {
   id: 3,
   titulo: "Ceremonia civil",
   imagen: civil,
-  time: "15:30 hrs",
+  time: "15:00 hrs",
   special: true, //only for specific people
 };
 const damasEvent = {
@@ -25,7 +25,7 @@ const damosEvent = {
   id: 0,
   titulo: "Fotos con best man ",
   imagen: civil,
-  time: "13:00 hrs",
+  time: "12:00 hrs",
   special: true, //only for specific people
 };
 

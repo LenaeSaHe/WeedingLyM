@@ -72,7 +72,6 @@ export function getImages() {
   return res;
 }
 const images = getImages();
-console.log(images);
 export { images };
 
 export default [
