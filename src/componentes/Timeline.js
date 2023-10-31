@@ -54,13 +54,13 @@ function Timeline({ invitado }) {
       id: 5,
       titulo: "Pachangón masivo",
       imagen: party,
-      time: "16:30 hrs",
+      time: "17:30 hrs",
     },
     {
       id: 6,
       titulo: "Sorpresas",
       imagen: party,
-      time: "17:00 hrs",
+      time: "18:00 hrs",
     },
   ]);
 
