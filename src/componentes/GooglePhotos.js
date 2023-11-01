@@ -34,13 +34,14 @@ function GooglePhotos({ invitado }) {
 
   async function handleChange(e) {
     setSubmitStatus(stages.loading);
-    const fileName = invitado.nickname + "-" + crypto.randomUUID();
     const photos = e.target.files;
 
     try {
-      await Promise.all(
-        [...photos].map((photo) => submitPhoto(photo, fileName))
+      const promises = [...photos].map((photo) =>
+        submitPhoto(photo, invitado.nickname + "-" + crypto.randomUUID())
       );
+      const response = await Promise.allSettled(promises);
+      console.log("response", response);
       loadPhotos();
       setSubmitStatus(stages.succcess);
     } catch (error) {

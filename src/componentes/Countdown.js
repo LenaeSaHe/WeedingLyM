@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import CountdownNumber from "./CountdownNumber";
+import ornament from "../img/divider.png";
 
 function Countdown() {
   const [days, setDays] = useState(0);
@@ -8,8 +9,8 @@ function Countdown() {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const DATE_TARGET = new Date("11/04/2023 03:00 PM");
-    //const DATE_TARGET = new Date("09/25/2023 10:20 AM");
+    const DATE_TARGET = new Date("11/04/2023 02:00 PM");
+    //const DATE_TARGET = new Date("10/31/2023 02:48 PM");
     const MILLISECONDS_OF_A_SECOND = 1000;
     const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
     const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
@@ -46,10 +47,10 @@ function Countdown() {
 
 function selectView(days, hours, minutes, seconds) {
   console.log(days, hours, minutes, seconds);
-  if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
+  if (hours <= -12) {
+    return <PartyIsOver />;
+  } else if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
     return <WeddingStarted />;
-  } else if (days === 0 && hours <= 14 && hours > 0) {
-    return <IsToday />;
   } else {
     return (
       <ShowCountdown
@@ -66,7 +67,12 @@ function WeddingStarted() {
   return (
     <>
       {" "}
-      <div className="countdownTitle">EL EVENTO HA COMENZADO</div>
+      <div className="sectionTitle text-center txtTitles showTitle text-black py-4">
+        LA BODA HA COMENZADO!
+        <div className="ornamentTitle">
+          <img src={ornament} width="150" />
+        </div>
+      </div>
     </>
   );
 }
@@ -85,10 +91,16 @@ function ShowCountdown({ days, hours, minutes, seconds }) {
   );
 }
 
-function IsToday() {
+function PartyIsOver() {
   return (
     <>
-      <div className="countdownTitle">HOY ES LA BODA 🥳</div>
+      {" "}
+      <div className="sectionTitle text-center txtTitles showTitle text-black py-4">
+        MUCHAS GRACIAS POR ACOMPAÑARNOS!
+        <div className="ornamentTitle">
+          <img src={ornament} width="150" />
+        </div>
+      </div>
     </>
   );
 }
